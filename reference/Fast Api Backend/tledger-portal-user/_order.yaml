@@ -1,0 +1,7 @@
+- tledger-portal-user-read_users
+- tledger-portal-user-create_user
+- tledger-portal-user-read_user_me
+- tledger-portal-user-delete_user_me
+- tledger-portal-user-register_user
+- tledger-portal-user-read_user_by_id
+- tledger-portal-user-delete_user

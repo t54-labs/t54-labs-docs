@@ -1,0 +1,5 @@
+- agents-get_agent_by_id
+- agents-delete_agent
+- agents-onboard_agent
+- agents-set_agent_limit
+- agents-get_agent_limit
