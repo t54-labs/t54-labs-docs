@@ -1,7 +1,7 @@
 ---
 title: Explore all products
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
