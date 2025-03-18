@@ -1,15 +1,17 @@
 ---
-title: Getting Started with t54 labs
+title: 'Getting started '
 excerpt: >-
-  This page will help you get started with t54 labs. You'll be up and running in
-  a jiffy!
+  Create a t54 financial profile for your agent and learn how to start using t54
+  labs.
 hidden: false
 ---
 Welcome to ReadMe! :owlbert:
 
 You're on your way to building an awesome developer hub! Here's some of the things you'll want to check out.
 
-# 📝 Customize your docs
+# Start using t54 labs
+
+Set up a t54 project, migrate your customer data, and learn how to immediately protect yourself from fraud.
 
 What you're looking at right now is what we call our **Guides**. It's a free-form place to write to your heart's content! And the best part is... you aren't alone! Your users can contribute (with your approval, don't worry!) using the **[Suggested Edits](https://docs.readme.com/main/docs/suggested-edits)** feature on every page. It's like GitHub Pull Requests, but for text!
 
