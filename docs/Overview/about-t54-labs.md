@@ -21,6 +21,10 @@ Every day, people face countless financial decisions:
 
 These trivial yet relentless questions create anxiety. At T54, we empower AI Agent to automate those relentless tasks, and handle financial complexities, freeing people to focus on joy and happiness rather than financial stress.
 
+![](https://files.readme.io/133a2025091cf4df423e530d6dfc81f8744795494fc3e4233bc85ac6f28867e1-T54_deck_0307_page6.jpg)
+
+<br />
+
 ## How We Do It
 
 We provide a comprehensive suite of AI-native financial services, with a strong emphasis on end-to-end payments, risk management, and regulatory compliance. Our platform allows agent developers to seamlessly integrate financial capabilities directly into their AI agents.
@@ -39,5 +43,3 @@ We provide a comprehensive suite of AI-native financial services, with a strong 
 * Easy SDK Integration: Multi-language support ensuring compatibility with popular agent frameworks.
 
 At T54, we believe in seamlessly integrating technology into everyday life, transforming AI-driven financial interactions into powerful, positive experiences.
-
-![](https://files.readme.io/133a2025091cf4df423e530d6dfc81f8744795494fc3e4233bc85ac6f28867e1-T54_deck_0307_page6.jpg)
