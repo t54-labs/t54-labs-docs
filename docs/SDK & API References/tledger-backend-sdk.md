@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# 🛠 What's Included?
+# What's Included?
 
 This toolkit contains all the essentials to quickly get started with your backend development:
 
@@ -16,7 +16,7 @@ This toolkit contains all the essentials to quickly get started with your backen
 * **Alembic**: Seamless database migration tool to manage schema changes effectively.
 * **SQLAlchemy Models**: Powerful and intuitive ORM models for clean and efficient database interactions.
 
-# 🎓 Development Setup
+# Development Setup
 
 Follow these steps to set up the tLedger Backend on your local environment:
 
