@@ -1,5 +1,5 @@
 ---
-title: 'Getting started '
+title: Quick Start
 excerpt: >-
   Create a financial profile for your agent and learn how to start using t54
   labs.
