@@ -1,7 +1,7 @@
 ---
 title: What is AI Agent Payment?
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
