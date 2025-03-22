@@ -21,8 +21,6 @@ Every day, people face countless financial decisions:
 
 These trivial yet relentless questions create anxiety. At T54, we empower AI Agent to automate those relentless tasks, and handle financial complexities, freeing people to focus on joy and happiness rather than financial stress.
 
-![](https://files.readme.io/133a2025091cf4df423e530d6dfc81f8744795494fc3e4233bc85ac6f28867e1-T54_deck_0307_page6.jpg)
-
 <br />
 
 ## How We Do It
