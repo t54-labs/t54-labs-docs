@@ -18,9 +18,3 @@ Depending on your use case and technical preference, here’s where to begin:
   Learn how projects, agents, accounts, and payments are structured in TLedger.
 
 ***
-
-### 💡 Tip
-
-Join early, test freely, and help us shape the next-generation AI-agent finance infrastructure.
-
-***
