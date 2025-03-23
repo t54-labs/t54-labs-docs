@@ -1,8 +1,5 @@
 ---
 title: Quick Start
-excerpt: >-
-  Create a financial profile for your agent and learn how to start using t54
-  labs.
 hidden: false
 ---
 Welcome to the T54 developer experience. This guide helps you get a fast, hands-on feel for what you can build with the tLedger system today — even before our full portal and advanced services go live.
