@@ -25,5 +25,5 @@ Depending on your use case and technical preference, here’s where to begin:
 * **Integrate payments into your AI agent →** [tLedger Agent Toolkit](../docs/tledger-toolkit)\
   Install our Python package and embed TLedger payment APIs directly into your agent codebase.
 
-* **Understand key endpoints and workflows →** [API Schema & Endpoints](../docs/api-schema-and-endpoints)\
+* **Understand key endpoints and workflows →** [API Schema & Endpoints](../docs/api-schema-endpoints)\
   Learn how projects, agents, accounts, and payments are structured in TLedger.
