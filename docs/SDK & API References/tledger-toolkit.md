@@ -5,6 +5,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - title: G.A.M.E Framework
+      type: link
+      url: https://whitepaper.virtuals.io/developer-documents/game-framework
 ---
 The **tLedger Agent Toolkit** enables seamless integration with tLedger APIs, allowing agents to initiate and manage Agent-to-Agent payments. It is designed to work with popular AI agent frameworks such as Virtual's GAME SDK and ai16z’s Eliza.
 
