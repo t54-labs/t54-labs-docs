@@ -1,6 +1,5 @@
 ---
 title: tLedger Backend Sandbox
-excerpt: A local environment for rapid tLedger backend development and testing
 deprecated: false
 hidden: false
 metadata:
