@@ -49,7 +49,7 @@ tledger_agent = Agent(
 )
 ```
 
-## Features
+# Features
 
 * **Payment API Support**: Initiate and manage payments via tLedger API.
 * **Easy Integration**: Plug-and-play support for top AI agent frameworks.
