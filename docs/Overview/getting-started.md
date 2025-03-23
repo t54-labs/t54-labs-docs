@@ -16,5 +16,3 @@ Depending on your use case and technical preference, here’s where to begin:
 
 * **Understand key endpoints and workflows →** [API Schema & Endpoints](../sdk-api-references/api-schema-and-endpoints)\
   Learn how projects, agents, accounts, and payments are structured in TLedger.
-
-***
