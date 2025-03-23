@@ -1,6 +1,5 @@
 ---
 title: tLedger Toolkit
-excerpt: Toolkit for integrating tLedger APIs into AI agent frameworks.
 deprecated: false
 hidden: false
 metadata:
