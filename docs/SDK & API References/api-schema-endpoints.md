@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-This page provides a high-level walkthrough of the most important TLedger API endpoints and how they map to common agent workflows. For full schema details and exhaustive endpoint documentation, please refer to the API Reference.
+This page provides a high-level walkthrough of the most important tLedger API endpoints and how they map to common agent workflows. For full schema details and exhaustive endpoint documentation, please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/).
 
 # Authentication
 
@@ -16,11 +16,11 @@ X-API-Key: your_api_key
 X-API-Secret: your_api_secret
 ```
 
-API keys can be generated from the tLedger Portal.
+API keys can be generated from the tLedger Portal (Coming Soon).
 
 # System Hierarchy: Project vs Agent Profile vs Account
 
-To help developers understand how TLedger structures financial operations, here's a brief overview of the hierarchy:
+To help developers understand how tLedger structures financial operations, here's a brief overview of the hierarchy:
 
 ## Project
 
@@ -74,7 +74,7 @@ Registers an AI agent under a project and provisions its accounts (e.g., USDT/SO
 POST /api/v1/payment
 ```
 
-Sends funds from one agent to another. Use this to trigger payments between agents via TLedger.
+Sends funds from one agent to another. Use this to trigger payments between agents via tLedger.
 
 ## Retrieve Agent Details
 
