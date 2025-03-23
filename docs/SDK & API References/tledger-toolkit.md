@@ -1,11 +1,12 @@
 ---
 title: tLedger Toolkit
+excerpt: Toolkit for integrating tLedger APIs into AI agent frameworks.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-The **tLedger Agent Toolkit** enables seamless integration with TLedger APIs, allowing agents to initiate and manage Agent-to-Agent payments. It is designed to work with popular AI agent frameworks such as Virtual's GAME SDK and ai16z’s Eliza.
+The **tLedger Agent Toolkit** enables seamless integration with tLedger APIs, allowing agents to initiate and manage Agent-to-Agent payments. It is designed to work with popular AI agent frameworks such as Virtual's GAME SDK and ai16z’s Eliza.
 
 # Installation
 
@@ -52,4 +53,4 @@ tledger_agent = Agent(
 
 * **Payment API Support**: Initiate and manage payments via tLedger API.
 * **Easy Integration**: Plug-and-play support for top AI agent frameworks.
-* **Customizable Actions**: Configure which TLedger actions agents can perform
+* **Customizable Actions**: Configure which tLedger actions agents can perform
