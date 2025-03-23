@@ -19,7 +19,7 @@ Welcome to the T54 developer experience. This guide helps you get a fast, hands-
 
 Depending on your use case and technical preference, here’s where to begin:
 
-* **Build and test locally →** [tLedger Backend Sandbox](../docs/tledger-backend-sandbox)\
+* **Build and test locally →** [tLedger Backend Sandbox](../docs/tledger-backend-sdk)\
   Set up a full local instance of the T54 backend. Ideal for full-stack developers who want to simulate the full ledger system.
 
 * **Integrate payments into your AI agent →** [tLedger Agent Toolkit](../docs/tledger-toolkit)\
