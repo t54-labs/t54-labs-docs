@@ -105,4 +105,4 @@ Clean up unused entities as needed during testing or reset.
 
 Looking for full request/response schemas, status codes, and examples?
 
-Visit the API Reference for complete documentation.
+Visit the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/) for complete documentation.
