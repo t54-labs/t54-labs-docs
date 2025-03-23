@@ -7,8 +7,6 @@ hidden: false
 ---
 Welcome to the T54 developer experience. This guide helps you get a fast, hands-on feel for what you can build with the tLedger system today — even before our full portal and advanced services go live.
 
-***
-
 # Choose Your Starting Point
 
 Depending on your use case and technical preference, here’s where to begin:
