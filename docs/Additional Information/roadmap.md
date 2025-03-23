@@ -1,7 +1,7 @@
 ---
 title: Roadmap
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
