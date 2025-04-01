@@ -1,6 +1,5 @@
 ---
 title: About t54 labs
-excerpt: Emancipating us from financial anxiety
 deprecated: false
 hidden: false
 metadata:
