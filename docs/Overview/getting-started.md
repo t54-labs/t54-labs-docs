@@ -13,14 +13,14 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-Welcome to the T54 developer experience. This guide helps you get a fast, hands-on feel for what you can build with the tLedger system today — even before our full portal and advanced services go live.
+Welcome to the t54 developer experience. This guide helps you get a fast, hands-on feel for what you can build with the tLedger system today — even before our full portal and advanced services go live.
 
 # Choose Your Starting Point
 
 Depending on your use case and technical preference, here’s where to begin:
 
 * **Build and test locally →** [tLedger Backend Sandbox](../docs/tledger-backend-sdk)\
-  Set up a full local instance of the T54 backend. Ideal for full-stack developers who want to simulate the full ledger system.
+  Set up a full local instance of the t54 backend. Ideal for full-stack developers who want to simulate the full ledger system.
 
 * **Integrate payments into your AI agent →** [tLedger Agent Toolkit](../docs/tledger-toolkit)\
   Install our Python package and embed TLedger payment APIs directly into your agent codebase.
