@@ -17,6 +17,8 @@ Welcome to T54 Developer Experience. We’re here to provide you with the most p
 
 You can choose to integrate your Agent using our SDK, or start from scratch using our RESTful API for full functionality and testing flexibility.
 
+<br />
+
 # 🧭 Choose Your Starting Point
 
 Depending on your use case and technical preference, here’s where to begin:
