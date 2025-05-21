@@ -232,7 +232,7 @@ Get the balance information of a specifid agent.
 
 Sample response:
 
-```
+```json JSON
 {
    "agent_id":"agnt_19cebeaf-c961-4e50-a132-c0b39a8ecc55",
    "total_balance_usd":241.4092,
