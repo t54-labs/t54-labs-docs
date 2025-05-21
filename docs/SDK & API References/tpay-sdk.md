@@ -116,6 +116,7 @@ tpay_initialize(
     api_key="your_api_key",
     api_secret="your_api_secret",
     project_id="your_project_id",
+    base_url="base_url_for_tledger_backend",
     timeout=1000  # Optional: timeout in milliseconds
 )
 ```
