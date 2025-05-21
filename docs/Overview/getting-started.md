@@ -64,7 +64,7 @@ If you prefer to implement more advanced and customized features directly throug
 
 <br />
 
-### Understand key workflows: 👉 [Key Workflows](../docs/endpoints-workflows)
+### Understand key flows: 👉 [Key Flows](../docs/key-flows)
 
 Learn how Projects, Agents, Accounts, and Payments are structured in tLedger. This includes:
 
