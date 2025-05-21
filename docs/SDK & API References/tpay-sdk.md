@@ -5,8 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-# tPay SDK for Python
-
 visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more details
 
 <br />
