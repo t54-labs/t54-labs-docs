@@ -1,60 +1,213 @@
 ---
-title: tLedger Toolkit
+title: tPay SDK
 deprecated: false
 hidden: false
 metadata:
   robots: index
-next:
-  pages:
-    - title: G.A.M.E Framework
-      type: link
-      url: https://whitepaper.virtuals.io/developer-documents/game-framework
 ---
-The **tLedger Agent Toolkit** enables seamless integration with tLedger APIs, allowing agents to initiate and manage Agent-to-Agent payments. It is designed to work with popular AI agent frameworks such as Virtual's GAME SDK and ai16z’s Eliza.
+# tPay SDK for Python
 
-# Installation
+visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more details
 
-Install the toolkit via pip:
+<br />
+
+## Product Intro
+
+Welcome to tPay, the heart of t54 labs' comprehensive financial infrastructure designed exclusively for AI Agents. Like a masterful dance between technology and trust, we've crafted the most Agent-Native foundation that understands and speaks the language of your digital companions.
+
+At t54 labs, we believe in creating more than just a payment system – we're building a symphony of security and intelligence. Our masterpiece begins with a sophisticated KYA (Know Your Agent) framework, harmoniously orchestrated with our Agent-designed modules: tRadar and tAudit. Together, they compose a secure, reliable, and trustworthy financial infrastructure that your Agents will love to work with.
+
+The tPay Python SDK is your elegant gateway to this world of possibilities. Like a skilled matchmaker, it seamlessly introduces your existing Agents to the world of financial transactions, requiring just a few lines of code to begin the journey. No need to disrupt your current workflow or modify your Agent's core logic – we believe in smooth, non-intrusive relationships.
+
+But that's not all – we're not just about transactions; we're about understanding. Our SDK provides a complete data trail of your Agent's thoughts and behaviors, all leading to meaningful financial actions. Our network of financial Agents, like a council of wise advisors, offers intelligent insights and comprehensive behavioral analytics to guide your Agent's financial journey.
+
+Let t54's network of financial experts be your Agent's trusted companion in the world of finance. Together, we'll create a future where AI Agents handle financial transactions with grace, security, and intelligence.
+
+<br />
+
+## Features
+
+### Core Functionality
+
+1. **Payment Processing**
+   * Create payments between agents
+   * Support for multiple currencies (USDT, etc.)
+   * Multiple settlement networks (Solana, etc.)
+   * Transaction tracking and verification
+
+2. **Balance Management**
+   * Query agent balances
+   * Real-time balance updates
+   * Multi-currency balance support
+
+3. **Agent Management**
+   * Agent creation and management
+   * User-Agent association
+   * Agent status tracking
+
+4. **Agent Integration**
+   * Compatible with any OpenAI-compatible agent library
+   * Seamless integration without modifying existing agent code
+   * Flexible tool creation and management
+   * Context-aware conversation handling
+
+### Advanced Features
+
+1. **Audit Module (tAudit)**
+   * Enhance Agent KYA (Know Your Agent) level
+   * Improve security and protection for financial transactions
+   * Automated compliance verification
+   * Risk assessment and monitoring
+
+2. **Compliance and Security (tRadar)**
+   * Complete Agent behavior and decision-making data trail
+   * End-to-end transaction lifecycle tracking
+   * Validator Agent Network collaboration
+   * Transaction verification and risk control
+   * Developer analytics and insights
+   * Agent optimization and debugging support
+
+3. **Error Handling**
+   * Comprehensive error management
+   * Detailed error messages
+   * Error recovery mechanisms
+
+<br />
+
+## Installation
 
 ```bash
-pip install tledger-agent-toolkit
+pip install tpay
 ```
+
+<br />
 
 ## Requirements
 
-* Python 3.11+
+### Environment
 
-# Usage
+* Python 3.8 or higher
+* Operating System: Windows, macOS, or Linux
 
-Configure **tLedger Agent Toolkit** using your TLedger API credentials and integrate it into your AI agent environment.
+### Dependencies
+
+The SDK has the following main dependencies:
+
+* `requests>=2.31.0`: For HTTP requests
+* `pydantic>=2.5.0`: For data validation and settings management
+* `python-dotenv>=1.0.0`: For environment variable management
+* `openai>=1.0.0`: For OpenAI API integration (optional, only if using OpenAI features)
+
+Additional dependencies will be automatically installed when you install the SDK.
+
+<br />
+
+## Quick Start
+
+### SDK Initialization
+
+First, initialize the tPay SDK in your application:
 
 ```python
-from agents import Agent
-from tledger_agent_toolkit import TLedgerAgentToolkit
+from tpay import tpay_initialize
 
-# Initialize TLedger toolkit
-tledger_agent_toolkit = TLedgerAgentToolkit(
+# Initialize the SDK with your credentials
+tpay_initialize(
     api_key="your_api_key",
     api_secret="your_api_secret",
-    configuration={
-        "actions": {
-            "payment": {
-                "create": True
-            }
-        }
-    }
-)
-
-# Use it in an AI agent
-tledger_agent = Agent(
-    name="TLedger Agent",
-    instructions="You are an expert at interacting with TLedger APIs for payments.",
-    tools=tledger_agent_toolkit.get_tools()
+    project_id="your_project_id",
+    timeout=1000  # Optional: timeout in milliseconds
 )
 ```
 
-# Features
+### Agent Integration
 
-* **Payment API Support**: Initiate and manage payments via tLedger API.
-* **Easy Integration**: Plug-and-play support for top AI agent frameworks.
-* **Customizable Actions**: Configure which tLedger actions agents can perform
+The SDK provides seamless integration with any\*\* OpenAI-compatible agent library\*\*. You can integrate our tools with your existing agent without modifying its core code in just few lines of code. Here's how:
+
+1. **Create Tools**
+
+```python
+from tpay import *
+
+# Create payment tool
+payment_tool = tpay_toolkit_payment()
+
+# Create balance tool
+balance_tool = tpay_toolkit_balance()
+```
+
+2. **Add Tools to Your Agent**
+
+Simply add the tools to your existing agent's tool list:
+
+```python
+# Example with OpenAI's client
+from openai import OpenAI
+
+# Initialize your own tool list for your agent
+tools = [...]
+
+# Then add our tool defintions to the tool list
+tools.extend(get_all_tool_definitions())
+
+client = OpenAI(
+    api_key="your_openai_api_key",
+    model="gpt-4-turbo-preview",
+    tools=tools,  # Make sure you have added our tools to your existing tools
+    tool_choice="auto"
+)
+```
+
+3. **Handle Tool Execution**
+
+Implement a tool execution handler that works with your agent:
+
+```python
+def execute_tool(tool_name, tool_args):
+    if tool_name == "create_payment":
+        return payment_tool(**tool_args)
+    elif tool_name == "get_agent_balance":
+        return balance_tool(**tool_args)
+    return None
+```
+
+That's it! Your agent can now use tPay's payment and balance management capabilities.
+
+### Error Handling
+
+The SDK provides detailed error handling:
+
+```python
+from tpay.exceptions import TPayError
+
+try:
+    # Your code here
+    pass
+except TPayError as e:
+    print(f"Error: {e.message}")
+    print(f"Code: {e.code}")
+```
+
+<br />
+
+## Best Practices
+
+1. **API Key Management**
+   * Store API keys securely
+   * Use environment variables
+   * Rotate keys regularly
+
+2. **Error Handling**
+   * Always implement proper error handling
+   * Log errors appropriately
+   * Implement retry mechanisms for transient failures
+
+3. **Transaction Management**
+   * Verify transaction status
+   * Implement idempotency
+   * Handle edge cases
+
+4. **Security**
+   * Validate all inputs
+   * Implement rate limiting
+   * Use secure communication channels
