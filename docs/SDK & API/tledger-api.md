@@ -27,6 +27,14 @@ API keys can be generated from the tLedger Portal (Coming Soon).
 
 <br />
 
+# Base URL
+
+**sandbox environment**: [http://api-sandbox.t54.ai/api/v1](http://api-sandbox.t54.ai/api/v1)
+
+**production environment**: [http://api.t54.ai/api/v1](http://api.t54.ai/api/v1)
+
+<br />
+
 # System Hierarchy
 
 To help developers understand how tLedger structures different layer of objects, here's a brief overview of the hierarchy:
