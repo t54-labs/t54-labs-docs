@@ -56,7 +56,15 @@ In both SDK and RESTful API calls, simply set your `BASE URL` to the above addre
 
 Install our Python SDK to embed payment functionality directly into your Agent’s codebase.
 
-### Understand key endpoints and workflows: 👉 [Endpoints & Workflows](../docs/endpoints-workflows)
+<br />
+
+### Integrate with RESTful API: 👉 [tLedger API](../docs/tledger-api)
+
+If you prefer to implement more advanced and customized features directly through the API, you can explore each of our API endpoints and the corresponding authentication mechanism to accomplish this.
+
+<br />
+
+### Understand key workflows: 👉 [Key Workflows](../docs/endpoints-workflows)
 
 Learn how Projects, Agents, Accounts, and Payments are structured in tLedger. This includes:
 
