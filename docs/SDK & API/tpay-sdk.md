@@ -15,7 +15,7 @@ visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more detail
 
 <br />
 
-## Intro
+# Intro
 
 Welcome to tPay, the heart of t54 labs' comprehensive financial infrastructure designed exclusively for AI Agents. Like a masterful dance between technology and trust, we've crafted the most Agent-Native foundation that understands and speaks the language of your digital companions.
 
@@ -29,56 +29,7 @@ Let t54's network of financial experts be your Agent's trusted companion in the 
 
 <br />
 
-## Features
-
-### Core Functionality
-
-1. **Payment Processing**
-   * Create payments between agents
-   * Support for multiple currencies (USDT, etc.)
-   * Multiple settlement networks (Solana, etc.)
-   * Transaction tracking and verification
-
-2. **Balance Management**
-   * Query agent balances
-   * Real-time balance updates
-   * Multi-currency balance support
-
-3. **Agent Management**
-   * Agent creation and management
-   * User-Agent association
-   * Agent status tracking
-
-4. **Agent Integration**
-   * Compatible with any OpenAI-compatible agent library
-   * Seamless integration without modifying existing agent code
-   * Flexible tool creation and management
-   * Context-aware conversation handling
-
-### Advanced Features
-
-1. **Audit Module (tAudit)**
-   * Enhance Agent KYA (Know Your Agent) level
-   * Improve security and protection for financial transactions
-   * Automated compliance verification
-   * Risk assessment and monitoring
-
-2. **Compliance and Security (tRadar)**
-   * Complete Agent behavior and decision-making data trail
-   * End-to-end transaction lifecycle tracking
-   * Validator Agent Network collaboration
-   * Transaction verification and risk control
-   * Developer analytics and insights
-   * Agent optimization and debugging support
-
-3. **Error Handling**
-   * Comprehensive error management
-   * Detailed error messages
-   * Error recovery mechanisms
-
-<br />
-
-## Installation
+# Installation
 
 ```bash
 pip install tpay
@@ -86,14 +37,14 @@ pip install tpay
 
 <br />
 
-## Requirements
+# Requirements
 
-### Environment
+## Environment
 
 * Python 3.8 or higher
 * Operating System: Windows, macOS, or Linux
 
-### Dependencies
+## Dependencies
 
 The SDK has the following main dependencies:
 
@@ -106,9 +57,9 @@ Additional dependencies will be automatically installed when you install the SDK
 
 <br />
 
-## Quick Start
+# Quick Start
 
-### SDK Initialization
+## SDK Initialization
 
 First, initialize the tPay SDK in your application:
 
@@ -125,7 +76,7 @@ tpay_initialize(
 )
 ```
 
-### Agent Integration
+## Agent Integration
 
 The SDK provides seamless integration with any\*\* OpenAI-compatible agent library\*\*. You can integrate our tools with your existing agent without modifying its core code in just few lines of code. Here's how:
 
@@ -178,7 +129,7 @@ def execute_tool(tool_name, tool_args):
 
 That's it! Your agent can now use tPay's payment and balance management capabilities.
 
-### Error Handling
+## Error Handling
 
 The SDK provides detailed error handling:
 
@@ -195,7 +146,7 @@ except TPayError as e:
 
 <br />
 
-## Best Practices
+# Best Practices
 
 1. **API Key Management**
    * Store API keys securely
@@ -216,3 +167,52 @@ except TPayError as e:
    * Validate all inputs
    * Implement rate limiting
    * Use secure communication channels
+
+<br />
+
+# Features
+
+## Core Functionality
+
+1. **Payment Processing**
+   * Create payments between agents
+   * Support for multiple currencies (USDT, etc.)
+   * Multiple settlement networks (Solana, etc.)
+   * Transaction tracking and verification
+
+2. **Balance Management**
+   * Query agent balances
+   * Real-time balance updates
+   * Multi-currency balance support
+
+3. **Agent Management**
+   * Agent creation and management
+   * User-Agent association
+   * Agent status tracking
+
+4. **Agent Integration**
+   * Compatible with any OpenAI-compatible agent library
+   * Seamless integration without modifying existing agent code
+   * Flexible tool creation and management
+   * Context-aware conversation handling
+
+## Advanced Features
+
+1. **Audit Module (tAudit)**
+   * Enhance Agent KYA (Know Your Agent) level
+   * Improve security and protection for financial transactions
+   * Automated compliance verification
+   * Risk assessment and monitoring
+
+2. **Compliance and Security (tRadar)**
+   * Complete Agent behavior and decision-making data trail
+   * End-to-end transaction lifecycle tracking
+   * Validator Agent Network collaboration
+   * Transaction verification and risk control
+   * Developer analytics and insights
+   * Agent optimization and debugging support
+
+3. **Error Handling**
+   * Comprehensive error management
+   * Detailed error messages
+   * Error recovery mechanisms
