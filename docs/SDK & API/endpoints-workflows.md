@@ -1,5 +1,5 @@
 ---
-title: Endpoints & Workflows
+title: tledger API
 deprecated: false
 hidden: false
 metadata:
