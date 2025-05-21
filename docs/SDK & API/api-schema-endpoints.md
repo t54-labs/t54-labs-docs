@@ -1,5 +1,5 @@
 ---
-title: API Schema & Endpoints
+title: Endpoints & Workflows
 deprecated: false
 hidden: false
 metadata:
