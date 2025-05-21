@@ -9,7 +9,7 @@ visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more detail
 
 <br />
 
-## Product Intro
+## Intro
 
 Welcome to tPay, the heart of t54 labs' comprehensive financial infrastructure designed exclusively for AI Agents. Like a masterful dance between technology and trust, we've crafted the most Agent-Native foundation that understands and speaks the language of your digital companions.
 
