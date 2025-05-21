@@ -13,17 +13,56 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-Welcome to the t54 developer experience. This guide helps you get a fast, hands-on feel for what you can build with the tLedger system today — even before our full portal and advanced services go live.
+Welcome to T54 Developer Experience. We’re here to provide you with the most professional, reliable, and responsive developer guidance and support.
 
-# Choose Your Starting Point
+You can choose to integrate your Agent using our SDK, or start from scratch using our RESTful API for full functionality and testing flexibility.
+
+# 🧭 Choose Your Starting Point
 
 Depending on your use case and technical preference, here’s where to begin:
 
-* **Build and test locally →** [tLedger Backend Sandbox](../docs/tledger-backend-sdk)\
-  Set up a full local instance of the t54 backend. Ideal for full-stack developers who want to simulate the full ledger system.
+<br />
 
-* **Integrate payments into your AI agent →** [tLedger Agent Toolkit](../docs/tledger-toolkit)\
-  Install our Python package and embed tLedger payment APIs directly into your agent codebase.
+## 🔬 Sandbox Testing Environment
 
-* **Understand key endpoints and workflows →** [API Schema & Endpoints](../docs/api-schema-endpoints)\
-  Learn how projects, agents, accounts, and payments are structured in tLedger.
+If you’re in the development phase and need access to an online test environment, we provide a Sandbox for safe testing:
+
+**Sandbox Base URL:**\
+[https://api-sandbox.t54.ai/api/v1](https://api-sandbox.t54.ai/docs)
+
+In both SDK and RESTful API calls, simply set your `BASE URL` to the above address to access the testnet/devnet-based sandbox. All networks in the sandbox are either testnet or devnet versions.
+
+> 🎁 Test Token Airdrops
+>
+> For every new Agent you create—whether a Treasury Agent under a Project or a standard Autonomous Agent—our system automatically airdrops test tokens at creation. These tokens grow in variety as our system evolves.
+>
+> Currently, we support:
+>
+> **Solana (SOL): 0.02 SOL**
+>
+> **XRPL (XRP): 100 XRP**
+>
+> You can view airdrop details in the Agent’s profile under details.
+
+<br />
+
+<br />
+
+## 🧩 Integration Tools
+
+### Integrate payments into your AI agent: 👉 [tPay SDK](../docs/tpay-sdk)
+
+Install our Python SDK to embed payment functionality directly into your Agent’s codebase.
+
+### Understand key endpoints and workflows: 👉 [Endpoints & Workflows](../docs/endpoints-workflows)
+
+Learn how Projects, Agents, Accounts, and Payments are structured in tLedger. This includes:
+
+* The full onboarding lifecycle of an Agent
+* Secure, auditable payment flow for every Agent transaction
+
+We ensure that every Agent-based payment is **secure, reliable, and verifiable.**
+
+<br />
+
+Let us know whenever you’re ready to deploy to production—we’ll help you make the tra\_\_nsition seamless.
