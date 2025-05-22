@@ -9,5 +9,5 @@ In this section, we’ll dive into the core logic behind key components of our s
 
 Here are several key modules or areas we’ll cover:
 
-1. [Project/Agent Onboarding Flow](../docs/tpay-sdk)
+1. [Project/Agent Onboarding Flow](../docs/projectagent-onboarding)
 2. Payments & Risk Control Module
