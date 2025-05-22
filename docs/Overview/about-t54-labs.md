@@ -5,9 +5,11 @@ hidden: false
 metadata:
   robots: index
 ---
-# Our Vision
+# Learn about t54
 
-t54 labs is building an AI-native financial infrastructure, empowering AI agents to autonomously manage and execute financial transactions. Our goal is to eliminate financial anxiety, making transactions effortless, intelligent, and secure.
+t54 is an AI-native (~huamn centric~) financial infrastructure platform built for the Agent Economy. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, t54 provides the infrastructure to do it safely and confidently.
+
+This guide introduces t54’s enterprise capabilities, our unique agent-native risk framework, and how to get started with empowering your AI agents with financial functionality.
 
 ## What We Solve
 
