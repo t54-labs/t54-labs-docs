@@ -75,4 +75,4 @@ We ensure that every Agent-based payment is **secure, reliable, and verifiable.*
 
 <br />
 
-Let us know whenever you’re ready to deploy to production—we’ll help you make the tra\_\_nsition seamless.
+Let us know whenever you’re ready to deploy to production—we’ll help you make the transition seamless.
