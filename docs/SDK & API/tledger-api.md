@@ -51,6 +51,8 @@ Each project includes a **treasury agent** to manage the overall fund. And all t
 
 Centralized configuration including a high level daily transaction limit set by the developer.
 
+Project management can only be accessed through **tPortal**.
+
 ## Agent
 
 An Agent Represents a financial identity for an individual AI agent. Each agent belongs to one Project. And each agent represents one instance which should be initiated and connected with a human user.
@@ -120,15 +122,7 @@ please refer to the [API Reference](https://docs.t54.ai/reference/payment-create
 
 <br />
 
-## Create a Project
-
-```
-POST /api/v1/projects
-```
-
-Initializes a new project as a financial container with a treasury agent.
-
-## Onboard an Agent
+## Onboard a new Agent
 
 ```
 POST /api/v1/agent_profiles
@@ -246,15 +240,6 @@ Sample response:
    }
 }
 ```
-
-## Delete a Project or Agent
-
-```
-DELETE /api/v1/projects/{project_id}
-DELETE /api/v1/agent_profiles/{agent_id}
-```
-
-Clean up unused entities as needed during testing or reset. In production environment, deletion will be more strict to protect users' and the agents' fund.
 
 <br />
 
