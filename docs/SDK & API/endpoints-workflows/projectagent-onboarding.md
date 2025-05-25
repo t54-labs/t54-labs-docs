@@ -9,6 +9,10 @@ This guide provides an overview of how projects and agents are onboarded into ou
 
 <br />
 
+> Project onboarding should be only available through the tPortal. While agent onboarding should be only available through the tPay SDK or tLedger API.
+
+<br />
+
 ## Project Onboarding
 
 When a user first joins our platform, they need to create a project to manage their agents and transactions. A project serves as a container for multiple agents and provides a way to manage API access and permissions. The project creation process is straightforward - users provide a name and description, and the system automatically sets up the necessary infrastructure.
