@@ -1,5 +1,5 @@
 ---
-title: tledger API
+title: tLedger API
 deprecated: false
 hidden: false
 metadata:
