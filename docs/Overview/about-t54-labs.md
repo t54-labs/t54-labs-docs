@@ -11,34 +11,25 @@ t54 is an AI-native (~huamn centric~) financial infrastructure platform built fo
 
 This guide introduces t54’s enterprise capabilities, our unique agent-native risk framework, and how to get started with empowering your AI agents with financial functionality.
 
-## What We Solve
+## What you can do with t54
 
-Every day, people face countless financial decisions:
+t54 enables agent developers to equip AI agents with core financial primitives—without the need to rebuild financial infrastructure from scratch. More importantly, when failure, fraud, or loss occurs, t54 provides peace of mind to human users by enforcing trust and guardrails—maximizing the overall customer experience.
 
-* "Did the restaurant just overcharge me?"
-* "Am I getting the best price online?"
-* "Is this transaction secure?"
-* "Is my subscription auto-renewing without consent?"
+| **Capability**                         | **Enables you to…**                                                                                                              |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Create agent financial profiles       | Assign each AI agent a virtual financial account, configure daily spend limits, and manage the agent’s financial assets.        |
+| Trigger agent-to-agent payments       | Enable your agents to send payments to other agents or third-party t54 agents using secure, programmable infrastructure.         |
+| Delegate payments securely            | Leverage t54’s KYA (Know Your Agent) and validator agents to verify behavior, enforce credit caps, and prevent fraud or hallucinated transactions. |
+| Build merchant payout rails           | Integrate compliant payout flows to human merchants—allowing agents to pay for services, subscriptions, or contractual work.    |
+| Unlock agent monetization             | Set up fee-sharing structures and reward tokens so agents can earn for completed tasks—similar to SaaS-style commissions or usage-based incentives. |
+| Integrate seamlessly with agent frameworks | Connect directly with agent orchestration tools like [Virtual Protocol’s GAME](https://github.com/game-by-virtuals/game-python/tree/main/plugins/tLedger), [MCP](https://www.anthropic.com/news/model-context-protocol), and REST APIs. |
+| Audit and analyze                     | Track balances, review transaction history, and export logs for compliance or analytics—accessible via API or the t54 Portal. |
 
-These trivial yet relentless questions create anxiety. At t54, we empower AI Agent to automate those relentless tasks, and handle financial complexities, freeing people to focus on joy and happiness rather than financial stress.
-
-## How We Do It
-
-We provide a comprehensive suite of AI-native financial services, with a strong emphasis on end-to-end payments, risk management, and regulatory compliance. Our platform allows agent developers to seamlessly integrate financial capabilities directly into their AI agents.
-
-![](https://files.readme.io/f889a72468dbfa009170fe98274359628b9bc0ef2edeb10dbbdfb541b81d664b-T54_deck_0307_page6.jpg)
 
 ## Our Products
 
 * tLedger: Blockchain-agnostic agent account management platform.
 * tRadar: AI-native compliance and risk management framework.
 * tPay: Comprehensive AI payment solution for real-world applications.
+* t54 Portal: UI Portal to track, manage and review agent's financial profile.
 
-## Core Capabilities
-
-* Autonomous Payments: Real-time monitoring and execution of payments.
-* Agent Risk Management: Proprietary KYA (Know Your Agent) framework to control agent behaviors and mitigate risks.
-* Agent Account Management: Fiat and crypto support with robust wallet integration.
-* Easy SDK Integration: Multi-language support ensuring compatibility with popular agent frameworks.
-
-At t54, we believe in seamlessly integrating technology into everyday life, transforming AI-driven financial interactions into powerful, positive experiences.
