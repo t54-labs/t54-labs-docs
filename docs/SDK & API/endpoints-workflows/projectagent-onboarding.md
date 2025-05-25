@@ -1,5 +1,5 @@
 ---
-title: project/agent onboarding
+title: Project/Agent onboarding
 deprecated: false
 hidden: false
 metadata:
