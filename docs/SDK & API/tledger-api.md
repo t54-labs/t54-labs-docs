@@ -51,7 +51,7 @@ Each project includes a **treasury agent** to manage the overall fund. And all t
 
 Centralized configuration including a high level daily transaction limit set by the developer.
 
-Project management can only be accessed through **tPortal**.
+Project management can only be accessed through **tPortal**, our web based dashboard for developers.
 
 ## Agent
 
