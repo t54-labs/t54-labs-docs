@@ -12,8 +12,6 @@ next:
 ---
 This page provides a high-level walkthrough of the most important tLedger API endpoints and how they map to common agent workflows. For full schema details and exhaustive endpoint documentation, please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/).
 
-<br />
-
 # Authentication
 
 All API requests must include the following headers:
@@ -25,23 +23,17 @@ X-API-Secret: your_api_secret
 
 API keys can be generated from the tLedger Portal (Coming Soon).
 
-<br />
-
 # Base URL
 
 **sandbox environment**: [http://api-sandbox.t54.ai/api/v1](http://api-sandbox.t54.ai/api/v1)
 
 **production environment**: [http://api.t54.ai/api/v1](http://api.t54.ai/api/v1)
 
-<br />
-
 # System Hierarchy
 
 To help developers understand how tLedger structures different layer of objects, here's a brief overview of the hierarchy:
 
 ![](https://files.readme.io/2b83f5b5cff1f5bb3228593774acbbfe37c37687aae526e40e7eef546898ef7d-image.png)
-
-<br />
 
 ## Project
 
@@ -50,6 +42,8 @@ A Project acts as the top-level financial and operational container, created by 
 Each project includes a **treasury agent** to manage the overall fund. And all the other instances of agent will be **autonomous agent**.  Treasury Agent and Autonomous Agent are the only two type of agents so far.
 
 Centralized configuration including a high level daily transaction limit set by the developer.
+
+Project management can only be accessed through **tPortal**, our web based dashboard for developers.
 
 ## Agent
 
@@ -112,23 +106,11 @@ This is a sample of an agent object with asset accounts:
 
 Multiple accounts can share the same blockchain wallet address within a network.
 
-<br />
-
 # Key Endpoints
 
 please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/) for detailed input/output.
 
-<br />
-
-## Create a Project
-
-```
-POST /api/v1/projects
-```
-
-Initializes a new project as a financial container with a treasury agent.
-
-## Onboard an Agent
+## Onboard a new Agent
 
 ```
 POST /api/v1/agent_profiles
@@ -246,17 +228,6 @@ Sample response:
    }
 }
 ```
-
-## Delete a Project or Agent
-
-```
-DELETE /api/v1/projects/{project_id}
-DELETE /api/v1/agent_profiles/{agent_id}
-```
-
-Clean up unused entities as needed during testing or reset. In production environment, deletion will be more strict to protect users' and the agents' fund.
-
-<br />
 
 # Full Reference
 
