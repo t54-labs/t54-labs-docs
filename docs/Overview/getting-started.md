@@ -13,7 +13,7 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-Welcome to T54 Developer Experience. We’re here to provide you with the most professional, reliable, and responsive developer guidance and support.
+Welcome to t54 Developer Experience. We’re here to provide you with the most professional, reliable, and responsive developer guidance and support.
 
 You can choose to integrate your Agent using our SDK, or start from scratch using our RESTful API for full functionality and testing flexibility.
 
