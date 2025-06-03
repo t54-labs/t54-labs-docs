@@ -11,7 +11,7 @@ next:
       title: tledger API
       type: basic
 ---
-visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more details
+Visit[ github repo](https://github.com/t54-labs/tpay-sdk-python) for more details.
 
 <br />
 
