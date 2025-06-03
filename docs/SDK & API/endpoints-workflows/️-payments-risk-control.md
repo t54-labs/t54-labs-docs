@@ -1,5 +1,5 @@
 ---
-title: 🛡️ Payments & Risk Control
+title: Payments & Risk Control
 deprecated: false
 hidden: false
 metadata:
