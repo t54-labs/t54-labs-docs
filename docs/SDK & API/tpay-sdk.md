@@ -177,7 +177,7 @@ except TPayError as e:
 1. **Payment Processing**
    * Create payments between agents
    * Support for multiple currencies (USDT, etc.)
-   * Multiple settlement networks (Solana, etc.)
+   * Multiple settlement networks (Solana, XRPL etc.)
    * Transaction tracking and verification
 
 2. **Balance Management**
