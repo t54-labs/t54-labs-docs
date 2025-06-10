@@ -142,7 +142,7 @@ pip install tpay-0.1.1.tar.gz[async]
 
 ### Step 1: 🔑 Get API Credentials
 
-1. Visit [tPay Portal](https://portal.t54.ai) and create an account
+1. Visit [tPortal](https://portal.t54.ai) and create an account
 2. Create a new project and obtain:
    * `API_KEY` - Your authentication key
    * `API_SECRET` - Your secret key
