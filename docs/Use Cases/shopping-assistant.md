@@ -11,6 +11,8 @@ metadata:
 
 Imagine an AI agent that can autonomously complete entire shopping transactions - from understanding user requirements to finalizing payments - without any human intervention. With tPay SDK, this vision becomes reality. Our shopping assistant demonstrates how AI agents can seamlessly handle complex, multi-step financial workflows while maintaining full autonomy and security.
 
+<br />
+
 ## 🎯 The Challenge
 
 Traditional e-commerce requires multiple human interactions:
@@ -20,20 +22,26 @@ Traditional e-commerce requires multiple human interactions:
 * Transaction confirmation and tracking
 * Error handling and retry logic
 * **Payment dispute resolution**: Manual customer service intervention, lengthy back-and-forth communication, time-consuming escalation processes
+* **The biggest pain point**: When payments fail or disputes arise, it often takes hours or days of manual communication between customers, merchants, and payment processors to resolve issues.
+* **What if an AI agent could handle all of this autonomously through intelligent agent-to-agent communication?**
 
-**The biggest pain point**: When payments fail or disputes arise, it often takes hours or days of manual communication between customers, merchants, and payment processors to resolve issues.
+<br />
 
-**What if an AI agent could handle all of this autonomously through intelligent agent-to-agent communication?**
+<br />
 
 ## 💡 The Solution: Autonomous Shopping Agent
 
+<br />
+
 Our shopping assistant showcases a fully autonomous agent that:
 
-🔍 **Understands Context** - Interprets user requirements intelligently\
-💰 **Manages Finances** - Checks balances and makes informed decisions
-🛍️ **Shops Intelligently** - Searches, compares, and selects optimal products
-💳 **Completes Payments** - Handles transactions end-to-end
-🔄 **Handles Challenges** - Automatically retries and resolves payment issues through intelligent agent-to-agent communication
+* 🔍 **Understands Context** - Interprets user requirements intelligently
+* 💰 **Manages Finances** - Checks balances and makes informed decisions
+* 🛍️ **Shops Intelligently** - Searches, compares, and selects optimal products
+* 💳 **Completes Payments** - Handles transactions end-to-end
+* 🔄 **Handles Challenges** - Automatically retries and resolves payment issues through intelligent agent-to-agent communication
+
+<br />
 
 ## 🚀 Agent Workflow
 
@@ -53,6 +61,8 @@ graph TD
     L --> M[🔁 Retry Payment with Enhanced Data]
     M --> H
 ```
+
+<br />
 
 ## 💻 Core Implementation
 
@@ -132,14 +142,14 @@ def autonomous_shopping_agent(user_request: str) -> Dict[str, Any]:
     return run_autonomous_conversation(conversation)
 ```
 
+<br />
+
 ## 🎬 Live Agent Interaction
 
 ### User Request
 
 ```
-"My user_id is 123, I want to buy a microphone for Alice, 
-please help me decide the most suitable choice within my 
-current balance and complete the purchase for me."
+"My user_id is 123, I want to buy a microphone for Alice, please help me decide the most suitable choice within my current balance and complete the purchase for me."
 ```
 
 ### Agent Autonomous Response Flow
@@ -206,6 +216,8 @@ Microphone for Alice using 10 XRP. Transaction confirmed on XRPL network.
 Your remaining balance is 40 XRP."
 ```
 
+<br />
+
 ## 🔐 Security & Compliance Features
 
 ### Automatic Audit Trail
@@ -245,9 +257,17 @@ if payment_response.status == "failed" and payment_response.challenge is not Non
     # ⚡ Resolution in seconds, not hours/days
 ```
 
+<br />
+
 **Traditional Process**: Human customer service → Email exchanges → Manual verification → 24-48 hours resolution
 
+<br />
+
 **tPay Agent Process**: Agent detects issue → Agent-to-agent communication → Autonomous resolution → 2-5 mins resolution
+
+<br />
+
+<br />
 
 ## 📊 Business Impact
 
@@ -258,6 +278,8 @@ if payment_response.status == "failed" and payment_response.challenge is not Non
 * **Automatic Compliance**: KYA and audit trails included
 * **Multi-Network Support**: Solana, XRPL, and more
 
+<br />
+
 ### For Businesses 🏢
 
 * **Autonomous Operations**: 24/7 intelligent purchasing with agentic customer support
@@ -267,12 +289,16 @@ if payment_response.status == "failed" and payment_response.challenge is not Non
 * **Risk Mitigation**: Built-in fraud protection with real-time agent verification
 * **Scalable Architecture**: Handle thousands of concurrent transactions and disputes simultaneously
 
+<br />
+
 ### For Users 🎯
 
 * **Seamless Experience**: extremely simplified experience (natural language/ambient agents)
 * **Intelligent Decisions**: AI optimizes for preferences and budget
 * **Secure Transactions**: Enterprise-grade security, more reliable than human
 * **Multi-Asset Support**: Pay with various cryptocurrencies
+
+<br />
 
 ## 🌟 Key Differentiators
 
@@ -285,6 +311,8 @@ if payment_response.status == "failed" and payment_response.challenge is not Non
 | ❌ Customer service escalation needed      | ✅ Intelligent agent negotiation                      |
 | ❌ Limited to business hours               | ✅ 24/7 autonomous operation                          |
 | ❌ Single payment method                   | ✅ Multi-network crypto payments                      |
+
+<br />
 
 ## 🚀 Getting Started
 
@@ -314,7 +342,9 @@ agent = create_autonomous_agent(
 # 4️⃣ Deploy and watch it work! 🎉
 ```
 
-## 📈 Real-World Applications
+<br />
+
+## 📈 MORE Real-World Applications...
 
 **🛒 E-commerce Platforms**
 
