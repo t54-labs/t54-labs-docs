@@ -91,7 +91,7 @@ graph TB
 
 **Environment Setup:**
 
-```bash
+```powershell
 # Create virtual environment (recommended)
 python -m venv tpay_env
 source tpay_env/bin/activate  # On Windows: tpay_env\Scripts\activate
@@ -103,13 +103,13 @@ source tpay_env/bin/activate  # On Windows: tpay_env\Scripts\activate
 
 **📦 Option 1: Basic Installation (Synchronous)**
 
-```bash
+```powershell
 pip install tpay
 ```
 
 **⚡ Option 2: Full Installation (Async Support)**
 
-```bash
+```powershell
 pip install tpay[async]
 # or
 pip install tpay[all]
@@ -117,7 +117,7 @@ pip install tpay[all]
 
 **🔧 Option 3: Development Installation**
 
-```bash
+```powershell
 # From /dist
 pip install tpay-0.1.1.tar.gz[async]
 ```
