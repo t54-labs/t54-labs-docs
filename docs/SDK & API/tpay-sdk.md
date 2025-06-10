@@ -323,7 +323,7 @@ print(f"💳 Payment result: {payment_result}")
 
 ### Complete End-to-End Example
 
-Please check more [Use Cases](../docs/tpay-sdk) we provide as a guidance.
+Please check more [Use Cases](../docs/shopping-assistant) we provide as a guidance.
 
 <br />
 
@@ -362,6 +362,8 @@ async def async_agent_operations():
 asyncio.run(async_agent_operations())
 ```
 
+<br />
+
 ## 🔒 Security & Compliance
 
 ### Automatic Audit Trail
@@ -391,6 +393,8 @@ def tracked_tool():
     pass
 ```
 
+<br />
+
 ### Error Handling
 
 ```python
@@ -412,6 +416,8 @@ except TPayError as e:
 except Exception as e:
     print(f"❌ Unexpected error: {e}")
 ```
+
+<br />
 
 ## 🚦 Production Deployment
 
@@ -435,6 +441,8 @@ tpay.tpay_initialize(
 )
 ```
 
+<br />
+
 ## 💡 Key Concepts
 
 ### 🤖 **Agent Autonomy**
@@ -445,6 +453,8 @@ Your agents gain the ability to make financial decisions independently:
 * **Autonomous transactions**: Complete payments without human intervention
 * **Smart rejection handling**: Automatically retry failed transactions with enhanced data
 
+<br />
+
 ### 🔄 **Integration Philosophy**
 
 The SDK is designed to augment your existing agent capabilities:
@@ -453,26 +463,17 @@ The SDK is designed to augment your existing agent capabilities:
 * **Tool-based**: Financial operations are exposed as callable tools
 * **Autonomous**: Agents decide when and how to use financial capabilities
 
+<br />
+
 ## 🎯 Next Steps
 
-1. **📚 Study Use Cases**: Check out our [Shopping Assistant Use Case](use_case_shopping_assistant.md) to see real-world implementation
+1. **📚 Study Use Cases**: Check out our [Shopping Assistant Use Case](/docs/shopping-assistant) to see real-world implementation
 2. **🧪 Test Integration**: Start with small transactions in development mode
 3. **📈 Scale Up**: Implement async operations for production workloads
 4. **🔍 Monitor**: Use built-in analytics to optimize agent financial behavior
 
-## 🔗 Additional Resources
+<br />
 
 ***
 
 *Ready to give your AI agents financial superpowers? Start building with tPay SDK today!* 🚀💳
-
-```python
-from tpay.exceptions import TPayError
-
-try:
-    # Your code here
-    pass
-except TPayError as e:
-    print(f"Error: {e.message}")
-    print(f"Code: {e.code}")
-```
