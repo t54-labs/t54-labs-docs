@@ -24,12 +24,13 @@ metadata:
       color: '#24292f',
       fontWeight: 500,
       fontSize: '14px',
+      lineHeight: '1',
       transition: 'background-color 0.2s',
     }}
     onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#eaeef2')}
     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#f6f8fa')}
   >
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" style={{ marginRight: '8px' }} />
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="18" height="18" style={{ marginRight: '8px', verticalAlign: 'middle' }} />
 
     View source code
   </a>
@@ -47,12 +48,13 @@ metadata:
       color: '#dc2626',
       fontWeight: 500,
       fontSize: '14px',
+      lineHeight: '1',
       transition: 'background-color 0.2s',
     }}
     onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fde8e8')}
     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#fef6f6')}
   >
-    <img src="https://img.icons8.com/ios-filled/50/monitor.png" alt="Live demo" width="20" height="20" style={{ marginRight: '8px' }} />
+    <img src="https://img.icons8.com/ios-filled/50/monitor.png" alt="Live demo" width="18" height="18" style={{ marginRight: '8px', verticalAlign: 'middle' }} />
 
     View live demo
   </a>
