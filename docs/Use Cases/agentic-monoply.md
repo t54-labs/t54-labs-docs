@@ -14,11 +14,37 @@ metadata:
 
 <br />
 
-<a href="https://github.com/t54-labs/agentic-monoply">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" />
+<a
+  href="https://github.com/t54-labs/agentic-monoply"
+  style={{
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px'
+  }}
+>
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
+
+  <span>View source code</span>
 </a>
 
-view
+<br />
+
+<a
+  href="https://monopoly.t54.ai"
+  style={{
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px'
+  }}
+>
+  <img src="https://img.icons8.com/ios-filled/50/monitor.png" width="24" height="24" alt="Live demo icon" />
+
+  <span>View live demo</span>
+</a>
+
+<br />
 
 <br />
 
