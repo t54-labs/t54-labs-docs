@@ -1,7 +1,7 @@
 ---
 title: What is Agentic Finance?
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
