@@ -25,6 +25,19 @@ Depending on your use case and technical preference, here’s where to begin:
 
 <br />
 
+## 👁️ Start with some use cases...
+
+Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases. They illustrate how agent products intersect deeply with finance, and offer concrete scenarios to help you understand how agentic payments function in practice. Grasping these patterns is essential before entering a live development environment.
+
+*We're also continuously working with our developer community and partners to expand this library of use cases and explore new frontiers together. And we welcome you onboard!*
+
+<br />
+
+* [Autonomous Shopping Assistant](/docs/shopping-assistant)
+* [Agentic Monopoly Game]()
+
+<br />
+
 ## 🔬 Sandbox Testing Environment
 
 If you’re in the development phase and need access to an online test environment, we provide a Sandbox for safe testing:
