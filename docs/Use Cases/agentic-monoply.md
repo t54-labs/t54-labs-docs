@@ -16,21 +16,30 @@ metadata:
     style={{
       display: 'inline-flex',
       alignItems: 'center',
-      padding: '10px 16px',
+      padding: '10px 18px',
       backgroundColor: '#f6f8fa',
       border: '1px solid #d0d7de',
-      borderRadius: '6px',
+      borderRadius: '8px',
       textDecoration: 'none',
       color: '#24292f',
       fontWeight: 500,
       fontSize: '16px',
-      lineHeight: '1.4',
+      lineHeight: '1.5',
       transition: 'background-color 0.2s',
     }}
     onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#eaeef2')}
     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#f6f8fa')}
   >
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" style={{ marginRight: '10px', display: 'block' }} />
+    <img
+      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+      alt="GitHub"
+      width="20"
+      height="20"
+      style={{
+        marginRight: '10px',
+        marginBottom: '1px', // 关键调整
+      }}
+    />
 
     View source code
   </a>
@@ -40,21 +49,30 @@ metadata:
     style={{
       display: 'inline-flex',
       alignItems: 'center',
-      padding: '10px 16px',
+      padding: '10px 18px',
       backgroundColor: '#fef6f6',
       border: '1px solid #fca5a5',
-      borderRadius: '6px',
+      borderRadius: '8px',
       textDecoration: 'none',
       color: '#dc2626',
       fontWeight: 500,
       fontSize: '16px',
-      lineHeight: '1.4',
+      lineHeight: '1.5',
       transition: 'background-color 0.2s',
     }}
     onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fde8e8')}
     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#fef6f6')}
   >
-    <img src="https://img.icons8.com/ios-filled/50/monitor.png" alt="Live demo" width="20" height="20" style={{ marginRight: '10px', display: 'block' }} />
+    <img
+      src="https://img.icons8.com/ios-filled/50/monitor.png"
+      alt="Live demo"
+      width="20"
+      height="20"
+      style={{
+        marginRight: '10px',
+        marginBottom: '1px', // 关键调整
+      }}
+    />
 
     View live demo
   </a>
