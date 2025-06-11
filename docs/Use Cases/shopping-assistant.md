@@ -354,7 +354,7 @@ agent = create_autonomous_agent(
 
 **🏦 Financial Services**
 
-* Automated bill payments
+* Automated bill payments (utility bill, subscription, etc.)
 * Investment portfolio management
 * Smart contract executions
 
@@ -366,7 +366,7 @@ agent = create_autonomous_agent(
 
 **🤖 IoT & Smart Devices**
 
-* Autonomous supply ordering
+* Autonomous supply (parts, material, etc. ) ordering
 * Smart home expense management
 * Industrial procurement automation
 
@@ -374,7 +374,7 @@ agent = create_autonomous_agent(
 
 * Cross-platform payment dispute resolution
 * Automated merchant-customer agent negotiations
-* Real-time transaction verification networks
+* Real-time transaction verification networks (tRadar as a service)
 * Autonomous refund and chargeback handling
 
 ***
