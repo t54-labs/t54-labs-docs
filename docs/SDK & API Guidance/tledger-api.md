@@ -12,6 +12,8 @@ next:
 ---
 This page provides a high-level walkthrough of the most important tLedger API endpoints and how they map to common agent workflows. For full schema details and exhaustive endpoint documentation, please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/).
 
+<br />
+
 # Authentication
 
 All API requests must include the following headers:
@@ -21,13 +23,17 @@ X-API-Key: your_api_key
 X-API-Secret: your_api_secret
 ```
 
-API keys can be generated from the tLedger Portal (Coming Soon).
+API keys are tied to only one project, its scope is also under the specified project, including all agent instances under this project. API keys can only be generated from the tPortal manually (Coming Soon).
+
+<br />
 
 # Base URL
 
 **sandbox environment**: [http://api-sandbox.t54.ai/api/v1](http://api-sandbox.t54.ai/api/v1)
 
 **production environment**: [http://api.t54.ai/api/v1](http://api.t54.ai/api/v1)
+
+<br />
 
 # System Hierarchy
 
@@ -65,13 +71,17 @@ Centralized configuration including a high level daily transaction limit set by 
 
 Project management can only be accessed through **tPortal**, our web based dashboard for developers.
 
-## Agent
+<br />
 
-An Agent Represents a financial identity for an individual AI agent. Each agent belongs to one Project. And each agent represents one instance which should be initiated and connected with a human user.
+## Agent (instance)
+
+An Agent Represents a financial identity for an individual AI agent. Each agent belongs to one Project. And each agent represents one \*\*instance \*\*which should be initiated and connected with a human user.
 
 Treasury agents manage project funds; autonomous agents carry out actions.
 
 Each agent will also have a daily transaction limit (set by the creator) and associated multi-asset accounts.
+
+<br />
 
 ## Asset Account
 
@@ -126,9 +136,13 @@ This is a sample of an agent object with asset accounts:
 
 Multiple accounts can share the same blockchain wallet address within a network.
 
+<br />
+
 # Key Endpoints
 
-please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/) for detailed input/output.
+Please refer to the [API Reference](https://docs.t54.ai/reference/payment-create_payment#/) for detailed input/output.
+
+<br />
 
 ## Onboard a new Agent
 
@@ -182,6 +196,8 @@ Sample response:
 }
 ```
 
+<br />
+
 ## Initiate a Payment
 
 ```
@@ -216,6 +232,8 @@ Sample response:
 }
 ```
 
+<br />
+
 ## Retrieve Agent Details
 
 ```
@@ -223,6 +241,8 @@ GET /api/v1/agent_profiles/{agent_id}
 ```
 
 Fetches agent metadata, virtual accounts, balances, and limits.
+
+<br />
 
 ## Monitor Agent Balance
 
@@ -248,6 +268,8 @@ Sample response:
    }
 }
 ```
+
+<br />
 
 # Full Reference
 
