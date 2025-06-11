@@ -13,6 +13,24 @@ next:
 ---
 # 🚀 tPay SDK Developer Integration Guide
 
+<br />
+
+<a
+  href="https://github.com/t54-labs/tpay-sdk-python/"
+  style={{
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px'
+  }}
+>
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
+
+  <span>View source code and detailed installation guide</span>
+</a>
+
+<br />
+
 ## Overview
 
 tPay SDK provides AI agents with **autonomous financial capabilities** - essentially giving your agents the ability to open bank accounts and execute payments independently. This enables agents to make financial decisions and complete transactions as part of their autonomous decision-making process.
