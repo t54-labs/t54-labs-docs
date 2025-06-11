@@ -7,6 +7,24 @@ metadata:
 ---
 # 🛒 Use Case: Autonomous Shopping Assistant
 
+<br />
+
+<a
+  href="https://github.com/t54-labs/tpay-sdk-python/blob/master/examples/test_agent.py"
+  style={{
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px'
+  }}
+>
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
+
+  <span>View source code</span>
+</a>
+
+<br />
+
 ## Overview
 
 Imagine an AI agent that can autonomously complete entire shopping transactions - from understanding user requirements to finalizing payments - without any human intervention. With tPay SDK, this vision becomes reality. Our shopping assistant demonstrates how AI agents can seamlessly handle complex, multi-step financial workflows while maintaining full autonomy and security.
