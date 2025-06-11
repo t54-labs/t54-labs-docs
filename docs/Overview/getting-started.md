@@ -38,6 +38,8 @@ Before diving into the technical architecture and implementation details like SD
 
 <br />
 
+<br />
+
 ## 🔬 Sandbox testing environment
 
 If you’re in the development phase and need access to an online test environment, we provide a Sandbox for safe testing:
