@@ -10,10 +10,6 @@ metadata:
 
 <br />
 
-<br />
-
-<br />
-
 <a
   href="https://github.com/t54-labs/agentic-monoply"
   style={{
@@ -43,10 +39,6 @@ metadata:
 
   <span>View live demo</span>
 </a>
-
-<br />
-
-<br />
 
 ## Overview
 
