@@ -1,5 +1,5 @@
 ---
-title: Quick Start
+title: Quick start
 hidden: false
 next:
   pages:
@@ -19,13 +19,13 @@ You can choose to integrate your Agent using our SDK, or start from scratch usin
 
 <br />
 
-# 🧭 Choose Your Starting Point
+# 🧭 Choose your starting point
 
 Depending on your use case and technical preference, here’s where to begin:
 
 <br />
 
-## 👁️ Start with some use cases...
+## 👁️ Start with some use cases!
 
 Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases. They illustrate how agent products intersect deeply with finance, and offer concrete scenarios to help you understand how agentic payments function in practice. Grasping these patterns is essential before entering a live development environment.
 
@@ -38,7 +38,7 @@ Before diving into the technical architecture and implementation details like SD
 
 <br />
 
-## 🔬 Sandbox Testing Environment
+## 🔬 Sandbox testing environment
 
 If you’re in the development phase and need access to an online test environment, we provide a Sandbox for safe testing:
 
@@ -63,7 +63,7 @@ In both SDK and RESTful API calls, simply set your `BASE URL` to the above addre
 
 <br />
 
-## 🧩 Integration Tools
+## 🧩 Integration tools
 
 ### Integrate payments into your AI agent: 👉 [tPay SDK](../docs/tpay-sdk)
 
