@@ -33,6 +33,26 @@ API keys can be generated from the tLedger Portal (Coming Soon).
 
 To help developers understand how tLedger structures different layer of objects, here's a brief overview of the hierarchy:
 
+<br />
+
+```mermaid mermaid
+graph TD
+    Users --> ProjectA
+    Users --> ProjectB
+    Users --> ProjectC
+
+    ProjectA --> agnt_xxx_01
+    ProjectA --> agnt_xxx_02
+    ProjectB --> agnt_xxx_03
+    ProjectC --> agnt_xxx_04
+
+    agnt_xxx_01 --> acct_xxx_01
+    agnt_xxx_02 --> acct_xxx_02
+    agnt_xxx_03 --> acct_xxx_03
+    agnt_xxx_04 --> acct_xxx_04
+
+```
+
 ![](https://files.readme.io/2b83f5b5cff1f5bb3228593774acbbfe37c37687aae526e40e7eef546898ef7d-image.png)
 
 ## Project
