@@ -10,9 +10,15 @@ metadata:
 
 <br />
 
-\<a href="https\://github.com/t54-labs/agentic-monoply">
-&#x20; \<img src="https\://github.githubassets.com/images/modules/logos\_page/GitHub-Mark.png" width="30" />
-\</a> view source code
+<br />
+
+<br />
+
+<a href="https://github.com/t54-labs/agentic-monoply">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" />
+</a>
+
+view
 
 <br />
 
