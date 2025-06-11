@@ -66,13 +66,43 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-### 🏦 **Comprehensive Financial Scenarios**
+## 📊 Financial Scenarios Demonstrated
 
-* Property purchases and rent collection
-* Mortgage and loan mechanisms with interest
-* Tax payments and government fees
-* Multi-party trade negotiations with asset transfers
-* Bankruptcy and debt resolution processes
+<br />
+
+### 🏠 **Property Management**
+
+* **Purchase decisions** based on ROI analysis
+* **Mortgage strategies** for liquidity management
+* **Development planning** with house/hotel construction
+* **Portfolio optimization** across color groups
+
+<br />
+
+### 💰 **Cash Flow Operations**
+
+* **Rent collection** with automatic P2P payments
+* **Tax obligations** to treasury account
+* **GO salary** from system rewards
+* **Utility and railroad** income streams
+
+<br />
+
+### 🤝 **Complex Trading**
+
+* **Multi-asset negotiations** (properties + money + cards)
+* **Strategic messaging** between agents
+* **Multi-round counter-offers** with rejection limits
+* **Atomic settlement** ensuring trade completion
+
+<br />
+
+### ⚖️ **Debt Resolution**
+
+* **Asset liquidation** under financial pressure
+* **Bankruptcy procedures** with creditor payments
+* **Mortgage interest** calculations and payments
+* **Bail payments** for jail release
 
 <br />
 
@@ -399,46 +429,6 @@ async def _create_tpay_payment_player_to_player(self, payer: Player, recipient: 
   "parameters": {"property_id": 1}
 }
 ```
-
-<br />
-
-## 📊 Financial Scenarios Demonstrated
-
-<br />
-
-### 🏠 **Property Management**
-
-* **Purchase decisions** based on ROI analysis
-* **Mortgage strategies** for liquidity management
-* **Development planning** with house/hotel construction
-* **Portfolio optimization** across color groups
-
-<br />
-
-### 💰 **Cash Flow Operations**
-
-* **Rent collection** with automatic P2P payments
-* **Tax obligations** to treasury account
-* **GO salary** from system rewards
-* **Utility and railroad** income streams
-
-<br />
-
-### 🤝 **Complex Trading**
-
-* **Multi-asset negotiations** (properties + money + cards)
-* **Strategic messaging** between agents
-* **Multi-round counter-offers** with rejection limits
-* **Atomic settlement** ensuring trade completion
-
-<br />
-
-### ⚖️ **Debt Resolution**
-
-* **Asset liquidation** under financial pressure
-* **Bankruptcy procedures** with creditor payments
-* **Mortgage interest** calculations and payments
-* **Bail payments** for jail release
 
 <br />
 
