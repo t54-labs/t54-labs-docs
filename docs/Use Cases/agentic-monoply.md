@@ -165,11 +165,11 @@ graph TB
 sequenceDiagram
     participant Agent as 🤖 AI Agent
     participant GC as 🎯 Game Controller
-    participant TPay as 💳 TPay System
-    participant TLedger as 🏦 TLedger
+    participant tPay as 💳 TPay System
+    participant tLedger as 🏦 TLedger
     participant OtherAgent as 🤖 Other Agent
     
-    Note over Agent, TLedger: 🎮 Autonomous Agent Decision & Financial Transaction Flow
+    Note over Agent, tLedger: 🎮 Autonomous Agent Decision & Financial Transaction Flow
     
     Agent->>GC: 1. Request game state & available actions
     GC->>Agent: 2. Return state: position, money, properties, pending decisions
@@ -180,17 +180,17 @@ sequenceDiagram
     Agent->>GC: 4. Execute chosen action<br/>e.g., "tool_buy_property", "tool_propose_trade"
     
     alt Property Purchase
-        GC->>TPay: 5a. Initiate payment: Agent → Treasury
-        TPay->>TLedger: 6a. Create settlement on Solana
-        TLedger-->>TPay: 7a. Confirm transaction
-        TPay-->>GC: 8a. Payment success ✅
+        GC->>tPay: 5a. Initiate payment: Agent → Treasury
+        tPay->>tLedger: 6a. Create settlement on Solana
+        tLedger-->>tPay: 7a. Confirm transaction
+        tPay-->>GC: 8a. Payment success ✅
         GC->>GC: 9a. Transfer property ownership
         
     else Rent Payment
-        GC->>TPay: 5b. Initiate payment: Agent → Property Owner
-        TPay->>TLedger: 6b. Create P2P settlement
-        TLedger-->>TPay: 7b. Confirm transaction
-        TPay-->>GC: 8b. Payment success ✅
+        GC->>tPay: 5b. Initiate payment: Agent → Property Owner
+        tPay->>tLedger: 6b. Create P2P settlement
+        tLedger-->>tPay: 7b. Confirm transaction
+        tPay-->>GC: 8b. Payment success ✅
         
     else Trade Proposal
         GC->>OtherAgent: 5c. Notify of trade offer
@@ -198,16 +198,16 @@ sequenceDiagram
         OtherAgent->>GC: 7c. Respond: accept/reject/counter
         
         alt Trade Accepted
-            GC->>TPay: 8c. Execute multi-party settlement
-            TPay->>TLedger: 9c. Atomic property + money transfer
-            TLedger-->>TPay: 10c. Settlement complete
-            TPay-->>GC: 11c. Trade executed ✅
+            GC->>tPay: 8c. Execute multi-party settlement
+            tPay->>tLedger: 9c. Atomic property + money transfer
+            tLedger-->>tPay: 10c. Settlement complete
+            tPay-->>GC: 11c. Trade executed ✅
         end
     end
     
     GC->>Agent: 12. Return action result
     
-    Note over Agent, TLedger: 💰 Real-time balance sync ensures<br/>agents see actual financial state
+    Note over Agent, tLedger: 💰 Real-time balance sync ensures<br/>agents see actual financial state
 ```
 
 <br />
