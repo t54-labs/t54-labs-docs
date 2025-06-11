@@ -53,7 +53,7 @@ graph TD
 
 ```
 
-![](https://files.readme.io/2b83f5b5cff1f5bb3228593774acbbfe37c37687aae526e40e7eef546898ef7d-image.png)
+<br />
 
 ## Project
 
