@@ -75,7 +75,7 @@ Install our Python SDK to embed payment functionality directly into your Agentâ€
 
 ### Integrate with RESTful API: ðŸ‘‰ [tLedger API](../docs/tledger-api)
 
-If you prefer to implement more advanced and customized features directly through the API, you can explore each of our API endpoints and the corresponding authentication mechanism to accomplish this.
+If you prefer to implement more advanced and customized features directly through the API, you can explore each of our API endpoints and the corresponding authentication mechanism to accomplish this. Connecting your agent to t54 with RESTful API may require higher level of developer KYC, since we still recommend using SDK. If you have any questions/improvment proposal for the SDK, feel free to open an issue under the [SDK github rep](https://github.com/t54-labs/tpay-sdk-python)o.
 
 <br />
 
