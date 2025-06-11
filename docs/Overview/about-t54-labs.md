@@ -27,7 +27,7 @@ t54 enables agent developers to equip AI agents with core financial primitivesâ€
 
 ## Our Products
 
-* tLedger: Blockchain-agnostic agent account management platform.
-* tRadar: AI-native compliance and risk management framework.
-* tPay: Comprehensive AI payment solution for real-world applications.
-* tPortal: UI Portal to track, manage and review agent's financial profile.
+* **tLedger**: Blockchain-agnostic agent account management platform.
+* **tRadar**: AI-native compliance and risk management framework.
+* **tPay**: Comprehensive AI payment solution for real-world applications.
+* **tPortal**: UI Portal to track, manage and review agent's financial profile.
