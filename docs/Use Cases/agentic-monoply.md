@@ -10,35 +10,53 @@ metadata:
 
 <br />
 
-<a
-  href="https://github.com/t54-labs/agentic-monoply"
-  style={{
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px'
-  }}
->
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
+<div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
+  <a
+    href="https://github.com/t54-labs/agentic-monoply"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      padding: '8px 12px',
+      backgroundColor: '#f6f8fa',
+      border: '1px solid #d0d7de',
+      borderRadius: '6px',
+      textDecoration: 'none',
+      color: '#24292f',
+      fontWeight: 500,
+      fontSize: '14px',
+      transition: 'background-color 0.2s',
+    }}
+    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#eaeef2')}
+    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#f6f8fa')}
+  >
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20" style={{ marginRight: '8px' }} />
 
-  <span>View source code</span>
-</a>
+    View source code
+  </a>
 
-<br />
+  <a
+    href="https://monopoly.t54.ai"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      padding: '8px 12px',
+      backgroundColor: '#fef6f6',
+      border: '1px solid #fca5a5',
+      borderRadius: '6px',
+      textDecoration: 'none',
+      color: '#dc2626',
+      fontWeight: 500,
+      fontSize: '14px',
+      transition: 'background-color 0.2s',
+    }}
+    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fde8e8')}
+    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#fef6f6')}
+  >
+    <img src="https://img.icons8.com/ios-filled/50/monitor.png" alt="Live demo" width="20" height="20" style={{ marginRight: '8px' }} />
 
-<a
-  href="https://monopoly.t54.ai"
-  style={{
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px'
-  }}
->
-  <img src="https://img.icons8.com/ios-filled/50/monitor.png" width="24" height="24" alt="Live demo icon" />
-
-  <span>View live demo</span>
-</a>
+    View live demo
+  </a>
+</div>
 
 ## Overview
 
