@@ -8,13 +8,11 @@ metadata:
 ---
 # 🎮 Agentic Monopoly: Fully Autonomous Agent Economy
 
-[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/t54-labs/agentic-monoply)
-
 <br />
 
-<a href="https://github.com/chenyuheng">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" />
-</a>
+\<a href="https\://github.com/t54-labs/agentic-monoply">
+&#x20; \<img src="https\://github.githubassets.com/images/modules/logos\_page/GitHub-Mark.png" width="30" />
+\</a> view source code
 
 <br />
 
