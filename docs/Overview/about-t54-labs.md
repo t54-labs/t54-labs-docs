@@ -29,7 +29,7 @@ t54 enables agent developers to equip AI agents with core financial primitivesâ€
 
 <br />
 
-**Learn more with a[quick start](/docs/quick-start)!**
+**Learn more with a[quick start](/docs/getting-started)!**
 
 <br />
 
