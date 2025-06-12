@@ -7,21 +7,7 @@ metadata:
 ---
 # 🛒 Use Case: Autonomous Shopping Assistant
 
-<br />
-
-<a
-  href="https://github.com/t54-labs/tpay-sdk-python/blob/master/examples/test_agent.py"
-  style={{
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px'
-  }}
->
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
-
-  <span>View source code</span>
-</a>
+<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/tpay-sdk-python/blob/master/examples/test_agent.py">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)</Anchor>
 
 <br />
 
