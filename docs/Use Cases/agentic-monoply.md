@@ -10,7 +10,7 @@ metadata:
 
 <br />
 
-[![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)](https://github.com/t54-labs/agentic-monoply)  [![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)](https://monopoly.t54.ai)
+<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)</Anchor>  <Anchor label="![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome&logoColor=white)" target="_blank" href="https://monopoly.t54.ai">![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)</Anchor>
 
 <br />
 
