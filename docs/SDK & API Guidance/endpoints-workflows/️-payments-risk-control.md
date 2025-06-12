@@ -21,6 +21,8 @@ Every payment initiated through the API or SDK includes several key parameters b
 
 These fields are required to initiate a payment and serve as the foundation for real-time risk evaluation.
 
+<br />
+
 # Transactional Risk Evaluation (tRadar)
 
 Once submitted, the transaction is passed through tRadar, our real-time validator agent network (VAN). tRadar assesses risk using a multi-tiered logic engine that takes into account:
@@ -35,9 +37,13 @@ Once submitted, the transaction is passed through tRadar, our real-time validato
 
 Transactions are scored and assigned one of several risk levels\_ (LOW, MEDIUM, HIGH, CRITICAL)\_. For elevated risk levels, tRadar may issue a challenge, requiring the Agent to submit additional justification or data to proceed.
 
+<br />
+
 # Challenge-Response Mechanism
 
 If a transaction is flagged, the challenge system acts as a dynamic gatekeeper. It pauses execution and returns a structured request for clarification—such as proof-of-purpose, logs, or metadata. Agents can respond programmatically and resubmit for re-evaluation. This adaptive flow balances security with user experience by reducing false rejections of legitimate activity.
+
+<br />
 
 # Code Auditing (tAudit)
 
@@ -49,14 +55,18 @@ To maintain integrity at the function level, all payment-related code must under
 
 This ensures a tamper-proof audit trail linking every transaction back to a vetted implementation, deterring unauthorized behavior or malicious injection.
 
+<br />
+
 # Payment Execution
 
 Payments proceed only after:
 
-1. The Agent is authenticated and the request validated.
-2. The risk assessment returns an approved or resolved state.
+1. **The Agent is authenticated and the request validated.**
+2. **The risk assessment returns an approved or resolved state.**
 
 In production mode, the payment is submitted to the designated settlement network (e.g., Solana) and the resulting `transaction_hash` is stored. In debug mode, execution is simulated locally for safe testing and QA.
+
+<br />
 
 # Error & Logging
 
