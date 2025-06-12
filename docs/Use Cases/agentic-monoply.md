@@ -1,6 +1,5 @@
 ---
 title: Agentic Monoply
-excerpt: Fully Autonomous Agent Economy
 deprecated: false
 hidden: true
 metadata:
