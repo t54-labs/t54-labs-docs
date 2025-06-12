@@ -13,23 +13,7 @@ next:
 ---
 # 🚀 tPay SDK Developer Integration Guide
 
-<br />
-
-<a
-  href="https://github.com/t54-labs/tpay-sdk-python/"
-  style={{
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '6px'
-  }}
->
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24" height="24" alt="GitHub logo" />
-
-  <span>View source code and detailed installation guide</span>
-</a>
-
-<br />
+<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/tpay-sdk-python/">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)</Anchor>
 
 ## Overview
 
