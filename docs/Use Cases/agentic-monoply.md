@@ -10,75 +10,11 @@ metadata:
 
 <br />
 
-[![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)](https://github.com/t54-labs/agentic-monoply)[![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)](https://monopoly.t54.ai)
+[![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)](https://github.com/t54-labs/agentic-monoply)
 
-<div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
-  <a
-    href="https://github.com/t54-labs/agentic-monoply"
-    style={{
-      display: 'inline-flex',
-      alignItems: 'center',
-      padding: '10px 18px',
-      backgroundColor: '#f6f8fa',
-      border: '1px solid #d0d7de',
-      borderRadius: '8px',
-      textDecoration: 'none',
-      color: '#24292f',
-      fontWeight: 500,
-      fontSize: '16px',
-      lineHeight: '1.5',
-      transition: 'background-color 0.2s',
-    }}
-    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#eaeef2')}
-    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#f6f8fa')}
-  >
-    <img
-      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-      alt="GitHub"
-      width="20"
-      height="20"
-      style={{
-        marginRight: '10px',
-        marginBottom: '1px', // 关键调整
-      }}
-    />
+[![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)](https://monopoly.t54.ai)
 
-    View source code
-  </a>
-
-  <a
-    href="https://monopoly.t54.ai"
-    style={{
-      display: 'inline-flex',
-      alignItems: 'center',
-      padding: '10px 18px',
-      backgroundColor: '#fef6f6',
-      border: '1px solid #fca5a5',
-      borderRadius: '8px',
-      textDecoration: 'none',
-      color: '#dc2626',
-      fontWeight: 500,
-      fontSize: '16px',
-      lineHeight: '1.5',
-      transition: 'background-color 0.2s',
-    }}
-    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fde8e8')}
-    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#fef6f6')}
-  >
-    <img
-      src="https://img.icons8.com/ios-filled/50/monitor.png"
-      alt="Live demo"
-      width="20"
-      height="20"
-      style={{
-        marginRight: '10px',
-        marginBottom: '1px', // 关键调整
-      }}
-    />
-
-    View live demo
-  </a>
-</div>
+<br />
 
 ## Overview
 
