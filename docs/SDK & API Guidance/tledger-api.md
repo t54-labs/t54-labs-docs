@@ -1,5 +1,5 @@
 ---
-title: tLedger API
+title: RESTful API
 deprecated: false
 hidden: false
 metadata:
