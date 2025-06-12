@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# 🎮 Agentic Monopoly: Fully Autonomous Agent Economy
+# Agentic Monopoly: Fully Autonomous Agent Economy
 
 <Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)</Anchor>  <Anchor label="![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome&logoColor=white)" target="_blank" href="https://monopoly.t54.ai">![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)</Anchor>
 
@@ -17,11 +17,11 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-## 🚀 Key Features
+## Key Features
 
 <br />
 
-### 🤖 **Fully Autonomous Agents**
+### **Fully Autonomous Agents**
 
 * **GPT-4 powered decision making** with strategic reasoning
 * **Multi-round negotiations** for complex trades
@@ -29,7 +29,7 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-### 💳 **Real Financial Integration**
+### **Real Financial Integration**
 
 * **Virtual bank accounts** for each agent via tPay SDK
 * **Real-time asset balance synchronization** with tLedger
@@ -37,11 +37,11 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-## 📊 Financial Scenarios Demonstrated
+## Financial Scenarios Demonstrated
 
 <br />
 
-### 🏠 **Property Management**
+### **Property Management**
 
 * **Purchase decisions** based on ROI analysis
 * **Mortgage strategies** for liquidity management
@@ -50,7 +50,7 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-### 💰 **Cash Flow Operations**
+### **Cash Flow Operations**
 
 * **Rent collection** with automatic P2P payments
 * **Tax obligations** to treasury account
@@ -59,7 +59,7 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-### 🤝 **Complex Trading**
+### **Complex Trading**
 
 * **Multi-asset negotiations** (properties + money + cards)
 * **Strategic messaging** between agents
@@ -68,7 +68,7 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-### ⚖️ **Debt Resolution**
+### **Debt Resolution**
 
 * **Asset liquidation** under financial pressure
 * **Bankruptcy procedures** with creditor payments
@@ -77,7 +77,7 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system consists of four main layers working in harmony:
 
@@ -160,7 +160,7 @@ graph TB
 
 <br />
 
-## 🔄 Agent Decision & Transaction Flow
+## Agent Decision & Transaction Flow
 
 ```mermaid
 sequenceDiagram
@@ -213,7 +213,7 @@ sequenceDiagram
 
 <br />
 
-## 💡 Core Implementation
+## Core Implementation
 
 <br />
 
@@ -357,7 +357,7 @@ async def _create_tpay_payment_player_to_player(self, payer: Player, recipient: 
 
 <br />
 
-## 🎯 Sample Agent Interactions
+## Sample Agent Interactions
 
 <br />
 
@@ -403,7 +403,7 @@ async def _create_tpay_payment_player_to_player(self, payer: Player, recipient: 
 
 <br />
 
-## 🎮 Game Flow Example
+## Game Flow Example
 
 ```
 Turn 15: Agent A's Strategic Sequence
@@ -421,7 +421,7 @@ Turn 16: Agent B's Response
 
 <br />
 
-## 🛠️ Available Agent Tools
+## Available Agent Tools
 
 The system provides a comprehensive function tools for autonomous agent operations:
 
@@ -471,7 +471,7 @@ The system provides a comprehensive function tools for autonomous agent operatio
 
 <br />
 
-## 📈 Real Transaction Examples
+## Real Transaction Examples
 
 <br />
 
@@ -549,20 +549,20 @@ The system provides a comprehensive function tools for autonomous agent operatio
 
 <br />
 
-## 🔮 Extensibility to Real-World Applications
+## Extensibility to Real-World Applications
 
 This Monopoly demonstration showcases **tPay's capability** to power sophisticated autonomous financial applications:
 
-* **🏦 Autonomous Investment Funds**: AI agents managing real investment portfolios
-* **🏢 Supply Chain Finance**: Automated payment networks between business entities
-* **🎯 Insurance Claims**: AI-driven claim assessment and automatic payouts
-* **🌐 Decentralized Marketplaces**: Agent-to-agent commerce with complex negotiations
-* **💱 Algorithmic Trading**: High-frequency autonomous trading with instant settlements
+* **Autonomous Investment Funds**: AI agents managing real investment portfolios
+* **Supply Chain Finance**: Automated payment networks between business entities
+* **Insurance Claims**: AI-driven claim assessment and automatic payouts
+* **Decentralized Marketplaces**: Agent-to-agent commerce with complex negotiations
+* **Algorithmic Trading**: High-frequency autonomous trading with instant settlements
 
 ***
 
 <br />
 
-**🚀 The Agentic Monopoly demonstrates that with tPay, the future of autonomous finance isn't just possible—it's running today.**
+\*\* The Agentic Monopoly demonstrates that with tPay, the future of autonomous finance isn't just possible—it's running today.\*\*
 
 From simple property transactions to complex multi-party negotiations, AI agents can operate sophisticated financial systems with the same reliability and oversight as traditional banking, but with the speed and programmability of blockchain technology.
