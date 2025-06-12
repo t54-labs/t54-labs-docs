@@ -10,6 +10,8 @@ metadata:
 
 <br />
 
+[![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)](https://github.com/t54-labs/agentic-monoply)[![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)](https://monopoly.t54.ai)
+
 <div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
   <a
     href="https://github.com/t54-labs/agentic-monoply"
