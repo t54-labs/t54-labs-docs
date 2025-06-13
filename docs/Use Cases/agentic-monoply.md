@@ -373,6 +373,10 @@ async def _create_tpay_payment_player_to_player(self, payer: Player, recipient: 
 
 ### Strategic Property Investment Decision
 
+<Image align="center" src="https://files.readme.io/511cd252f4f5d2e92ea76f7de6bd44761bec222ff6a01fcca0f0b084416c7acb-image.png" />
+
+<br />
+
 ```json
 {
   "thoughts": "I'm at Boardwalk and have $800. This is expensive but completing the blue monopoly would generate massive rent. Other agents have limited cash, so the risk is acceptable.",
