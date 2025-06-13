@@ -17,7 +17,7 @@ metadata:
 
 ## Overview
 
-Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complete end-to-end system where AI agents independently play Monopoly with real financial settlements. Each agent maintains a virtual 'bank' account synchronized with **tPay/tLedger**, making autonomous decisions that result in actual blockchain-based transactions.
+Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complete end-to-end system where AI agents independently play Monopoly with real financial settlements. Each agent maintains a virtual 'bank' account synchronized with **tLedger** through **tPay SDK**, making autonomous decisions that result in actual blockchain-based transactions.
 
 <br />
 
