@@ -1,6 +1,7 @@
 ---
 title: Quick Start
 hidden: false
+icon: 🧑‍🚀
 next:
   pages:
     - slug: tledger-backend-sdk
