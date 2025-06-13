@@ -2,6 +2,7 @@
 title: About t54 labs
 deprecated: false
 hidden: false
+icon: 👋
 metadata:
   robots: index
 ---
