@@ -17,6 +17,10 @@ Agentic Monopoly demonstrates **Level 4 autonomous agentic finance** - a complet
 
 <br />
 
+![]()
+
+<br />
+
 ## Key Features
 
 <br />
