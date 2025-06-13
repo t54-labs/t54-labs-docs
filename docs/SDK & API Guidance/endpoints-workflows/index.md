@@ -2,7 +2,7 @@
 title: Key Flows
 deprecated: false
 hidden: false
-icon: fad fa-3
+icon: 🔑
 metadata:
   robots: index
 ---
