@@ -14,5 +14,5 @@ excerpt: |-
 api:
   file: openapi.json
   operationId: Balances-get_project_balances
-hidden: false
+hidden: true
 ---
