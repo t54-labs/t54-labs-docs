@@ -3,7 +3,6 @@ title: What is Agentic Finance?
 excerpt: Emancipating human from financial anxiety
 deprecated: false
 hidden: false
-icon: 💸
 metadata:
   robots: index
 ---
