@@ -1,4 +1,4 @@
 ---
 title: Projects
-hidden: false
+hidden: true
 ---
