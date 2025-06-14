@@ -1,4 +1,4 @@
 ---
 title: Agent Details
-hidden: false
+hidden: true
 ---
