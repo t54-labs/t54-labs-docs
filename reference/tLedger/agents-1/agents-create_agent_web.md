@@ -11,5 +11,5 @@ excerpt: |-
 api:
   file: openapi.json
   operationId: Agents-create_agent_web
-hidden: false
+hidden: true
 ---
