@@ -1,4 +1,4 @@
 ---
 title: Google Auth
-hidden: false
+hidden: true
 ---
