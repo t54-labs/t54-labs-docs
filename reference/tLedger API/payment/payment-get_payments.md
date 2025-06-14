@@ -14,5 +14,5 @@ excerpt: |-
 api:
   file: openapi.json
   operationId: Payment-get_payments
-hidden: false
+hidden: true
 ---
