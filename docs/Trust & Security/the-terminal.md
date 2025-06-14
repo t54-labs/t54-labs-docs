@@ -23,6 +23,8 @@ tRadar Terminal provides you unprecedented visibility into tRadar, the heart of 
 
 ### 🔍 **Live Transaction Flow Visualization**
 
+![](https://files.readme.io/78a917c14415f5a524612a80cec8bd12022f6b5120fe24eef033099e3082f98c-screenshot-20250614-164217.png)
+
 Watch transactions flow through our tPay network in real-time as animated connections between agent nodes. Each transaction is represented by smooth, curved lines that dynamically adapt to network topology, providing immediate visual context for transaction patterns and volumes.
 
 <br />
