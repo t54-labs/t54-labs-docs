@@ -12,5 +12,5 @@ excerpt: |-
 api:
   file: openapi.json
   operationId: Projects-get_user_projects_web
-hidden: false
+hidden: true
 ---
