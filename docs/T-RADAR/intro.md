@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: Introduction
 deprecated: false
 hidden: false
 metadata:
