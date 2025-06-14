@@ -16,5 +16,5 @@ excerpt: >-
 api:
   file: openapi.json
   operationId: Projects-get_project_agents_web
-hidden: false
+hidden: true
 ---
