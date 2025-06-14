@@ -1,4 +1,4 @@
 ---
 title: ApiKey
-hidden: false
+hidden: true
 ---
