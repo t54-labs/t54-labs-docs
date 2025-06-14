@@ -15,5 +15,5 @@ excerpt: |-
 api:
   file: openapi.json
   operationId: Agents-delete_agent_web
-hidden: false
+hidden: true
 ---
