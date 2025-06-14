@@ -9,6 +9,8 @@ metadata:
 
 <Anchor label="![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome&logoColor=white)" target="_blank" href="https://terminal.t54.ai">![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome\&logoColor=white)</Anchor>
 
+<br />
+
 tRadar Terminal provides you unprecedented visibility into tRadar, the heart of tPay network, through an intuitive, real-time visualization interface. This terminal transforms complex financial risk analysis into clear, actionable insights through dynamic network visualization.
 
 <br />
