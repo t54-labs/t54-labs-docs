@@ -9,6 +9,8 @@ metadata:
 
 <br />
 
+<br />
+
 **Real-time tRadar Visualization Platform**
 
 tRadar Terminal provides you unprecedented visibility into tRadar, the heart of tPay network, through an intuitive, real-time visualization interface. This terminal transforms complex financial risk analysis into clear, actionable insights through dynamic network visualization.
