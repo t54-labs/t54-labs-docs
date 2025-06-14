@@ -1,4 +1,4 @@
 ---
 title: Payment Rules
-hidden: false
+hidden: true
 ---
