@@ -62,7 +62,7 @@ On this terminal, you can also view a visual representation of each Agent’s **
 ## 📊 **What You Can Do**
 
 * **Agent Nodes**: Circular nodes representing individual agents, hover or click to see the agent details
-* **Transactuon Visualization**: Zoom in to check the real-time validating process, hover or click to see the payment transaction details
+* **Transaction Visualization**: Zoom in to check the real-time validating process, hover or click to see the payment transaction details
 * **Status Indicators**: Real-time color transitions showing transaction states (initiated → validating → completed/failed)
 
 ***
