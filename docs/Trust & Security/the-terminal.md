@@ -25,11 +25,17 @@ tRadar Terminal provides you unprecedented visibility into tRadar, the heart of 
 
 ![](https://files.readme.io/78a917c14415f5a524612a80cec8bd12022f6b5120fe24eef033099e3082f98c-screenshot-20250614-164217.png)
 
+<br />
+
 Watch transactions flow through our tPay network in real-time as animated connections between agent nodes. Each transaction is represented by smooth, curved lines that dynamically adapt to network topology, providing immediate visual context for transaction patterns and volumes.
 
 <br />
 
-### 🤖 **Agentic Risk Assessment in Action**
+### 🤖 **Agent Validating in Action**
+
+![](https://files.readme.io/62b35519104799a90cd45b2f55f051c2b0d43fc46bc8c6249ca5ba39f4da3ec9-614-ezgif.com-video-to-gif-converter.gif)
+
+<br />
 
 Observe our AI validator agents analyzing transactions in real-time by scrolling to zoom in. See the actual process unfold as floating text boxes that display the Validator Agent's complex reasoning process.
 
@@ -44,6 +50,10 @@ You can also view the detailed and complete transaction context directly in the 
 <br />
 
 ### **A Glimpse into the Agent’s Financial Profile**
+
+![](https://files.readme.io/152b53be08550751a81dcd84c94105116868c9ebab8b67010c7dabbb86747098-6141-ezgif.com-video-to-gif-converter.gif)
+
+<br />
 
 On this terminal, you can also view a visual representation of each Agent’s **virtual account**. This is a key feature of the tLedger. Every Agent is assigned a unique Agent ID, which functions as their “bank account.” With this ID, neither the Agent nor the developer or end user needs to worry about wallets or assets across different chains — tLedger handles all supported cross-chain transactions and swaps automatically.
 
