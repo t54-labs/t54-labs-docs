@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-**Finance is, at its core, a business of trust.**
+## **Finance is, at its core, a business of trust.**
 
 The moment we ask users to let an autonomous software Agent—not a human banker, fund manager, or family office—initiate, route, and settle their transactions, the bar for safety rises sharply. Level-4 Agentic Finance re-imagines the traditional “custody” model as a delegated protocol relationship: capital and decision-making authority are handed to an entity that exists entirely outside today’s legal and financial ecosystems. For that leap to feel safe, trust must be engineered rather than assumed.
 
