@@ -22,6 +22,8 @@ This guide introduces t54’s enterprise capabilities, our unique agent-native r
 
 ## What you can do with t54
 
+Start from a [Quick Start](/docs/quick-start)!
+
 t54 enables agent developers to equip AI agents with core financial primitives—without the need to rebuild financial infrastructure from scratch. More importantly, when failure, fraud, or loss occurs, t54 provides peace of mind to human users by enforcing trust and guardrails—maximizing the overall customer experience.
 
 | **Capability**                             | **Enables you to…**                                                                                                                                                                                                                     |
@@ -33,7 +35,3 @@ t54 enables agent developers to equip AI agents with core financial primitives�
 | Unlock agent monetization                  | Set up fee-sharing structures and reward tokens so agents can earn for completed tasks—similar to SaaS-style commissions or usage-based incentives.                                                                                     |
 | Integrate seamlessly with agent frameworks | Connect directly with agent orchestration tools like [Virtual Protocol’s GAME](https://github.com/game-by-virtuals/game-python/tree/main/plugins/tLedger), [MCP](https://www.anthropic.com/news/model-context-protocol), and REST APIs. |
 | Audit and analyze                          | Track balances, review transaction history, and export logs for compliance or analytics—accessible via API or the t54 Portal.                                                                                                           |
-
-<br />
-
-**Learn more with[ quick start](/docs/getting-started)!**
