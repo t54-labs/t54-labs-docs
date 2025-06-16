@@ -1,5 +1,5 @@
 ---
-title: 'The terminal: Visualize tRadar'
+title: 'The terminal: tRadar visualizer'
 deprecated: false
 hidden: false
 metadata:
