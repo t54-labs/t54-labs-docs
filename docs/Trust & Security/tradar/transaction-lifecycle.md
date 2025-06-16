@@ -37,6 +37,8 @@ metadata:
 
 7. **Continuous Learning:** Even after a transaction’s immediate fate is decided, the risk control system treats it as valuable data. tRadar updates metrics for validators (were they correct relative to the eventual outcome?), updates agent trust levels if applicable, and feeds this information into model improvement and rule tuning. If a fraudulent transaction was caught and confirmed, that pattern might be added as a new rule or used to train validators to recognize similar cases. If a legitimate transaction was initially challenged, perhaps some rules can be relaxed or more context included next time to avoid unnecessary friction. Thus, over the long term, tRadar’s layered defenses become smarter and more efficient, combining human expert feedback and machine learning. The **Validator-Agent Network** in particular can be periodically retrained or diversified with new AI models to adapt to evolving fraud tactics, ensuring the system stays a step ahead of adversaries.
 
+<br />
+
 Below is a flowchart summarizing the journey of a transaction through tRadar’s layers of validation:
 
 ```mermaid
