@@ -79,7 +79,7 @@ If you prefer to implement more advanced and customized features directly throug
 
 <br />
 
-### Understand key flows: 👉 [Key Flows](../docs/key-flows)
+### Understand key flows during integration: 👉 [Key Flows](../docs/key-flows)
 
 Learn how Projects, Agents, Accounts, and Payments are structured in tLedger. This includes:
 
