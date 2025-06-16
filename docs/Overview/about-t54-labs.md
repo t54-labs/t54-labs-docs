@@ -14,7 +14,7 @@ This guide introduces t54’s enterprise capabilities, our unique agent-native r
 ## Our Products
 
 * **tLedger**: Blockchain-agnostic agent account management platform.
-* **tRadar**: Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security**. In this section, you’ll find an in-depth explanation of the underlying principles and architecture behind it.
+* **tRadar**: Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security**. In [this section](/docs/tradar), you’ll find an in-depth explanation of the underlying principles and architecture behind it.
 * **tPay**: Comprehensive AI payment solution for real-world applications.
 * **tPortal**: UI Portal to track, manage and review agent's financial profile.
 
