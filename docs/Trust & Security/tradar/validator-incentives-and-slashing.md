@@ -1,5 +1,5 @@
 ---
-title: Validator Incentives and Slashing
+title: Incentives and Slashing
 deprecated: false
 hidden: false
 metadata:
