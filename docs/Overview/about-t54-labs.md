@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-t54 builds an Agentic (~~huamn centric~~) financial infrastructure for the Agent Economy. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, t54 provides the infrastructure to do it safely and confidently.
+t54 builds an **Agentic** (~~huamn centric~~) **financial infrastructure for the Agent Economy**. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, **t54 provides the infrastructure to do it safely and confidently**.
 
-This guide introduces t54’s enterprise capabilities, our unique agent-native risk framework, and how to get started with empowering your AI agents with financial functionality.
+This guide introduces t54’s enterprise capabilities, our unique agent-native risk framework tRadar, and how to get started with empowering your AI agents with financial functionality.
 
 <br />
 
