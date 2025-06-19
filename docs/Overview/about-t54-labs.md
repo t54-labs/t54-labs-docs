@@ -7,13 +7,11 @@ metadata:
 ---
 t54 builds an **Agentic** (~~huamn centric~~) **financial infrastructure for the Agent Economy**. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, **t54 provides the infrastructure to do it safely and confidently**.
 
-This guide introduces t54's enterprise capabilities, our unique agent-native risk framework tRadar, and how to get started with empowering your AI agents with financial functionality.
-
-## Our Products
+## Explore the products
 
 |                     💳 **tLedger**                    |                                                                     🛡️ **tRadar**                                                                    |                          💰 **tPay**                          |                          📊 **tPortal**                         |
 | :---------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------: | :-------------------------------------------------------------: |
-|                 **Account Management**                |                                                                  **Risk Management**                                                                  |                        **AI Payments**                        |                        **Management UI**                        |
+|                 **Account Management**                |                                                                  **Risk Management**                                                                  |                        **AI Payments**                        |                      **Management Portal**                      |
 | Blockchain-agnostic agent account management platform | Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security** | Comprehensive AI payment solution for real-world applications | UI Portal to track, manage and review agent's financial profile |
 |           [**Learn More →**](/docs/tledger)           |                                                            [**Learn More →**](/docs/tradar)                                                           |                 [**Learn More →**](/docs/tpay)                |                [**Learn More →**](/docs/tportal)                |
 
