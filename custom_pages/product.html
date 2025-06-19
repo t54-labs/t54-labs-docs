@@ -3,4 +3,436 @@ title: Home
 fullscreen: false
 hidden: false
 ---
-d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t54 Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #0a2540;
+            background-color: #fafbfc;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 1px solid #e6ebf1;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #E27B54;
+            text-decoration: none;
+        }
+        
+        .nav {
+            margin-left: auto;
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav a {
+            color: #425466;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav a:hover {
+            color: #E27B54;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafe 100%);
+            padding: 80px 24px;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0a2540;
+            margin-bottom: 16px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #425466;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: #E27B54;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #d96944;
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #E27B54;
+            border: 1px solid #e6ebf1;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #E27B54;
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+        
+        .products-section {
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0a2540;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: #425466;
+            text-align: center;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+        
+        .product-card {
+            background: white;
+            border: 1px solid #e6ebf1;
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .product-card:hover {
+            border-color: #E27B54;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(226, 123, 84, 0.1);
+        }
+        
+        .product-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .product-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 8px;
+        }
+        
+        .product-subtitle {
+            font-size: 14px;
+            color: #E27B54;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .product-description {
+            color: #425466;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        
+        .product-link {
+            color: #E27B54;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .quick-start {
+            background: white;
+            border: 1px solid #e6ebf1;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 64px;
+        }
+        
+        .quick-start h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #0a2540;
+        }
+        
+        .quick-start p {
+            color: #425466;
+            margin-bottom: 24px;
+        }
+        
+        .code-snippet {
+            background: #0a2540;
+            color: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin-bottom: 16px;
+        }
+        
+        .code-snippet .comment {
+            color: #74858a;
+        }
+        
+        .code-snippet .string {
+            color: #E27B54;
+        }
+        
+        .footer {
+            background: #0a2540;
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #8fa5ad;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: #E27B54;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">t54</a>
+            <nav class="nav">
+                <a href="/docs">Documentation</a>
+                <a href="/api">API Reference</a>
+                <a href="/guides">Guides</a>
+                <a href="/support">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Financial infrastructure for AI agents</h1>
+            <p>Build trustworthy AI agents that can handle payments, manage accounts, and operate autonomously with enterprise-grade security and compliance.</p>
+            <div class="cta-buttons">
+                <a href="/docs/getting-started" class="btn btn-primary">Get Started</a>
+                <a href="/docs/api" class="btn btn-secondary">View API Docs</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="products-section">
+            <h2 class="section-title">Products</h2>
+            <p class="section-subtitle">Everything you need to build financially autonomous AI agents</p>
+            
+            <div class="products-grid">
+                <a href="/docs/tledger" class="product-card">
+                    <span class="product-icon">💳</span>
+                    <h3 class="product-title">tLedger</h3>
+                    <p class="product-subtitle">Account Management</p>
+                    <p class="product-description">Blockchain-agnostic agent account management platform with programmable spending limits and multi-asset wallets.</p>
+                    <span class="product-link">Learn more →</span>
+                </a>
+
+                <a href="/docs/tradar" class="product-card">
+                    <span class="product-icon">🛡️</span>
+                    <h3 class="product-title">tRadar</h3>
+                    <p class="product-subtitle">Risk Management</p>
+                    <p class="product-description">Agent-native compliance and risk management framework. Our core module for ensuring trust and security in agent transactions.</p>
+                    <span class="product-link">Learn more →</span>
+                </a>
+
+                <a href="/docs/tpay" class="product-card">
+                    <span class="product-icon">💰</span>
+                    <h3 class="product-title">tPay</h3>
+                    <p class="product-subtitle">AI Payments</p>
+                    <p class="product-description">Comprehensive AI payment solution for real-world applications with cross-border support and fiat integration.</p>
+                    <span class="product-link">Learn more →</span>
+                </a>
+
+                <a href="/docs/tportal" class="product-card">
+                    <span class="product-icon">📊</span>
+                    <h3 class="product-title">tPortal</h3>
+                    <p class="product-subtitle">Management UI</p>
+                    <p class="product-description">No-code portal to track, manage and review your agents' financial profiles with real-time analytics and controls.</p>
+                    <span class="product-link">Learn more →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="quick-start">
+            <h3>Quick Start</h3>
+            <p>Create your first AI agent with financial capabilities in minutes. Our SDK makes it simple to integrate secure payment functionality into your agents.</p>
+            
+            <div class="code-snippet">
+<span class="comment"># Install the t54 SDK</span>
+npm install @t54/sdk
+
+<span class="comment"># Create an agent with financial capabilities</span>
+import { T54Client } from <span class="string">'@t54/sdk'</span>;
+
+const t54 = new T54Client({
+  apiKey: <span class="string">'your-api-key'</span>
+});
+
+<span class="comment"># Create agent account</span>
+const agent = await t54.agents.create({
+  name: <span class="string">'shopping-assistant'</span>,
+  spendingLimit: 1000, <span class="comment">// USD</span>
+  allowedMerchants: [<span class="string">'amazon'</span>, <span class="string">'uber'</span>]
+});
+
+<span class="comment"># Make a payment</span>
+const payment = await agent.pay({
+  recipient: <span class="string">'merchant-id'</span>,
+  amount: 25.99,
+  purpose: <span class="string">'Coffee order for user'</span>
+});
+            </div>
+            
+            <a href="/docs/getting-started" class="btn btn-primary">Start Building</a>
+        </section>
+
+        <section>
+            <h2 class="section-title">Why t54?</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <span class="product-icon">🤖</span>
+                    <h3 class="product-title">Agent-Native</h3>
+                    <p class="product-description">Built specifically for AI agents, not adapted from human-centric payment systems. Native KYA (Know Your Agent) protocols and autonomous transaction capabilities.</p>
+                </div>
+
+                <div class="product-card">
+                    <span class="product-icon">🔒</span>
+                    <h3 class="product-title">Enterprise Security</h3>
+                    <p class="product-description">Bank-grade security with real-time fraud detection, compliance monitoring, and programmable risk controls designed for autonomous operations.</p>
+                </div>
+
+                <div class="product-card">
+                    <span class="product-icon">⚡</span>
+                    <h3 class="product-title">Developer First</h3>
+                    <p class="product-description">Simple APIs, comprehensive SDKs, and detailed documentation. Integrate financial capabilities into your agents with just a few lines of code.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/docs">Documentation</a>
+                <a href="/api">API Reference</a>
+                <a href="/guides">Guides</a>
+                <a href="/support">Support</a>
+                <a href="/blog">Blog</a>
+                <a href="/about">About</a>
+            </div>
+            <p>&copy; 2025 t54 Labs. Building the financial infrastructure for AI agents.</p>
+        </div>
+    </footer>
+</body>
+</html>
