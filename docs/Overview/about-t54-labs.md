@@ -9,32 +9,29 @@ t54 builds an **Agentic** (~~huamn centric~~) **financial infrastructure for the
 
 ## Our Products
 
-  &#xA;
+<br />
 
 \<div style="width: 100%;">
 
-\| 💳 \*\*tLedger\*\* | 🛡️ \*\*tRadar\*\* | 💰 \*\*tPay\*\* | 📊 \*\*tPortal\*\* |
-\|:---:|:---:|:---:|:---:|
-\| \*\*Account Management\*\* | \*\*Risk Management\*\* | \*\*AI Payments\*\* | \*\*Management UI\*\* |
-\| Blockchain-agnostic agent account management platform | Agent-native compliance and risk management framework. This is our \*\*core module\*\*—and the most critical part of \*\*how we ensure trust and security\*\* | Comprehensive AI payment solution for real-world applications | UI Portal to track, manage and review agent's financial profile |
-\| \[\*\*Learn More →\*\*]\(/docs/tledger) | \[\*\*Learn More →\*\*]\(/docs/tradar) | \[\*\*Learn More →\*\*]\(/docs/tpay) | \[\*\*Learn More →\*\*]\(/docs/tportal) |
+|                     💳 **tLedger**                    |                                                                     🛡️ **tRadar**                                                                    |                          💰 **tPay**                          |                          📊 **tPortal**                         |
+| :---------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------: | :-------------------------------------------------------------: |
+|                 **Account Management**                |                                                                  **Risk Management**                                                                  |                        **AI Payments**                        |                        **Management UI**                        |
+| Blockchain-agnostic agent account management platform | Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security** | Comprehensive AI payment solution for real-world applications | UI Portal to track, manage and review agent's financial profile |
+
+|
 
 \</div>
 
-\<style>
+\<style>\
 table \{
-&#x20; table-layout: fixed;
-&#x20; width: 100%;
+table-layout: fixed;
+width: 100%;
 }
 table td, table th \{
-&#x20; width: 25%;
-&#x20; word-wrap: break-word;
+width: 25%;
+word-wrap: break-word;
 }
 \</style>
-
-
-
-
 
 ## What you can do with t54
 
