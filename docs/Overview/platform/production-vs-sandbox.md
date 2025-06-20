@@ -1,5 +1,5 @@
 ---
-title: Production vs Sandbox
+title: Sandbox vs Production
 deprecated: false
 hidden: false
 metadata:
