@@ -33,17 +33,16 @@ You can view airdrop details in the Agent's profile under details.
 
 ## Differences Between Environments
 
-| Feature                 | Sandbox                                                             | Production                                                     |
-| ----------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| **Base URL**            | `https://api-sandbox.t54.ai/api/v1`                                 | `https://api.t54.ai/api/v1`                                    |
-| **Cost**                | **Free** - No charges for any operations                            | **Live billing** - Real transaction costs apply                |
-| **Blockchain Networks** | **Testnet/Devnet only** (Solana Devnet, XRPL Testnet, Base Sepolia) | **Mainnet** (Solana, XRPL, Base mainnet)                       |
-| **Test Tokens**         | **Automatic airdrops** for new agents                               | **Real tokens required** - Must fund agents with actual assets |
-| **API Keys**            | Same API keys work across both environments                         | Same API keys work across both environments                    |
-| **Rate Limits**         | Relaxed limits for testing                                          | Standard production rate limits                                |
-| **Data Persistence**    | **May be reset periodically**                                       | **Permanent** - Production data is never deleted               |
-
-<br />
+| Feature                 | Sandbox                                                             | Production                                                        |
+| ----------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Base URL**            | `https://api-sandbox.t54.ai/api/v1`                                 | `https://api.t54.ai/api/v1`                                       |
+| **Cost**                | **Free** - No charges for any operations                            | **Live billing** - Real transaction costs apply                   |
+| **Blockchain Networks** | **Testnet/Devnet only** (Solana Devnet, XRPL Testnet, Base Sepolia) | **Mainnet** (Solana, XRPL, Base mainnet)                          |
+| **Test Tokens**         | **Automatic airdrops** for new agents                               | **Real tokens required** - Must deposit agents with actual assets |
+| **User Accounts**       | **Separate sandbox accounts** - Create new account for testing      | **Separate production accounts** - Different user registration    |
+| **API Keys**            | **Different API keys** - Sandbox-specific authentication            | **Different API keys** - Production-specific authentication       |
+| **Rate Limits**         | **Different rate limits** optimized for testing                     | **Production rate limits** for live operations                    |
+| **Data Persistence**    | **Permanent** - All data is retained for now                        | **Permanent** - Production data is never deleted                  |
 
 ***
 
