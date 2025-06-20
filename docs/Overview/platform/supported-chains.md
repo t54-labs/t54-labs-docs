@@ -6,21 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-t54 provides blockchain-agnostic financial infrastructure for AI agents. By default, the developers do not need to touch blockchain layer when setting up the financial profile for your agents. For certain use cases require blockchain level configuration, please refer to the table below
-
-<br />
-
-# Supported Blockchains
-
-Build AI agents with financial capabilities across multiple blockchain networks in one unified integration.
-
-## 🌐 Multi-Chain Agent Infrastructure
-
-t54 provides blockchain-agnostic financial infrastructure for AI agents. Choose from our supported networks based on your specific needs - whether you're building for DeFi, cross-border payments, or real-world commerce.
-
-Each blockchain integration includes native support for agent accounts, programmable spending controls, and our tRadar security framework.
-
-## Supported Networks
+t54 provides blockchain-agnostic financial infrastructure for AI agents. By default, the developers do not need to touch blockchain layer when setting up the financial profile for your agents. For certain use cases require blockchain level configuration, please refer to the table below.
 
 | Blockchain                            | tLedger        | tPay           | Network Labs   | Mainnet Label | Testnet Label      |
 | ------------------------------------- | -------------- | -------------- | -------------- | ------------- | ------------------ |
