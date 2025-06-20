@@ -1,5 +1,5 @@
 ---
-title: Trust Booster for Financial Evolution
+title: Booster for Financial Evolution
 deprecated: false
 hidden: false
 metadata:
