@@ -17,27 +17,12 @@ t54 provides blockchain-agnostic financial infrastructure for AI agents. By defa
 ## Legend
 
 * **✅ Live** - Fully supported and available in production
-* **🚧 Beta** - Available in beta - [contact us](/contact) for early access
+* **🚧 Beta** - Available in beta - [contact us](/discuss) for early access
 * **📅 Coming Soon** - In development - expected timeline shown
 * **❌ Not Supported** - Not currently planned for support
-
-## 🏗️ Product Coverage
-
-**tLedger:** Agent account management, virtual wallets, and programmable spending controls
-
-**tPay:** Cross-chain payments, fiat on/off-ramps, and real-world transaction capabilities
-
-**Network Labs:** Experimental features, advanced integrations, and cutting-edge agent capabilities
-
-## 📋 Notes
-
-* All supported chains include full tRadar security and compliance features
-* Beta features require approval - [contact our team](/contact) for access
-* Testnet access available through our [development environment](/docs/testing)
-* Cross-chain agent transactions supported between all live networks
 
 ## Building on a different chain?
 
 We're constantly expanding our blockchain support. Your preferred network might already be in our pipeline.
 
-[**Contact our team →**](/contact)
+[**Contact our team →**](/discuss)
