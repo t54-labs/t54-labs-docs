@@ -61,4 +61,6 @@ Project-level administrative operations for managing agents:
 * `agent:account:read` - Access agent account information
 * `agent:account:delete` - Delete agent accounts
 
-**Need help?** Check our [API Reference](/docs/api) or [contact support](/discussion) for assistance with API key setup and configuration.
+***
+
+**Need help?** Check our [API documentation](/docs/api) or [contact support](/discussion) for assistance with environment setup.
