@@ -35,4 +35,4 @@ Today's financial world operates at L1 and L2, with clear movement toward L3: AI
 
 ***
 
-**t54 exists to build this foundation.**
+**t54 exists to build this agentic finance.**
