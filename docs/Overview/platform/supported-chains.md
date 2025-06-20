@@ -8,14 +8,11 @@ metadata:
 ---
 t54 provides blockchain-agnostic financial infrastructure for AI agents. By default, the developers do not need to touch blockchain layer when setting up the financial profile for your agents. For certain use cases require blockchain level configuration, please refer to the table below.
 
-| Blockchain                            | tLedger        | tPay           | Network Labs   | Mainnet Label | Testnet Label      |
-| ------------------------------------- | -------------- | -------------- | -------------- | ------------- | ------------------ |
-| **🟠 Solana** *Native*                | **✅ Live**     | **🚧 Beta**    | **✅ Live**     | `solana`      | `solana-devnet`    |
-| **🔷 XRP Ledger (XRPL)** *Enterprise* | **🚧 Q2 2025** | **📅 Q3 2025** | **🚧 Beta**    | `xrpl`        | `xrpl-testnet`     |
-| **🔵 Base** *L2*                      | **🚧 Q2 2025** | **📅 Q4 2025** | **📅 Q3 2025** | `base`        | `base-sepolia`     |
-| **⚪ Ethereum** *L1*                   | **📅 Q3 2025** | **📅 Q4 2025** | **📅 Q4 2025** | `ethereum`    | `ethereum-sepolia` |
-| **🟣 Polygon** *L2*                   | **📅 Q4 2025** | **📅 2026**    | **📅 2026**    | `polygon`     | `polygon-amoy`     |
-| **🔴 Arbitrum** *L2*                  | **📅 2026**    | **📅 2026**    | **📅 2026**    | `arbitrum`    | `arbitrum-sepolia` |
+| Blockchain            | tLedger            | tPay               | Mainnet Label | Testnet Label |
+| --------------------- | ------------------ | ------------------ | ------------- | ------------- |
+| **Solana**            | **✅ Live**         | **✅ Live**         | `solana`      | `solana`      |
+| **XRP Ledger (XRPL)** | **✅ Live**         | **✅ Live**         | `xrpl`        | `xrpl`        |
+| **Base**              | **📅 Coming Soon** | **📅 Coming Soon** | `base`        | `base`        |
 
 ## Legend
 
