@@ -13,4 +13,6 @@ Financial infrastructure is rooted in trust. To cultivate trust, financial servi
 
 Agent-driven transactions create unprecedented opportunities for intelligent risk assessment. Unlike human transactions that reveal only surface metadata—sender, recipient, amount—agent transactions expose the complete decision context: reasoning chains, planning conversations, intent justification, and execution rationale. This transparency enables superior risk frameworks powered by agent behavior intelligence, creating systems that become smarter with every interaction.
 
+***
+
 **t54 exists to build this trust.**
