@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-To help developers understand how tLedger structures different layer of objects, here's a brief overview of the hierarchy:
+To help developers understand how tLedger structures different layers of objects, here's a brief overview of the hierarchy:
 
-```mermaid mermaid
+```mermaid
 graph TD
     Users --> ProjectA
     Users --> ProjectB
@@ -22,34 +22,37 @@ graph TD
     agnt_xxx_02 --> acct_xxx_02
     agnt_xxx_03 --> acct_xxx_03
     agnt_xxx_04 --> acct_xxx_04
-
 ```
 
 ## Project
 
-A project is a group of agent collections, financial accounts, API keys, risk limit, billing information, and more. It acts as the top-level financial and operational container.
+A project serves as the top-level financial and operational container, grouping agent collections, financial accounts, API keys, risk limits, billing information, and other resources.
 
-If you are working with different teams or clients, you can create different projects to segregate sensitive information and tool access. We recommend each project represent one standalone business use case, for example, a 'travel planning' project to organize a group of travel planning agents vs 'car rental' project to organize a group of car rental agents
+If you are working with different teams or clients, you can create separate projects to segregate sensitive information and tool access. We recommend that each project represents one standalone business use case—for example, a 'travel planning' project to organize travel planning agents versus a 'car rental' project for car rental agents.
 
-Each project includes a **treasury agent** to manage the overall fund on behalf of the project owner (Agent company, developers). And all the other instances of agent will be **autonomous agent**, each autonomous agent have its own t54 financial account, representing the third party end human user.
+Each project includes a **treasury agent** to manage overall funds on behalf of the project owner (agent companies or developers). All other agent instances are **autonomous agents**, each with their own t54 financial account representing third-party end users.
 
-Project management can only be accessed through **tPortal**, our web based dashboard for developers.
+Project management is exclusively accessible through **tPortal**, our web-based dashboard for developers.
 
 ## Agent (Financial Profile)
 
-An Agent represents a financial identity for an individual AI agent. Each agent belongs to one Project. And each **autonomous** agent represents one \*\*instance \*\*which should be initiated and connected with a human user. Autonomous agents usually carry out actions for humans.  **Treasury agents** serve a special case to manage project own treasury funds.
+An Agent represents a financial identity for an individual AI agent. Each agent belongs to one Project, and each **autonomous** agent represents one instance that should be initiated and connected with a human user. Autonomous agents typically carry out actions for humans, while **treasury agents** serve the special purpose of managing project treasury funds.
 
-Each agent will also have a daily transaction limit and associated multi-asset accounts.
+Each agent maintains a daily transaction limit and associated multi-asset accounts.
 
-Note: t54 labs don't host AI agents, but empower AI agents with financial capability. The **agents** term in t54 labs represent the financial profile and its associated financial capability, effectively the financial profile of the AI agent.
+**Important Note:** t54 does not host AI agents but empowers them with financial capabilities. The term "agents" in t54 refers to the financial profile and associated financial capabilities—effectively the financial identity of the AI agent.
 
 ## Account
 
-A virtual account is linked to an agent and holds a specific asset (e.g., SOL, USDT) on specific network. It functions as a virtual account to the agent, which means agent doesn't initiate payment from any of their asset account, but from their agent profile account - their agent id 'agnt\_xxx'. tLedger will automatically manage different networks and different currencies across different asset accounts and sync with the blockchain ledger.
+A virtual account is linked to an agent and holds a specific asset (e.g., SOL, USDT) on a specific network. It functions as a virtual account for the agent, meaning agents don't initiate payments directly from their asset accounts, but from their agent profile account using their agent ID `agnt_xxx`. tLedger automatically manages different networks and currencies across various asset accounts and synchronizes with the blockchain ledger.
 
-This is a sample of an agent object with asset accounts:
+For information about currently supported blockchain networks, visit our [Supported Chains documentation](https://docs.t54.ai/v1.2/update/docs/supported-chains#/).
 
-```json json
+## Example Agent Object
+
+Below is a sample agent object with associated asset accounts:
+
+```json
 {
    "agent":{
       "object":"agent",
