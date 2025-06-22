@@ -9,9 +9,9 @@ To help developers understand how tLedger structures different layers of objects
 
 ```mermaid
 graph TD
-    Users --> ProjectA
-    Users --> ProjectB
-    Users --> ProjectC
+    Developers --> ProjectA
+    Developers --> ProjectB
+    Developers --> ProjectC
 
     ProjectA --> agnt_xxx_01
     ProjectA --> agnt_xxx_02
