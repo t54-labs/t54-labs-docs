@@ -7,11 +7,7 @@ metadata:
 ---
 tLedger is t54's foundational product—a blockchain-agnostic account & ledger designed to support AI agent-initiated financial transactions. It enables developers to create and manage agent-level virtual accounts, set programmable spending limits, and trigger on-chain payments via a lightweight SDK.
 
-## What is tLedger?
-
-tLedger is an AI agent-native ledger system offering account management, blockchain transactions, dashboard portal, and compatibility with major agent workflow frameworks. The platform enforces compliance through Know Your Agent (KYA) protocols and centralized risk controls, giving developers the tooling to deploy financially autonomous agents at scale.
-
-Each agent is provisioned with multi-asset wallets (e.g., USDT, SOL), and all activity is surfaced through robust APIs and a web-based portal.
+tLedger seamlessly connect to tRadar
 
 ## Key Features
 
@@ -27,13 +23,21 @@ Interact with multiple blockchains, enabling transaction recording and synchroni
 
 Standard on-chain payment protocol handling sender-to-receiver transactions, including blockchain-based payment information, addresses, and payment purposes.
 
+### Framework Integration
+
+Native plugins for mainstream web3 agent frameworks, including GAME by Virtual Protocols.
+
+<br />
+
+<br />
+
+<br />
+
 ### Management Portal
 
 Web-based portal with user-friendly UI/UX that surfaces API actions through an intuitive interface built with modern frameworks.
 
-### Framework Integration
-
-Native plugins for mainstream web3 agent frameworks, including GAME by Virtual Protocols and Eliza by ai16z.
+<br />
 
 ## Who should use tLedger?
 
