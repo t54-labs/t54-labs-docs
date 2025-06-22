@@ -11,41 +11,39 @@ next:
       title: tledger API
       type: basic
 ---
-# 🚀 tPay SDK Developer Integration Guide
+# tPay SDK Developer Integration Guide
 
-<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/tpay-sdk-python/">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github\&logoColor=white)</Anchor>
+[View source code](https://github.com/t54-labs/tpay-sdk-python/)
 
 ## Overview
 
 tPay SDK provides AI agents with **autonomous financial capabilities** - essentially giving your agents the ability to open bank accounts and execute payments independently. This enables agents to make financial decisions and complete transactions as part of their autonomous decision-making process.
 
-<br />
-
-## 🏗️ tPay SDK Architecture
+## tPay SDK Architecture
 
 ```mermaid
 graph TB
-    A[🤖 Your AI Agent] --> B[🧠 Agent Decision Engine]
-    B --> C[🛠️ tPay SDK Tools]
+    A[Your AI Agent] --> B[Agent Decision Engine]
+    B --> C[tPay SDK Tools]
     
-    C --> D[🆔 Agent Identity]
-    C --> E[💰 Balance Management]
-    C --> F[💳 Autonomous Payment]
-    C --> G[🔍 Transaction Tracking]
+    C --> D[Agent Identity]
+    C --> E[Balance Management]
+    C --> F[Autonomous Payment]
+    C --> G[Transaction Tracking]
     
-    D --> H[📊 tRadar Compliance]
+    D --> H[tRadar Compliance]
     E --> H
     F --> H
     G --> H
     
-    H --> I[🌐 Multi-Chain Networks]
-    I --> J[⛓️ Solana]
-    I --> K[⛓️ XRPL]
-    I --> L[⛓️ Other Networks]
+    H --> I[Multi-Chain Networks]
+    I --> J[Solana]
+    I --> K[XRPL]
+    I --> L[Other Networks]
     
-    M[🏦 Traditional Banking] -.->|Replace| C
-    N[💳 Manual Payments] -.->|Automate| F
-    O[👨‍💼 Human Oversight] -.->|Autonomous| B
+    M[Traditional Banking] -.->|Replace| C
+    N[Manual Payments] -.->|Automate| F
+    O[Human Oversight] -.->|Autonomous| B
     
     style A fill:#e1f5fe
     style C fill:#f3e5f5
@@ -53,35 +51,27 @@ graph TB
     style I fill:#fff3e0
 ```
 
-<br />
+## Core Capabilities
 
-## 📋 Core Capabilities
-
-### 🏦 **Digital Banking for Agents**
+### Digital Banking for Agents
 
 * **Agent Account Creation**: Programmatically create financial identities for your agents
 * **Multi-Asset Support**: Handle various cryptocurrencies (USDT, XRP, SOL, etc.)
 * **Real-time Balance Tracking**: Query agent balances across multiple networks
 
-<br />
-
-### 💸 **Autonomous Payment Processing**
+### Autonomous Payment Processing
 
 * **Direct Transfers**: Agent-to-agent payments without human intervention
 * **Smart Routing**: Automatic network selection and optimization
 * **Transaction Verification**: Built-in compliance and fraud protection
 
-<br />
-
-### 🤝 **Agent-to-Agent Commerce**
+### Agent-to-Agent Commerce
 
 * **Dispute Resolution**: Autonomous conflict resolution between agents
 * **Challenge Handling**: Smart retry mechanisms for failed transactions
 * **Cross-Network Operations**: Seamless payments across different blockchain networks
 
-<br />
-
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -99,17 +89,15 @@ python -m venv tpay_env
 source tpay_env/bin/activate  # On Windows: tpay_env\Scripts\activate
 ```
 
-<br />
-
 ### Installation Options
 
-**📦 Option 1: Basic Installation (Synchronous)**
+**Option 1: Basic Installation (Synchronous)**
 
 ```powershell
 pip install tpay
 ```
 
-**⚡ Option 2: Full Installation (Async Support)**
+**Option 2: Full Installation (Async Support)**
 
 ```powershell
 pip install tpay[async]
@@ -117,14 +105,12 @@ pip install tpay[async]
 pip install tpay[all]
 ```
 
-**🔧 Option 3: Development Installation**
+**Option 3: Development Installation**
 
 ```powershell
 # From /dist
 pip install tpay-0.1.1.tar.gz[async]
 ```
-
-<br />
 
 ### Dependencies
 
@@ -138,11 +124,9 @@ pip install tpay-0.1.1.tar.gz[async]
 * `httpx>=0.24.0` - For async operations (with `[async]` install)
 * `pydantic>=2.0.0` - Data validation (optional)
 
-<br />
+## Step-by-Step Integration
 
-## 🔧 Step-by-Step Integration
-
-### Step 1: 🔑 Get API Credentials
+### Step 1: Get API Credentials
 
 1. Visit [tPortal](https://portal.t54.ai) and create an account
 2. Create a new project and obtain:
@@ -150,9 +134,7 @@ pip install tpay-0.1.1.tar.gz[async]
    * `API_SECRET` - Your secret key
    * `PROJECT_ID` - Your project identifier
 
-<br />
-
-### Step 2: 🌍 Environment Configuration
+### Step 2: Environment Configuration
 
 Create a `.env` file in your project root:
 
@@ -164,9 +146,7 @@ TLEDGER_PROJECT_ID=your_project_id_here
 TLEDGER_API_BASE_URL=https://api.t54.ai/api/v1
 ```
 
-<br />
-
-### Step 3: 🚀 Initialize SDK
+### Step 3: Initialize SDK
 
 ```python
 import tpay
@@ -185,12 +165,10 @@ tpay.tpay_initialize(
     timeout=30  # Optional: request timeout in seconds
 )
 
-print("✅ tPay SDK initialized successfully!")
+print("tPay SDK initialized successfully!")
 ```
 
-<br />
-
-### Step 4: 🤖 Create Agent Financial Identity
+### Step 4: Create Agent Financial Identity
 
 ```python
 # Create a new agent with financial capabilities
@@ -203,14 +181,12 @@ agent_data = tpay.create_agent(
 
 if agent_data:
     agent_id = agent_data['id']
-    print(f"🎉 Agent created with ID: {agent_id}")
+    print(f"Agent created with ID: {agent_id}")
 else:
-    print("❌ Failed to create agent")
+    print("Failed to create agent")
 ```
 
-<br />
-
-### Step 5: 🛠️ Register Financial Tools
+### Step 5: Register Financial Tools
 
 ```python
 # Create tPay financial tools for your agent
@@ -220,12 +196,10 @@ payment_tool = tpay.tpay_toolkit_payment()
 # Get tool definitions for LLM integration
 financial_tools = tpay.get_all_tool_definitions()
 
-print(f"📋 Registered {len(financial_tools)} financial tools")
+print(f"Registered {len(financial_tools)} financial tools")
 ```
 
-<br />
-
-### Step 6: 🧠 Integrate with Your Agent
+### Step 6: Integrate with Your Agent
 
 ```python
 from openai import OpenAI
@@ -262,8 +236,8 @@ def create_financial_agent():
                 "content": """You are an autonomous agent with financial capabilities.
                 
                 Available financial tools:
-                🏦 get_agent_balance(agent_id) - Check agent's current balance
-                💳 create_payment(agent_id, receiving_agent_id, amount, currency, settlement_network) - Execute payments
+                get_agent_balance(agent_id) - Check agent's current balance
+                create_payment(agent_id, receiving_agent_id, amount, currency, settlement_network) - Execute payments
                 
                 You can autonomously:
                 - Check your financial capacity before making decisions
@@ -278,9 +252,7 @@ def create_financial_agent():
     )
 ```
 
-<br />
-
-### Step 7: 🎯 Execute Financial Operations
+### Step 7: Execute Financial Operations
 
 ```python
 # Tool execution handler
@@ -307,7 +279,7 @@ balance_result = execute_financial_tool("get_agent_balance", {
     "agent_id": agent_id
 })
 
-print(f"💰 Agent balance: {balance_result}")
+print(f"Agent balance: {balance_result}")
 
 # Example: Agent executes autonomous payment
 payment_result = execute_financial_tool("create_payment", {
@@ -318,18 +290,14 @@ payment_result = execute_financial_tool("create_payment", {
     "settlement_network": "solana"
 })
 
-print(f"💳 Payment result: {payment_result}")
+print(f"Payment result: {payment_result}")
 ```
-
-<br />
 
 ### Complete End-to-End Example
 
 Please check more [Use Cases](../docs/shopping-assistant) we provide as a guidance.
 
-<br />
-
-## ⚡ Async Integration (Advanced)
+## Async Integration (Advanced)
 
 For high-performance applications requiring concurrent operations:
 
@@ -357,16 +325,14 @@ async def async_agent_operations():
         tpay.async_get_agent_asset_balance(agents[2]['id'], "xrpl", "XRP")
     )
     
-    print("🚀 All operations completed concurrently!")
+    print("All operations completed concurrently!")
     return agents, balances
 
 # Run async operations
 asyncio.run(async_agent_operations())
 ```
 
-<br />
-
-## 🔒 Security & Compliance
+## Security & Compliance
 
 ### Automatic Audit Trail
 
@@ -376,10 +342,10 @@ asyncio.run(async_agent_operations())
 def audited_financial_operation():
     """
     This function is automatically:
-    ✅ Tracked and logged
-    ✅ Compliance-verified
-    ✅ Cryptographically signed
-    ✅ Risk-assessed
+    - Tracked and logged
+    - Compliance-verified
+    - Cryptographically signed
+    - Risk-assessed
     """
     pass
 
@@ -388,14 +354,12 @@ def audited_financial_operation():
 def tracked_tool():
     """
     Tool usage is automatically:
-    ✅ Monitored for behavior patterns
-    ✅ Recorded for analytics
-    ✅ Verified for authenticity
+    - Monitored for behavior patterns
+    - Recorded for analytics
+    - Verified for authenticity
     """
     pass
 ```
-
-<br />
 
 ### Error Handling
 
@@ -409,19 +373,17 @@ try:
         amount=100.0
     )
 except TPayAPIError as e:
-    print(f"❌ API Error: {e.message}")
+    print(f"API Error: {e.message}")
     print(f"Status Code: {e.status_code}")
     
 except TPayError as e:
-    print(f"❌ tPay Error: {e}")
+    print(f"tPay Error: {e}")
     
 except Exception as e:
-    print(f"❌ Unexpected error: {e}")
+    print(f"Unexpected error: {e}")
 ```
 
-<br />
-
-## 🚦 Production Deployment
+## Production Deployment
 
 ### Environment Setup
 
@@ -443,11 +405,9 @@ tpay.tpay_initialize(
 )
 ```
 
-<br />
+## Key Concepts
 
-## 💡 Key Concepts
-
-### 🤖 **Agent Autonomy**
+### Agent Autonomy
 
 Your agents gain the ability to make financial decisions independently:
 
@@ -455,9 +415,7 @@ Your agents gain the ability to make financial decisions independently:
 * **Autonomous transactions**: Complete payments without human intervention
 * **Smart rejection handling**: Automatically retry failed transactions with enhanced data
 
-<br />
-
-### 🔄 **Integration Philosophy**
+### Integration Philosophy
 
 The SDK is designed to augment your existing agent capabilities:
 
@@ -465,17 +423,13 @@ The SDK is designed to augment your existing agent capabilities:
 * **Tool-based**: Financial operations are exposed as callable tools
 * **Autonomous**: Agents decide when and how to use financial capabilities
 
-<br />
+## Next Steps
 
-## 🎯 Next Steps
-
-1. **📚 Study Use Cases**: Check out our [Shopping Assistant Use Case](/docs/shopping-assistant) to see real-world implementation
-2. **🧪 Test Integration**: Start with small transactions in development mode
-3. **📈 Scale Up**: Implement async operations for production workloads
-4. **🔍 Monitor**: Use built-in analytics to optimize agent financial behavior
-
-<br />
+1. **Study Use Cases**: Check out our [Shopping Assistant Use Case](/docs/shopping-assistant) to see real-world implementation
+2. **Test Integration**: Start with small transactions in development mode
+3. **Scale Up**: Implement async operations for production workloads
+4. **Monitor**: Use built-in analytics to optimize agent financial behavior
 
 ***
 
-*Ready to give your AI agents financial superpowers? Start building with tPay SDK today!* 🚀💳
+*Ready to give your AI agents financial superpowers? Start building with tPay SDK today!*
