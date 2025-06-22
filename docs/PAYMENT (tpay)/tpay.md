@@ -11,10 +11,10 @@ tPay is t54's end-to-end payment solution designed to extend agent-initiated tra
 
 tPay delivers comprehensive payment infrastructure through advanced enterprise capabilities:
 
-• **Payment Protocols** - Structured data exchange supporting payer, payee, and transaction purpose information\
-• **Currency Conversion** - Cross-network and cross-asset conversion (crypto-to-crypto, crypto-to-fiat)
-• **Quote Engine** - Dynamic pricing and fee calculation for optimal transaction routing
-• **Failure Handling** - Intelligent retry mechanisms and transaction recovery for failed payments
+* **Payment Protocols** - Structured data exchange supporting payer, payee, and transaction purpose information
+* **Currency Conversion** - Cross-network and cross-asset conversion (crypto-to-crypto, crypto-to-fiat)
+* **Quote Engine** - Dynamic pricing and fee calculation for optimal transaction routing
+* **Failure Handling** - Intelligent retry mechanisms and transaction recovery for failed payments
 
 ## Current Status & Roadmap
 
@@ -31,8 +31,8 @@ tPay currently provides robust **on-chain payment protocols** that enable:
 
 The following enterprise-grade features are in active development:
 
-• **Fiat Currency Integration** - Direct conversion and settlement in traditional currencies (USD, EUR, etc.)\
-• **Cross-Border Payments** - International money transfers with regulatory compliance
-• **Transaction Reconciliation** - Real-time reporting and settlement tracking
-• **Advanced Compliance** - Fraud detection, AML screening, and sanctions compliance
-• **Traditional Banking Integration** - Direct connectivity to banking networks and payment processors
+* **Fiat Currency Integration** - Direct conversion and settlement in traditional currencies (USD, EUR, etc.)
+* **Cross-Border Payments** - International money transfers with regulatory compliance
+* **Transaction Reconciliation** - Real-time reporting and settlement tracking
+* **Advanced Compliance** - Fraud detection, AML screening, and sanctions compliance
+* **Traditional Banking Integration** - Direct connectivity to banking networks and payment processors
