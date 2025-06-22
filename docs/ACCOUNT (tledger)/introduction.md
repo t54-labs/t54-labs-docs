@@ -13,7 +13,7 @@ tLedger seamlessly connects to t54 Portal, allowing developers to manage agents,
 
 tLedger provides comprehensive infrastructure for AI agent financial operations through four core capabilities:
 
-• **Agent Virtual Accounts** - Create, delete, and update virtual accounts for AI agents with full authentication and account management capabilities\
-• **Blockchain Ledger Service** - Interact with multiple blockchains, enabling transaction recording and synchronization with blockchain ledgers across different networks
-• **Payment Protocol** - Standard on-chain payment protocol handling sender-to-receiver transactions, including blockchain-based payment information, addresses, and payment purposes
-• **Framework Integration** - Native plugins for mainstream web3 agent frameworks, including GAME by Virtual Protocols
+* **Agent Virtual Accounts** - Create, delete, and update virtual accounts for AI agents with full authentication and account management capabilities
+* **Blockchain Ledger Service** - Interact with multiple blockchains, enabling transaction recording and synchronization with blockchain ledgers across different networks
+* **Payment Protocol** - Standard on-chain payment protocol handling sender-to-receiver transactions, including blockchain-based payment information, addresses, and payment purposes
+* **Framework Integration** - Native plugins for mainstream web3 agent frameworks, including GAME by Virtual Protocols
