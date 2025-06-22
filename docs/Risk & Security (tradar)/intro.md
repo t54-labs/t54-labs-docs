@@ -1,42 +1,23 @@
 ---
 title: Introduction
-excerpt: Agents will conquer the complexity of global finance.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## **Finance is, at its core, a business of trust.**
+tRadar is t54's AI-native compliance and risk management framework—designed to bring trust, auditability, and guardrails to agent-initiated financial activity. Built as a network of Validator Agents, tRadar inspects every payment transaction before execution, providing institutional-grade security for autonomous finance.
 
-The moment we ask users to let an autonomous software Agent—not a human banker, fund manager, or family office—initiate, route, and settle their transactions, the bar for safety rises sharply. Level-4 Agentic Finance re-imagines the traditional “custody” model as a delegated protocol relationship: capital and decision-making authority are handed to an entity that exists entirely outside today’s legal and financial ecosystems. For that leap to feel safe, trust must be engineered rather than assumed.
+## What is tRadar?
 
-t54 approaches this challenge with two complementary layers: **tAudit** and **tRadar**.
+tRadar is a real-time risk engine that marshals a committee of AI validator agents to scrutinize each payment transaction. Rather than relying on a single gatekeeper or fixed rules, tRadar uses multiple independent validators that analyze transaction context, agent behavior, and risk patterns to reach consensus on whether transactions should proceed.
 
-<br />
+The system provides validators with complete reasoning context—including the agent's decision process, function calls, and environmental data—enabling sophisticated risk assessment that goes far beyond traditional rule-based systems.
 
-**tAudit** performs **Know-Your-Agent (KYA)** due-diligence on the Agent’s own codebase and configuration. It fingerprints source code, model checkpoints, and prompt chains, then records the results on an immutable ledger. This audit trail becomes a verifiable root of trust for **tRadar**.
+## Key Features
 
-**tRadar** is our real-time risk-engine and the heartbeat of security. Built entirely as a network of Validator Agents, tRadar inspects every payment transaction before it leaves an Agent’s account, replaying the complete reasoning context (multi-step chain-of-thought, external calls, and environmental data, etc.) to detect anomalies. Validators use diverse reasoning models, prompts, and proprietary data; their voting weights adjust dynamically based on performance, data depth, and the amount of native t54 tokens they stake, etc. Each transaction is cleared—or halted—by a committee, delivering a probabilistic guarantee that no single validators can compromise system integrity.
+tRadar delivers comprehensive risk management through four core security layers:
 
-<br />
-
-Our conviction mirrors Tesla’s thesis that “software will conquer the physical world”; we believe **intelligent Agents will conquer the complexity of global finance**. As Agents evolve toward fully multimodal reasoning—speaking in tokens that blend text, audio, vision, and structured telemetry—only other Agents will understand that language natively. tRadar therefore embodies an Agent-for-Agent defense model: letting autonomous Validators police autonomous spenders, using the same multimodal vocabulary humans cannot parse in real time.
-
-By anchoring every Agent to an auditable identity (tAudit) and routing every transaction through a **decentralized, self-improving risk network** (tRadar), t54 provides the institutional-grade trust substrate that Agentic Finance needs to move from concept to mainstream adoption.
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-**This transition demands more than smarter APIs or better user interfaces**. It requires an entirely new financial substrate:
-
-* **Agent KYA (Know Your Agent)**: verifying agents not only by who created them, but by their **DNA**(prompts), **brain**(foundation models), **body**(code and function audit), and how they behave (reasoning process, behavior patterns, etc.).
-* **Agent-native risk management**: validating agents based on their code, model lineage, prompts, and reasoning chains, and more context—not by human or human based rule/algo engine, but **by agents**.
-* **Agent-agent protocols**: setting up communication standard in financial transactions including negotiation, coordination, and settlement among autonomous agents, without human intermediation.
-* **Dual-stack compliance**: bridging the gap between agentic and human-centric finance, allowing interoperation while preserving auditability and trust.
-
-Crucially, L4 Agentic Finance is not about replacing humans. It is about redefining the human role—**from executor to architect, from suffering anxiety to enjoying their life**. This unlocks a world where economic activity is not limited by bandwidth, availability, or cognitive load—but amplified by AI agents operating on behalf of individuals, teams, and institutions.
+* **Rule-Based Pre-Screening** - Lightweight rule engine for initial checks on transaction limits, frequency patterns, and known risk indicators
+* **Validator-Agent Network** - Committee of independent AI validators using diverse models to analyze transaction legitimacy and safety
+* **Dynamic Consensus** - Weighted voting system where validator influence is based on performance history, stake, and reliability metrics
+* **Challenge Mechanism** - Interactive escalation system that requests additional information from agents when consensus is uncertain
