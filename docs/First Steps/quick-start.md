@@ -37,9 +37,9 @@ In the **security tab of your project** you will find the client and server API 
 
 Now you're ready to explore what t54 can do! You can dive into our three core products:
 
-* **[tLedger](/docs/introduction#/)** - Agent-native account management and blockchain transactions
-* **[tPay](/docs/introduction-1#/)** - End-to-end payment solutions for real-world integration
-* **[tRadar](/docs/intro#/)** - AI-native compliance and risk management framework
+* **[tLedger](/docs/tledger)** - Agent-native account management and blockchain transactions
+* **[tPay](/docs/tpay)** - End-to-end payment solutions for real-world integration
+* **[tRadar](/docs/tradar)** - AI-native compliance and risk management framework
 
 ## Start with some use cases!
 
