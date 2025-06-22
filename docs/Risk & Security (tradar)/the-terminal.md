@@ -1,5 +1,5 @@
 ---
-title: 'The terminal: tRadar visualizer'
+title: Visualizer
 deprecated: false
 hidden: false
 metadata:
@@ -21,7 +21,7 @@ tRadar Terminal provides you unprecedented visibility into tRadar, the heart of 
 
 <br />
 
-### 🔍 **Live Transaction Flow Visualization**
+### **Live Transaction Flow Visualization**
 
 ![](https://files.readme.io/78a917c14415f5a524612a80cec8bd12022f6b5120fe24eef033099e3082f98c-screenshot-20250614-164217.png)
 
@@ -31,7 +31,7 @@ Watch transactions flow through our tPay network in real-time as animated connec
 
 <br />
 
-### 🤖 **Agent Validating in Action**
+### **Agent Validating in Action**
 
 ![](https://files.readme.io/62b35519104799a90cd45b2f55f051c2b0d43fc46bc8c6249ca5ba39f4da3ec9-614-ezgif.com-video-to-gif-converter.gif)
 
@@ -69,7 +69,7 @@ On this terminal, you can also view a visual representation of each Agent’s **
 
 <br />
 
-## 📊 **What You Can Do**
+## **What You Can Do**
 
 * **Agent Nodes**: Circular nodes representing individual agents, hover or click to see the agent details
 * **Transaction Visualization**: Zoom in to check the real-time validating process, hover or click to see the payment transaction details
