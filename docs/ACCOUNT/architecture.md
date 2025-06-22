@@ -40,7 +40,7 @@ An Agent represents a financial identity for an individual AI agent. Each agent 
 
 Each agent maintains a daily transaction limit and associated multi-asset accounts.
 
-**Important Note:** t54 does not host AI agents but empowers them with financial capabilities. The term "agents" in t54 refers to the financial profile and associated financial capabilities—effectively the financial identity of the AI agent.
+`**Important Note:** t54 does not host AI agents but empowers them with financial capabilities. The term "agents" in t54 refers to the financial profile and associated financial capabilities—effectively the financial identity of the AI agent.`
 
 ## Account
 
