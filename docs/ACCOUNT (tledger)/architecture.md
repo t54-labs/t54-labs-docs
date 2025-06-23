@@ -54,45 +54,84 @@ Below is a sample agent object with associated asset accounts:
 
 ```json
 {
-   "agent":{
-      "object":"agent",
-      "id":"agnt_95dcc7bb-dcc1-435a-a5c9-5e85ac57a4c5",
-      "project_id":"proj_c2b29e30-f2ab-4bbf-9d18-ab7d6c9aafb5",
-      "name":"Crypto Agent 8582e62b",
-      "agent_description":"Professional crypto agent focusing on financial operations",
-      "agent_type":"autonomous_agent",
-      "created_at":"2025-05-19T13:57:23.354234",
-      "updated_at":"2025-05-19T13:57:23.354234",
-      "daily_limit":100.0,
-      "project":"/api/v1/projects/proj_c2b29e30-f2ab-4bbf-9d18-ab7d6c9aafb5"
-   },
-   "account":[
-      {
-         "object":"account",
-         "id":"acct_2d95f75c-b908-455e-87b4-157f4d20eca2",
-         "owner_id":"c4eaf2b4-7de1-4146-8fbe-4bc1bc932338",
-         "balance":100.0,
-         "asset":"XRP",
-         "wallet_address":"rpp8XNAv5aCCY99p3WQQQpLQyW8E6eG2EF",
-         "network":"xrpl",
-         "is_testnet":true,
-         "account_metadata":"{}",
-         "created_at":"2025-05-19T13:57:23.800900",
-         "updated_at":"2025-05-19T13:57:34.570399"
-      },
-      {
-         "object":"account",
-         "id":"acct_9fbc8300-9273-4750-b843-82b6839f9f5d",
-         "owner_id":"c4eaf2b4-7de1-4146-8fbe-4bc1bc932338",
-         "balance":0.02,
-         "asset":"SOL",
-         "wallet_address":"FEfv1x5aYmtHLHGMSiXgfqchf1CPNo3BTYdqYCxcvvs7",
-         "network":"solana",
-         "is_testnet":true,
-         "account_metadata":"{}",
-         "created_at":"2025-05-19T13:57:23.785866",
-         "updated_at":"2025-05-19T13:57:50.226970"
-      }
-   ]
+    "agent": {
+        "object": "agent",
+        "id": "agnt_95dcc7bb-dcc1-435a-a5c9-5e85ac57a4c5",
+        "project_id": "proj_c2b29e30-f2ab-4bbf-9d18-ab7d6c9aafb5",
+        "name": "Crypto Agent 8582e62b",
+        "agent_description": "Professional crypto agent focusing on financial operations",
+        "agent_type": "autonomous_agent",
+        "created_at": "2025-06-21T20:43:59.557980",
+        "updated_at": "2025-06-21T20:43:59.557985",
+        "daily_limit": 100.0,
+        "project": "/api/v1/projects/proj_c2b29e30-f2ab-4bbf-9d18-ab7d6c9aafb5"
+    },
+    "account": [
+        {
+            "object": "account",
+            "id": "acct_efc8dd97-2a7e-4df1-92f0-51449faa1394",
+            "owner_id": "d52768ec-9cc0-4547-a15e-1ff2f4cae448",
+            "balance": 10.0,
+            "asset": "SOL",
+            "wallet_address": "9XEujVEA4mXLQLAJ88PfF9QdXnEFTssrsXtWR5yrjYsC",
+            "network": "SOLANA",
+            "is_testnet": true,
+            "account_metadata": "{}",
+            "created_at": "2025-06-21T20:43:59.496259",
+            "updated_at": "2025-06-21T20:43:59.496262"
+        },
+        {
+            "object": "account",
+            "id": "acct_1007738d-3ecf-45ca-85f7-b140b91c760b",
+            "owner_id": "d52768ec-9cc0-4547-a15e-1ff2f4cae448",
+            "balance": 0.0,
+            "asset": "USDT",
+            "wallet_address": "GJF6xjbW62v3NMwrrTKLuq86cw9DDeJfDVETCfe84dxf",
+            "network": "SOLANA",
+            "is_testnet": true,
+            "account_metadata": "{\"mint_id\": \"EJwZgeZrdC8TXTQbQBoL6bfuAnFUUy1PVCMB4DYPzVaS\", \"decimals\": 6}",
+            "created_at": "2025-06-21T20:43:59.511190",
+            "updated_at": "2025-06-21T20:43:59.511198"
+        },
+        {
+            "object": "account",
+            "id": "acct_3b5da8c8-23ef-42ba-ac91-8cd1a8c81d7e",
+            "owner_id": "d52768ec-9cc0-4547-a15e-1ff2f4cae448",
+            "balance": 0.0,
+            "asset": "USDC",
+            "wallet_address": "6eUWuHVEBpu9ANbqV9GKq9KdLABhdqeaEM16WgydtcVV",
+            "network": "SOLANA",
+            "is_testnet": true,
+            "account_metadata": "{\"mint_id\": \"4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU\", \"decimals\": 6}",
+            "created_at": "2025-06-21T20:43:59.517932",
+            "updated_at": "2025-06-21T20:43:59.517941"
+        },
+        {
+            "object": "account",
+            "id": "acct_434361e2-228d-4aca-9662-2abf4474ff68",
+            "owner_id": "d52768ec-9cc0-4547-a15e-1ff2f4cae448",
+            "balance": 10.0,
+            "asset": "XRP",
+            "wallet_address": "rDQAqAGLrwbPDHjPWQqMwV1WttDHALigAD",
+            "network": "XRPL",
+            "is_testnet": true,
+            "account_metadata": "{}",
+            "created_at": "2025-06-21T20:43:59.541929",
+            "updated_at": "2025-06-21T20:43:59.541931"
+        },
+        {
+            "object": "account",
+            "id": "acct_9b4a5dde-885f-4acf-9756-d2dc0b49cb5b",
+            "owner_id": "d52768ec-9cc0-4547-a15e-1ff2f4cae448",
+            "balance": 10.0,
+            "asset": "RLUSD",
+            "wallet_address": "rDQAqAGLrwbPDHjPWQqMwV1WttDHALigAD",
+            "network": "XRPL",
+            "is_testnet": true,
+            "account_metadata": "{}",
+            "created_at": "2025-06-21T20:43:59.547890",
+            "updated_at": "2025-06-21T20:43:59.547893"
+        }
+    ]
 }
 ```
