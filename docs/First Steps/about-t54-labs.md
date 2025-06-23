@@ -7,8 +7,6 @@ metadata:
 ---
 t54 labs builds an **Agentic financial infrastructure for the Agent Economy**. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, **t54 provides the infrastructure to do it safely and confidently**.
 
-<br />
-
 ## Explore the products
 
 |                     💳 **tLedger**                    |                                                                     🛡️ **tRadar**                                                                    |                          💰 **tPay**                          |                                   📊 **tPortal**                                  |
@@ -16,8 +14,6 @@ t54 labs builds an **Agentic financial infrastructure for the Agent Economy**. t
 |                 **Account Management**                |                                                                  **Risk Management**                                                                  |                        **AI Payments**                        |                               **Unified Dashboard**                               |
 | Blockchain-agnostic agent account management platform | Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security** | Comprehensive AI payment solution for real-world applications | Track users, agents, and financial profiles, all from a single unified dashboard. |
 |           [**Learn More →**](/docs/tledger)           |                                                            [**Learn More →**](/docs/tradar)                                                           |                 [**Learn More →**](/docs/tpay)                |                         [**Learn More →**](/docs/tportal)                         |
-
-<br />
 
 ## What you can do with t54
 
