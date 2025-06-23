@@ -10,7 +10,11 @@ Throughout human history, we have maintained exclusive custody over financial de
 
 **Imagine a different world.** Your AI agent pays bills, manages investments, negotiates credit terms, optimizes taxes, rebalances budgets, and adjusts retirement plans—all without prompting. You don't manage money. You manage outcomes.
 
+<br />
+
 ## This is not automation. This is autonomy.
+
+<br />
 
 Agentic Finance at Level 4 (L4) represents a paradigm shift as profound as full self-driving in transportation. Just as L4 autonomous vehicles eliminate the need for human drivers, L4 finance eliminates constant human micromanagement. The result: **hyper-personalized, intelligent financial experiences free from anxiety.**
 
@@ -19,6 +23,8 @@ Agentic Finance at Level 4 (L4) represents a paradigm shift as profound as full 
 *A single mother in Manila no longer juggles five apps to manage remittances, school fees, groceries, and utilities. Her agent tracks cash flow, pays bills on time, budgets for future expenses, and finds better insurance—automatically.*
 
 *A freelancer in Lagos deploys an agent that dynamically discovers bank promotions and autonomously sweeps deposits to maximize interest returns.*
+
+<br />
 
 ### The Evolution: L1 to L4 Finance
 
