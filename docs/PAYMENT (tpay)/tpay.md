@@ -7,8 +7,6 @@ metadata:
 ---
 tPay is t54's end-to-end payment solution designed to extend agent-initiated transactions beyond on-chain rails to fiat currencies, cross-border payments, and traditional financial infrastructure. It empowers AI agents to make payments to humans, businesses, or other agents across networks and currencies with enterprise-grade intelligence and precision.
 
-<br />
-
 ## Key Features
 
 tPay delivers comprehensive payment infrastructure through advanced enterprise capabilities:
@@ -18,11 +16,7 @@ tPay delivers comprehensive payment infrastructure through advanced enterprise c
 * **Quote Engine** - Dynamic pricing and fee calculation for optimal transaction routing
 * **Failure Handling** - Intelligent retry mechanisms and transaction recovery for failed payments
 
-<br />
-
 ## Current Status & Roadmap
-
-<br />
 
 ### Available Now: On-Chain Payment Infrastructure
 
@@ -32,8 +26,6 @@ tPay currently provides robust **on-chain payment protocols** that enable:
 * Structured transaction data with full context and purpose tracking
 * Integration with tLedger account management and tRadar risk controls
 * Multi-asset support (USDT, SOL, XRP, and other supported cryptocurrencies)
-
-<br />
 
 ### Coming Soon: Real-World Financial Integration
 
