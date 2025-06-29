@@ -1,2 +1,3 @@
 - balances-get_balance_by_agent
 - balances-get_project_balances
+- balances-get_agent_asset_balance
