@@ -1,5 +1,6 @@
 ---
 title: Introduction
+excerpt: Autonomous transactions without friction
 deprecated: false
 hidden: false
 metadata:
