@@ -1,5 +1,5 @@
 ---
-title: Agentic Monoply
+title: Agentic Monopoly
 deprecated: false
 hidden: false
 metadata:
