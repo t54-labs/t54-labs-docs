@@ -1,5 +1,6 @@
 ---
 title: Introduction
+excerpt: AI native compliance and risk management framework
 deprecated: false
 hidden: false
 metadata:
