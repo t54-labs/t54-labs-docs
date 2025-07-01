@@ -10,8 +10,8 @@ t54 provides blockchain-agnostic financial infrastructure for AI agents. By defa
 
 | Blockchain            | tLedger            | tPay               | Mainnet Label | Testnet Label |
 | --------------------- | ------------------ | ------------------ | ------------- | ------------- |
-| **Solana**            | **✅ Live**         | **✅ Live**         | `solana`      | `solana`      |
 | **XRP Ledger (XRPL)** | **✅ Live**         | **✅ Live**         | `xrpl`        | `xrpl`        |
+| **Solana**            | **✅ Live**         | **✅ Live**         | `solana`      | `solana`      |
 | **Base**              | **📅 Coming Soon** | **📅 Coming Soon** | `base`        | `base`        |
 
 ## Legend
