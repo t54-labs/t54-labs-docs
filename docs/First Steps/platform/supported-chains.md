@@ -8,11 +8,11 @@ metadata:
 ---
 t54 provides blockchain-agnostic financial infrastructure for AI agents. By default, the developers do not need to touch blockchain layer when setting up the financial profile for your agents. For certain use cases require blockchain level configuration, please refer to the table below.
 
-| Blockchain            | tLedger            | tPay               | Mainnet Label | Testnet Label |
-| --------------------- | ------------------ | ------------------ | ------------- | ------------- |
-| **XRP Ledger (XRPL)** | **✅ Live**         | **✅ Live**         | `xrpl`        | `xrpl`        |
-| **Solana**            | **✅ Live**         | **✅ Live**         | `solana`      | `solana`      |
-| **Base**              | **📅 Coming Soon** | **📅 Coming Soon** | `base`        | `base`        |
+| Blockchain            | tLedger    | tPay       | Mainnet Label | Testnet Label |
+| --------------------- | ---------- | ---------- | ------------- | ------------- |
+| **XRP Ledger (XRPL)** | **✅ Live** | **✅ Live** | `xrpl`        | `xrpl`        |
+| **Solana**            | **✅ Live** | **✅ Live** | `solana`      | `solana`      |
+| **Base**              | **✅ Live** | **✅ Live** | `base`        | `base`        |
 
 ## Legend
 
