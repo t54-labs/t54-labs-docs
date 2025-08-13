@@ -240,6 +240,11 @@ To use this server with Claude Desktop:
 3. Replace `/absolute/path/to/t54-mcp` with the actual absolute path to this directory
 4. Replace `your-api-key` and `your-api-secret` with your actual t54 API credentials
 5. Restart Claude Desktop
+6. You could also drag the t54 dxt file into the Claude Desktop window to add it automatically.
+
+<Image align="center" src="https://files.readme.io/346eafdd3ce706b0bc3e04d862870d809055f40e030a5611ac6f4ea30bc3e9d6-Screenshot_2025-08-12_at_8.21.46_PM.png" />
+
+<Image align="center" src="https://files.readme.io/020ffbd0c0e8116fefe16081f8f508a61ae793db9021d86be2952cfec119d4bd-Screenshot_2025-08-12_at_8.22.06_PM.png" />
 
 ## API Configuration
 
