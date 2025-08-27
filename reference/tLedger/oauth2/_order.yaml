@@ -1,0 +1,11 @@
+- oauth2-openid_configuration
+- oauth2-oauth_authorization_server
+- oauth2-jwks
+- oauth2-register_client
+- oauth2-get_client
+- oauth2-authorize_get
+- oauth2-authorize_post
+- oauth2-token
+- oauth2-userinfo
+- oauth2-revoke_token
+- oauth2-introspect_token

@@ -5,6 +5,550 @@
     "version": "0.1.0"
   },
   "paths": {
+    "/.well-known/openid-configuration": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Openid Configuration",
+        "description": "OpenID Connect discovery endpoint.",
+        "operationId": "OAuth2-openid_configuration",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/oauth-authorization-server": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Oauth Authorization Server",
+        "description": "OAuth2 Authorization Server Metadata endpoint (RFC 8414).\n\nThis provides metadata about the OAuth2 authorization server\nfor automatic client configuration and discovery.",
+        "operationId": "OAuth2-oauth_authorization_server",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/jwks.json": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Jwks",
+        "description": "JSON Web Key Set endpoint - provides public keys for JWT verification.\n\nThis endpoint returns the public keys that clients can use to verify\nJWT signatures. This is required for RS256 token validation.",
+        "operationId": "OAuth2-jwks",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/register": {
+      "post": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Register Client",
+        "description": "Dynamic Client Registration endpoint (RFC 7591).\nSupports Claude Desktop MCP integration with special handling.",
+        "operationId": "OAuth2-register_client",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClientRegistrationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientRegistrationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/register/{client_id}": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Get Client",
+        "description": "Get client registration information.",
+        "operationId": "OAuth2-get_client",
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Client Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/authorize": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Authorize Get",
+        "description": "Authorization endpoint - GET request shows login form.",
+        "operationId": "OAuth2-authorize_get",
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Client Id"
+            }
+          },
+          {
+            "name": "redirect_uri",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uri",
+              "minLength": 1,
+              "title": "Redirect Uri"
+            }
+          },
+          {
+            "name": "response_type",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Response Type"
+            }
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Scope"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "State"
+            }
+          },
+          {
+            "name": "code_challenge",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Code Challenge"
+            }
+          },
+          {
+            "name": "code_challenge_method",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Code Challenge Method"
+            }
+          },
+          {
+            "name": "nonce",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Nonce"
+            }
+          },
+          {
+            "name": "resource",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Resource server (audience) for the access token",
+              "title": "Resource"
+            },
+            "description": "Resource server (audience) for the access token"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Authorize Post",
+        "description": "Authorization endpoint - POST request processes login.",
+        "operationId": "OAuth2-authorize_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_OAuth2-authorize_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/token": {
+      "post": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Token",
+        "description": "Token endpoint for authorization code and refresh token grants.",
+        "operationId": "OAuth2-token",
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_OAuth2-token"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/userinfo": {
+      "get": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Userinfo",
+        "description": "UserInfo endpoint - returns user information for the access token.",
+        "operationId": "OAuth2-userinfo",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/revoke": {
+      "post": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Revoke Token",
+        "description": "Token Revocation endpoint (RFC 7009).\n\nRevokes an access token or refresh token.\nClients must authenticate using client_secret_basic or client_secret_post.",
+        "operationId": "OAuth2-revoke_token",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_OAuth2-revoke_token"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2/introspect": {
+      "post": {
+        "tags": [
+          "OAuth2"
+        ],
+        "summary": "Introspect Token",
+        "description": "Token Introspection endpoint (RFC 7662).\n\nReturns information about a token (active status, scopes, expiry, etc.).\nClients must authenticate using client_secret_basic or client_secret_post.",
+        "operationId": "OAuth2-introspect_token",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_OAuth2-introspect_token"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/payment": {
       "post": {
         "tags": [
@@ -158,17 +702,17 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "pattern": "^(created_at|amount)$"
+                  "pattern": "^(created_at|payment_amount_usd)$"
                 },
                 {
                   "type": "null"
                 }
               ],
-              "description": "Field to sort by: 'created_at' or 'amount'",
+              "description": "Field to sort by: 'created_at' or 'payment_amount_usd'",
               "default": "created_at",
               "title": "Sort By"
             },
-            "description": "Field to sort by: 'created_at' or 'amount'",
+            "description": "Field to sort by: 'created_at' or 'payment_amount_usd'",
             "example": "created_at"
           },
           {
@@ -4242,6 +4786,270 @@
         ],
         "title": "AuthProvider"
       },
+      "Body_OAuth2-authorize_post": {
+        "properties": {
+          "client_id": {
+            "type": "string",
+            "title": "Client Id"
+          },
+          "redirect_uri": {
+            "type": "string",
+            "title": "Redirect Uri"
+          },
+          "response_type": {
+            "type": "string",
+            "title": "Response Type"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope",
+            "default": ""
+          },
+          "state": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          },
+          "code_challenge": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Code Challenge"
+          },
+          "code_challenge_method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Code Challenge Method"
+          },
+          "resource": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Resource"
+          },
+          "username": {
+            "type": "string",
+            "title": "Username"
+          },
+          "password": {
+            "type": "string",
+            "title": "Password"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_id",
+          "redirect_uri",
+          "response_type",
+          "username",
+          "password"
+        ],
+        "title": "Body_OAuth2-authorize_post"
+      },
+      "Body_OAuth2-introspect_token": {
+        "properties": {
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "token_type_hint": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Token Type Hint"
+          },
+          "client_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Id"
+          },
+          "client_secret": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Secret"
+          }
+        },
+        "type": "object",
+        "required": [
+          "token"
+        ],
+        "title": "Body_OAuth2-introspect_token"
+      },
+      "Body_OAuth2-revoke_token": {
+        "properties": {
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "token_type_hint": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Token Type Hint"
+          },
+          "client_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Id"
+          },
+          "client_secret": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Secret"
+          }
+        },
+        "type": "object",
+        "required": [
+          "token"
+        ],
+        "title": "Body_OAuth2-revoke_token"
+      },
+      "Body_OAuth2-token": {
+        "properties": {
+          "grant_type": {
+            "type": "string",
+            "title": "Grant Type"
+          },
+          "code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Code"
+          },
+          "redirect_uri": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Redirect Uri"
+          },
+          "client_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Id"
+          },
+          "client_secret": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Secret"
+          },
+          "code_verifier": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Code Verifier"
+          },
+          "refresh_token": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Refresh Token"
+          },
+          "scope": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scope"
+          }
+        },
+        "type": "object",
+        "required": [
+          "grant_type"
+        ],
+        "title": "Body_OAuth2-token"
+      },
       "Body_tLedger_Portal_Login-login_access_token": {
         "properties": {
           "email": {
@@ -4291,6 +5099,244 @@
           "password"
         ],
         "title": "Body_tLedger Portal Login-login_access_token"
+      },
+      "ClientRegistrationRequest": {
+        "properties": {
+          "client_name": {
+            "type": "string",
+            "title": "Client Name"
+          },
+          "redirect_uris": {
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "format": "uri"
+            },
+            "type": "array",
+            "title": "Redirect Uris"
+          },
+          "token_endpoint_auth_method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Token Endpoint Auth Method",
+            "default": "client_secret_basic"
+          },
+          "grant_types": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grant Types",
+            "default": [
+              "authorization_code",
+              "refresh_token"
+            ]
+          },
+          "response_types": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Response Types",
+            "default": [
+              "code"
+            ]
+          },
+          "scope": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scope"
+          },
+          "contacts": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contacts"
+          },
+          "logo_uri": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Logo Uri"
+          },
+          "client_uri": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Client Uri"
+          },
+          "policy_uri": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Policy Uri"
+          },
+          "tos_uri": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tos Uri"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_name",
+          "redirect_uris"
+        ],
+        "title": "ClientRegistrationRequest",
+        "description": "Request model for Dynamic Client Registration."
+      },
+      "ClientRegistrationResponse": {
+        "properties": {
+          "client_id": {
+            "type": "string",
+            "title": "Client Id"
+          },
+          "client_secret": {
+            "type": "string",
+            "title": "Client Secret"
+          },
+          "client_id_issued_at": {
+            "type": "integer",
+            "title": "Client Id Issued At"
+          },
+          "client_secret_expires_at": {
+            "type": "integer",
+            "title": "Client Secret Expires At"
+          },
+          "client_name": {
+            "type": "string",
+            "title": "Client Name"
+          },
+          "redirect_uris": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Redirect Uris"
+          },
+          "token_endpoint_auth_method": {
+            "type": "string",
+            "title": "Token Endpoint Auth Method"
+          },
+          "grant_types": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Grant Types"
+          },
+          "response_types": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Response Types"
+          },
+          "scope": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scope"
+          },
+          "registration_client_uri": {
+            "type": "string",
+            "title": "Registration Client Uri"
+          },
+          "registration_access_token": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Registration Access Token"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_id",
+          "client_secret",
+          "client_id_issued_at",
+          "client_secret_expires_at",
+          "client_name",
+          "redirect_uris",
+          "token_endpoint_auth_method",
+          "grant_types",
+          "response_types",
+          "registration_client_uri"
+        ],
+        "title": "ClientRegistrationResponse",
+        "description": "Response model for Dynamic Client Registration."
       },
       "CodeAuditRequest": {
         "properties": {
@@ -4630,14 +5676,14 @@
             "format": "date-time",
             "title": "Created At",
             "description": "The entity create timestamp",
-            "default": "2025-08-20T22:04:08.611760Z"
+            "default": "2025-08-27T22:19:05.041636Z"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
             "description": "The entity update timestamp",
-            "default": "2025-08-20T22:04:08.611821Z"
+            "default": "2025-08-27T22:19:05.041696Z"
           },
           "id": {
             "type": "string",
@@ -5833,14 +6879,14 @@
             "format": "date-time",
             "title": "Created At",
             "description": "The entity create timestamp",
-            "default": "2025-08-20T22:04:08.611760Z"
+            "default": "2025-08-27T22:19:05.041636Z"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
             "description": "The entity update timestamp",
-            "default": "2025-08-20T22:04:08.611821Z"
+            "default": "2025-08-27T22:19:05.041696Z"
           },
           "email": {
             "type": "string",
@@ -5907,14 +6953,14 @@
             "format": "date-time",
             "title": "Created At",
             "description": "The entity create timestamp",
-            "default": "2025-08-20T22:04:08.611760Z"
+            "default": "2025-08-27T22:19:05.041636Z"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
             "description": "The entity update timestamp",
-            "default": "2025-08-20T22:04:08.611821Z"
+            "default": "2025-08-27T22:19:05.041696Z"
           },
           "email": {
             "type": "string",
