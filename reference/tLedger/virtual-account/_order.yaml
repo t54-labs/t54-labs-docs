@@ -3,3 +3,5 @@
 - virtual-account-get_withdrawal
 - virtual-account-get_transaction_history
 - virtual-account-get_agent_asset_accounts
+- virtual-account-get_agent_transactions
+- virtual-account-get_project_transactions

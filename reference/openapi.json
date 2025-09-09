@@ -3985,6 +3985,266 @@
         }
       }
     },
+    "/api/v1/virtual_account/agent/{agent_id}/transactions": {
+      "get": {
+        "tags": [
+          "Virtual Account",
+          "Virtual Accounts"
+        ],
+        "summary": "Get all transactions for an agent",
+        "operationId": "Virtual Account-get_agent_transactions",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Agent Id"
+            }
+          },
+          {
+            "name": "page_number",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Page number (starting from 1)",
+              "default": 1,
+              "title": "Page Number"
+            },
+            "description": "Page number (starting from 1)",
+            "example": 1
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "maximum": 100,
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Number of transactions per page (max 100)",
+              "default": 10,
+              "title": "Page Size"
+            },
+            "description": "Number of transactions per page (max 100)",
+            "example": 10
+          },
+          {
+            "name": "sort_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(created_at|amount)$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Field to sort by: 'created_at' or 'amount'",
+              "default": "created_at",
+              "title": "Sort By"
+            },
+            "description": "Field to sort by: 'created_at' or 'amount'",
+            "example": "created_at"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(asc|desc)$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Order of results: 'asc' or 'desc'",
+              "default": "desc",
+              "title": "Order"
+            },
+            "description": "Order of results: 'asc' or 'desc'",
+            "example": "desc"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Virtual Account-Get Agent Transactions"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/virtual_account/project/{project_id}/transactions": {
+      "get": {
+        "tags": [
+          "Virtual Account",
+          "Virtual Accounts"
+        ],
+        "summary": "Get all transactions for a project",
+        "operationId": "Virtual Account-get_project_transactions",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Project Id"
+            }
+          },
+          {
+            "name": "page_number",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Page number (starting from 1)",
+              "default": 1,
+              "title": "Page Number"
+            },
+            "description": "Page number (starting from 1)",
+            "example": 1
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "maximum": 100,
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Number of transactions per page (max 100)",
+              "default": 10,
+              "title": "Page Size"
+            },
+            "description": "Number of transactions per page (max 100)",
+            "example": 10
+          },
+          {
+            "name": "sort_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(created_at|amount)$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Field to sort by: 'created_at' or 'amount'",
+              "default": "created_at",
+              "title": "Sort By"
+            },
+            "description": "Field to sort by: 'created_at' or 'amount'",
+            "example": "created_at"
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(asc|desc)$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Order of results: 'asc' or 'desc'",
+              "default": "desc",
+              "title": "Order"
+            },
+            "description": "Order of results: 'asc' or 'desc'",
+            "example": "desc"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Virtual Account-Get Project Transactions"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/token-minting/token-info/{mint_address}": {
       "get": {
         "tags": [
@@ -4236,6 +4496,205 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/SwapResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tTrade/trade": {
+      "post": {
+        "tags": [
+          "Trade"
+        ],
+        "summary": "Create Trade",
+        "description": "Create a new trade\n\nCreates a trade with the specified parameters. The trade will be in 'created' status\nand needs to be submitted separately.",
+        "operationId": "Trade-create_trade",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tTrade/trade/{trade_id}/submit": {
+      "put": {
+        "tags": [
+          "Trade"
+        ],
+        "summary": "Submit Trade",
+        "description": "Submit a trade for processing\n\nThis endpoint is idempotent - calling it multiple times with the same trade_id\nwill not change the trade status if it's already submitted.",
+        "operationId": "Trade-submit_trade",
+        "parameters": [
+          {
+            "name": "trade_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trade Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeSubmitRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tTrade/trade/{trade_id}": {
+      "get": {
+        "tags": [
+          "Trade"
+        ],
+        "summary": "Get Trade",
+        "description": "Get trade details by ID",
+        "operationId": "Trade-get_trade",
+        "parameters": [
+          {
+            "name": "trade_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trade Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tTrade/trade/history": {
+      "get": {
+        "tags": [
+          "Trade"
+        ],
+        "summary": "Get Trade History",
+        "description": "Get paginated trade history\n\nReturns a paginated list of all trades with metadata.",
+        "operationId": "Trade-get_trade_history",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Page number (starting from 1)",
+              "default": 1,
+              "title": "Page"
+            },
+            "description": "Page number (starting from 1)"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "description": "Number of items per page (max 100)",
+              "default": 10,
+              "title": "Size"
+            },
+            "description": "Number of items per page (max 100)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeHistoryResponse"
                 }
               }
             }
@@ -5675,15 +6134,13 @@
             "type": "string",
             "format": "date-time",
             "title": "Created At",
-            "description": "The entity create timestamp",
-            "default": "2025-08-28T23:05:29.457051Z"
+            "description": "The entity create timestamp"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
-            "description": "The entity update timestamp",
-            "default": "2025-08-28T23:05:29.457103Z"
+            "description": "The entity update timestamp"
           },
           "id": {
             "type": "string",
@@ -5824,6 +6281,63 @@
           "message"
         ],
         "title": "Message"
+      },
+      "PaginationInfo": {
+        "properties": {
+          "page": {
+            "type": "integer",
+            "title": "Page",
+            "description": "Current page number"
+          },
+          "page_size": {
+            "type": "integer",
+            "title": "Page Size",
+            "description": "Number of items per page"
+          },
+          "total_items": {
+            "type": "integer",
+            "title": "Total Items",
+            "description": "Total number of items"
+          },
+          "total_pages": {
+            "type": "integer",
+            "title": "Total Pages",
+            "description": "Total number of pages"
+          },
+          "next_page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Page",
+            "description": "Next page number"
+          },
+          "prev_page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prev Page",
+            "description": "Previous page number"
+          }
+        },
+        "type": "object",
+        "required": [
+          "page",
+          "page_size",
+          "total_items",
+          "total_pages"
+        ],
+        "title": "PaginationInfo",
+        "description": "Pagination metadata"
       },
       "PaymentRequest": {
         "properties": {
@@ -5970,6 +6484,30 @@
             ],
             "title": "Transaction Hash",
             "description": "Transaction hash for the payment on the network"
+          },
+          "debit_transaction_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Debit Transaction Id",
+            "description": "Linked transaction id for sender debit entry"
+          },
+          "credit_transaction_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Credit Transaction Id",
+            "description": "Linked transaction id for receiver credit entry"
           },
           "created_at": {
             "type": "string",
@@ -6839,6 +7377,220 @@
         ],
         "title": "Token"
       },
+      "TradeCreate": {
+        "properties": {
+          "asset_account_id": {
+            "type": "string",
+            "title": "Asset Account Id",
+            "description": "UUID of the asset account"
+          },
+          "trade_currency": {
+            "type": "string",
+            "title": "Trade Currency",
+            "description": "Currency for the trade (e.g., RLUSD)"
+          },
+          "sending_amount": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sending Amount",
+            "description": "Amount being sent"
+          },
+          "receiving_amount": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Receiving Amount",
+            "description": "Amount being received"
+          },
+          "trade_type": {
+            "$ref": "#/components/schemas/TradeType",
+            "description": "Type of trade"
+          }
+        },
+        "type": "object",
+        "required": [
+          "asset_account_id",
+          "trade_currency",
+          "trade_type"
+        ],
+        "title": "TradeCreate",
+        "description": "Request model for creating a trade"
+      },
+      "TradeHistoryResponse": {
+        "properties": {
+          "object": {
+            "type": "string",
+            "title": "Object",
+            "default": "trade_history"
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationInfo",
+            "description": "Pagination information"
+          },
+          "data": {
+            "items": {
+              "$ref": "#/components/schemas/TradeResponse"
+            },
+            "type": "array",
+            "title": "Data",
+            "description": "List of trade records"
+          }
+        },
+        "type": "object",
+        "required": [
+          "pagination",
+          "data"
+        ],
+        "title": "TradeHistoryResponse",
+        "description": "Response model for trade history with pagination"
+      },
+      "TradeResponse": {
+        "properties": {
+          "object": {
+            "type": "string",
+            "title": "Object",
+            "default": "trade"
+          },
+          "trade_id": {
+            "type": "string",
+            "title": "Trade Id",
+            "description": "Unique trade ID"
+          },
+          "asset_account_id": {
+            "type": "string",
+            "title": "Asset Account Id",
+            "description": "UUID of the asset account"
+          },
+          "agent_id": {
+            "type": "string",
+            "title": "Agent Id",
+            "description": "UUID of the agent"
+          },
+          "base_currency": {
+            "type": "string",
+            "title": "Base Currency",
+            "description": "Base currency (e.g., XRP)"
+          },
+          "trade_currency": {
+            "type": "string",
+            "title": "Trade Currency",
+            "description": "Trade currency (e.g., RLUSD)"
+          },
+          "sending_amount": {
+            "type": "number",
+            "title": "Sending Amount",
+            "description": "Amount being sent"
+          },
+          "receiving_amount": {
+            "type": "number",
+            "title": "Receiving Amount",
+            "description": "Amount being received"
+          },
+          "trade_type": {
+            "$ref": "#/components/schemas/TradeType",
+            "description": "Type of trade"
+          },
+          "expires_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Expires At",
+            "description": "Expiration time (UTC datetime)"
+          },
+          "fx_rate": {
+            "type": "string",
+            "title": "Fx Rate",
+            "description": "Exchange rate"
+          },
+          "service_fee": {
+            "type": "string",
+            "title": "Service Fee",
+            "description": "Service fee (e.g., 10 bps)"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TradeStatus"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Current trade status"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At",
+            "description": "Creation timestamp"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At",
+            "description": "Last update timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trade_id",
+          "asset_account_id",
+          "agent_id",
+          "base_currency",
+          "trade_currency",
+          "sending_amount",
+          "receiving_amount",
+          "trade_type",
+          "expires_at",
+          "fx_rate",
+          "service_fee",
+          "created_at",
+          "updated_at"
+        ],
+        "title": "TradeResponse",
+        "description": "Response model for trade operations"
+      },
+      "TradeStatus": {
+        "type": "string",
+        "enum": [
+          "created",
+          "submitted",
+          "processing",
+          "completed",
+          "failed",
+          "cancelled",
+          "expired"
+        ],
+        "title": "TradeStatus",
+        "description": "Enum for trade statuses"
+      },
+      "TradeSubmitRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "TradeSubmitRequest",
+        "description": "Request model for submitting a trade (empty for idempotency)"
+      },
+      "TradeType": {
+        "type": "string",
+        "enum": [
+          "fixed",
+          "indicative",
+          "market_order",
+          "ceiling_order"
+        ],
+        "title": "TradeType",
+        "description": "Enum for trade types"
+      },
       "TransactionStateBreakdown": {
         "properties": {
           "count": {
@@ -6878,15 +7630,13 @@
             "type": "string",
             "format": "date-time",
             "title": "Created At",
-            "description": "The entity create timestamp",
-            "default": "2025-08-28T23:05:29.457051Z"
+            "description": "The entity create timestamp"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
-            "description": "The entity update timestamp",
-            "default": "2025-08-28T23:05:29.457103Z"
+            "description": "The entity update timestamp"
           },
           "email": {
             "type": "string",
@@ -6952,15 +7702,13 @@
             "type": "string",
             "format": "date-time",
             "title": "Created At",
-            "description": "The entity create timestamp",
-            "default": "2025-08-28T23:05:29.457051Z"
+            "description": "The entity create timestamp"
           },
           "updated_at": {
             "type": "string",
             "format": "date-time",
             "title": "Updated At",
-            "description": "The entity update timestamp",
-            "default": "2025-08-28T23:05:29.457103Z"
+            "description": "The entity update timestamp"
           },
           "email": {
             "type": "string",
@@ -7138,6 +7886,19 @@
             ],
             "title": "Amount",
             "description": "The amount to withdraw. Must be greater than 0."
+          },
+          "destination_tag": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Destination Tag",
+            "description": "Destination tag or a memo",
+            "default": 0
           }
         },
         "type": "object",
