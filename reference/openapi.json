@@ -6070,6 +6070,19 @@
             "type": "string",
             "title": "Network",
             "description": "The network for the deposit (e.g., Solana, XRPL)."
+          },
+          "agent_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Agent Id",
+            "description": "Optional agent ID. If provided, resolve its asset account for the specified network/asset."
           }
         },
         "type": "object",
