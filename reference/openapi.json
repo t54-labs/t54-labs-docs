@@ -7897,8 +7897,7 @@
               }
             ],
             "title": "Destination Tag",
-            "description": "Destination tag or a memo",
-            "default": 0
+            "description": "Destination tag or a memo"
           }
         },
         "type": "object",
