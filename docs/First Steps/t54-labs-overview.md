@@ -9,17 +9,16 @@ t54 labs builds an **Agentic financial infrastructure for the Agent Economy**. t
 
 ## Explore the products
 
-
-
-| | ***Product Name*** | ***Sub Product Component*** | ***Description*** | ***Learn More*** |
+| | **Product Name** | **Sub Product Component** | **Description** | **Learn More** |
 |:---:|:---:|:---:|:---:|:---:|
-| 💳tLedger | tLedger API | Programattic APIs for Blockchain-agnostic agent account management platform | | |
-| | 💰tLedger SDK | Software development kit for seamless integration (consolidating former tPay SDK) | | |
-| | 📊tPortal | Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings | | |
-| | 🧠 t54 MCP | Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions | | |
-| 🛡️tRadar | tRadar API (Planned) | Standalone service accessible via simple API for third-party integration | | |
-| | Embedded functionality | Powering risk assessment within Ezy and tLedger products | | |
-| Ezy | Ezy Agent (WIP) | The financial gateway agent | | |
+| 💳 | tLedger | tLedger API | Programattic APIs for Blockchain-agnostic agent account management platform | |
+| | | tLedger SDK | Software development kit for seamless integration (consolidating former tPay SDK) | |
+| | | tPortal | Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings | |
+| | | 🧠 t54 MCP | Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions | |
+| 🛡️ | tRadar | tRadar API (Planned) | Standalone service accessible via simple API for third-party integration | |
+| | | Embedded functionality | Powering risk assessment within Ezy and tLedger products | |
+| | Ezy | Ezy Agent (WIP) | The financial gateway agent | |
+| | | Ezy Card (Planned for 2026+) | [Physical payment device](https://www.notion.so/Ezy-Hardware-Payment-Device-Product-Requirements-Document-249a7de921c380eab5e9fe9792d793c9?source=copy_link) enabling real-world transactions paired with financial agents | |
 
 
 ## What you can do with t54
