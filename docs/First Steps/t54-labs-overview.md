@@ -9,11 +9,18 @@ t54 labs builds an **Agentic financial infrastructure for the Agent Economy**. t
 
 ## Explore the products
 
-|                     💳 **tLedger**                    |                                                                     🛡️ **tRadar**                                                                    |                          💰 **tPay**                          |                                   📊 **tPortal**                                  |
-| :---------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-|                 **Account Management**                |                                                                  **Risk Management**                                                                  |                        **AI Payments**                        |                               **Unified Dashboard**                               |
-| Blockchain-agnostic agent account management platform | Agent-native compliance and risk management framework. This is our **core module**—and the most critical part of **how we ensure trust and security** | Comprehensive AI payment solution for real-world applications | Track users, agents, and financial profiles, all from a single unified dashboard. |
-|           [**Learn More →**](/docs/tledger)           |                                                            [**Learn More →**](/docs/tradar)                                                           |                 [**Learn More →**](/docs/tpay)                |                         [**Learn More →**](/docs/tportal)                         |
+
+
+| | ***Product Name*** | ***Sub Product Component*** | ***Description*** | ***Learn More*** |
+|:---:|:---:|:---:|:---:|:---:|
+| 💳tLedger | tLedger API | Programattic APIs for Blockchain-agnostic agent account management platform | | |
+| | 💰tLedger SDK | Software development kit for seamless integration (consolidating former tPay SDK) | | |
+| | 📊tPortal | Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings | | |
+| | 🧠 t54 MCP | Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions | | |
+| 🛡️tRadar | tRadar API (Planned) | Standalone service accessible via simple API for third-party integration | | |
+| | Embedded functionality | Powering risk assessment within Ezy and tLedger products | | |
+| Ezy | Ezy Agent (WIP) | The financial gateway agent | | |
+
 
 ## What you can do with t54
 
