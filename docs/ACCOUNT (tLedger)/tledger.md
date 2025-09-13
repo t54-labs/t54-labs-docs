@@ -8,7 +8,7 @@ metadata:
 ---
 tLedger is t54's foundational product—a blockchain-agnostic account & ledger designed to support AI agent-initiated financial transactions. It enables developers to create and manage agent-level virtual accounts, set programmable spending limits, and trigger on-chain payments via a lightweight SDK.
 
-tLedger seamlessly connects to t54 Portal, allowing developers to manage agents, accounts, and risk limits in an intuitive manner. Meanwhile, tRadar automatically screens payments initiated by agents, connecting to tLedger to understand agent identity and risk levels.
+There are multiple ways of interacting with tLedger such as API, tLedger SDK, tLedger MCP, and tPortal that allow developers and customers to manage agents, accounts, and risk limits in an intuitive manner. Meanwhile, tRadar automatically screens payments initiated by agents, connecting to tLedger to understand agent identity and risk levels.
 
 ## Key Features
 
@@ -18,3 +18,12 @@ tLedger provides comprehensive infrastructure for AI agent financial operations 
 * **Blockchain Ledger Service** - Interact with multiple blockchains, enabling transaction recording and synchronization with blockchain ledgers across different networks
 * **Payment Protocol** - Standard on-chain payment protocol handling sender-to-receiver transactions, including blockchain-based payment information, addresses, and payment purposes
 * **Framework Integration** - Native plugins for mainstream web3 agent frameworks, including GAME by Virtual Protocols
+
+## Ways to connect to tLedger
+
+There are multiple ways of connecting with tLedger based on your individual and/or business needs.
+
+* **tLedger API - External API endpoints providing programmatic access to t54 backend**
+* **tLedger SDK - Software development kit for seamless integration (consolidating former tPay SDK)**
+* **tPortal - Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings**
+* **t54 MCP - Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions**
