@@ -39,7 +39,7 @@ Now you're ready to explore what t54 can do! You can dive into our three core pr
 
 * **[tLedger](/docs/tledger)** - Agent-native account management and blockchain transactions
 * **[tRadar](/docs/tradar)** - AI-native compliance and risk management framework
-* **[Ezy](/docs/ezy)** - The financial gateway agent
+* **[Claire](/docs/claire)** - The financial gateway agent
 
 ## Start with some use cases!
 
