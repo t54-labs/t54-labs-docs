@@ -1,5 +1,5 @@
 ---
-title: t54 labs Overview
+title: t54 Labs Overview
 deprecated: false
 hidden: false
 metadata:
