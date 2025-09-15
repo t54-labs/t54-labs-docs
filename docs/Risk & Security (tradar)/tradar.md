@@ -12,11 +12,25 @@ tRadar is t54's comprehensive trust and risk management framework designed to br
 
 ## What is tRadar?
 
-tRadar is a real-time risk engine that marshals a committee of AI validator agents to scrutinize each payment transaction. Rather than relying on a single gatekeeper or fixed rules, tRadar uses multiple independent validators that analyze transaction context, agent behavior, and risk patterns to reach consensus on whether transactions should proceed.
-
-The system provides validators with complete reasoning context—including the agent's decision process, function calls, and environmental data—enabling sophisticated risk assessment that goes far beyond traditional rule-based systems.
+tRadar provides end-to-end trust management for the agent economy through three integrated layers:
+**Agent Trust Establishment** - Know Your Agent (KYA) processes that verify agent identity, validate project credentials, and establish initial risk profiles before any financial activity begins.
+**Code Integrity Validation **- Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
+**Transaction-Time Risk Assessment **- Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
 
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
+
+<br />
+
+## Live Validator Agent Network (VAN)
+
+At the core of tRadar is the Validator Agent Network (VAN)—a diverse ecosystem of independent AI validators that collaborate to assess transaction risk. Unlike traditional systems that rely on static rules, VAN validators:
+
+Analyze Complete Context: Access full agent reasoning trails, function call lineage, and environmental data
+Vote Dynamically: Reach consensus through weighted voting based on validator performance history and stake
+Coordinate in Real-Time: Collaborate and challenge each other's assessments for robust decision-making
+Adapt Continuously: Learn from transaction patterns and outcomes to improve future assessments
+
+You can observe this network in action through tRadar Terminal, where validator agents appear as coordinated nodes analyzing transactions with visible reasoning processes displayed in real-time floating text boxes.
 
 ## Key Features
 
