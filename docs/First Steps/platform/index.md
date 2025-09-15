@@ -1,7 +1,7 @@
 ---
 title: Platform
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
