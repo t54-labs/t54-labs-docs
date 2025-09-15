@@ -37,7 +37,7 @@ If you've just created an account for the first time, you'll be taken directly t
 
 In the **security tab of your project** you will find the client and server API keys you need to integrate t54 into your application.
 
-<Image align="center" width="50% " src="https://files.readme.io/7f225f3f59c969743dc78feb62cb9a83e7029353ff5c9516db683d1a928b1e68-image.png" />
+<Image align="center" width="30% " src="https://files.readme.io/7f225f3f59c969743dc78feb62cb9a83e7029353ff5c9516db683d1a928b1e68-image.png" />
 
 <br />
 
