@@ -8,8 +8,6 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
 ## Overview
 
 This MCP server enables Claude and other MCP-compatible clients to interact with the t54 Payment Gateway API, allowing for payment processing, agent management, and balance queries.
