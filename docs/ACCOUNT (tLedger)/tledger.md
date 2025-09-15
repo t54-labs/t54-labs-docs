@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-tLedger is t54's foundational product—a blockchain-agnostic account & ledger designed to support AI agent-initiated financial transactions. It enables developers to create and manage agent-level virtual accounts, set programmable spending limits, and trigger on-chain payments via a lightweight SDK.
+tLedger is t54's foundational product—a blockchain-agnostic account & ledger designed to support AI agent-initiated financial transactions. It enables developers to create and manage agent-level virtual accounts, set programmable spending limits, and trigger on-chain payments via fast API, MCP or a lightweight SDK.
 
 There are multiple ways of interacting with tLedger such as API, tLedger SDK, tLedger MCP, and tPortal that allow developers and customers to manage agents, accounts, and risk limits in an intuitive manner. Meanwhile, tRadar automatically screens payments initiated by agents, connecting to tLedger to understand agent identity and risk levels.
 
