@@ -32,9 +32,11 @@ tPortal streamlines the administration process, offering a powerful, efficient, 
 
 <br />
 
-## Creating an account
+## Create an account / Sign in
 
-<br />
+To create an account follow the instructions on the login page and create an account by providing your email, password, and full name (optional). Once you have created an account, please verify your email address by clicking on the link that you'd receive. 
+
+<Image align="center" width="60% " src="https://files.readme.io/62d09199f31e84c987741e8ef47c29e05374d40cce19efa5700f0eabc916f0cf-Screenshot_2025-09-15_at_6.44.50_PM.png" />
 
 ## Core Capabilities
 
