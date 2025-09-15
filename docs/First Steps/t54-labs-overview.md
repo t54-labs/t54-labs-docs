@@ -9,8 +9,6 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
 
 ![](https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png)
 
-<br />
-
 ## Explore the products
 
 | **Product Name** | **Sub Product Component** |                                                                               **Description**                                                                               |        Learn More       |
