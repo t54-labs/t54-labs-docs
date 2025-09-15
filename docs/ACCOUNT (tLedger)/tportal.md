@@ -70,12 +70,50 @@ Once you have filled in the required fields, click "Create Project". The new pro
 
 <Image align="center" width="100% " src="https://files.readme.io/ac1d8cedc819bee287cceddec2c356b0a8c14da9451de4642c0df004e7af8933-Screenshot_2025-09-15_at_6.59.29_PM.png" />
 
-**Transaction History**
+## Transaction History##
 
-**Risk Profile Monitoring**
+## Risk Profile Monitoring##
 
-**Security Configuration**
+## Security Configuration##
 
-**Treasury Management**
+## Treasury Management##
+
+The Balances page provides a comprehensive view of all financial assets held within the treasury and by individual agents. It's designed to give users a clear, real-time snapshot of their cryptocurrency holdings and transaction history.
 
 <br />
+
+<Image align="center" width="100% " src="https://files.readme.io/3a5725daa8c07228558a3731b253bbce59663401f781b1ce9f9325d184337715-Screenshot_2025-09-15_at_7.10.59_PM.png" />
+
+**Treasury Balance**
+
+This section displays the total value of all assets in the main project wallet.
+
+**Total USD Value**: The current aggregated value of all treasury assets is shown in U.S. Dollars ($).
+
+**Asset Breakdown**: A detailed breakdown of each cryptocurrency asset is provided, including the coin (e.g., SOL, XRP), its current balance, and its corresponding USD value.
+
+**Actions**: You can deposit or withdraw assets from the treasury. A toggle switch allows you to show underlying accounts to reveal the specific wallet addresses and account IDs that make up the total treasury balance
+
+<br />
+
+**Agents Total Balance**
+
+This section provides an overview of the total value of assets held by all agents associated with the project.
+
+**Total USD Value**: The aggregated value of all assets held by all agents, displayed in U.S. Dollars ($).
+
+**Toggle**: A toggle switch allows you to display a detailed list of all agent accounts and their individual balances.
+
+**Overview**
+
+The detailed table provides a granular look at each agent's holdings and the specific asset accounts they manage.
+
+**Agent Name**: The user-defined name for the agent.
+
+**Agent ID**: A unique identifier for the agent.
+
+**Daily Limit (USD)**: The maximum U.S. Dollar value of transactions the agent can perform in a 24-hour period.
+
+**Balance (USD)**: The total U.S. Dollar value of assets currently held by the agent.
+
+**Last Edit**: The date of the most recent activity on the account.
