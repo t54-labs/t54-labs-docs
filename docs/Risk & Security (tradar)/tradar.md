@@ -1,12 +1,14 @@
 ---
 title: Introduction
-excerpt: AI native compliance and risk management framework
+excerpt: AI-Native Trust & Risk Management Framework
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-tRadar is t54's AI-native compliance and risk management framework—designed to bring trust, auditability, and guardrails to agent-initiated financial activity. Built as a network of Validator Agents, tRadar inspects every payment transaction before execution, providing institutional-grade security for autonomous finance.
+tRadar is t54's comprehensive trust and risk management framework designed to bring institutional-grade security to agent-initiated financial activity. Operating as a network of AI validator agents combined with code integrity validation, tRadar ensures every transaction is secure, auditable, and contextually verifiable from agent onboarding through payment execution.
+
+View Live Demo - Watch tRadar in action with real-time transaction validation
 
 ## What is tRadar?
 
