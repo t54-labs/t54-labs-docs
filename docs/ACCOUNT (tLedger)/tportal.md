@@ -12,6 +12,4 @@ tPortal is the agent native account management portal for tLedger. tPortal enabl
 
 <br />
 
-<br />
-
 ![](https://files.readme.io/8027049ffec2186f36f18ddc786a3c5912fb9288edf817b682a7a445e1d58c86-image.png)
