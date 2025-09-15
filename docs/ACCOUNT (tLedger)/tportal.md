@@ -48,7 +48,7 @@ Once you have successfully created your account, a verification link will be sen
 
 The top-left corner of the tPortal dashboard is your control center for managing projects. You can easily switch between existing projects or create a new one to organize your agent accounts.
 
-<Image align="center" width="60% " src="https://files.readme.io/62d09199f31e84c987741e8ef47c29e05374d40cce19efa5700f0eabc916f0cf-Screenshot_2025-09-15_at_6.44.50_PM.png" />
+<Image align="center" width="100% " src="https://files.readme.io/39d64901fbadf5c57a18249de88aaea95542745a2000b5bf16352a0bba301cb4-Screenshot_2025-09-15_at_6.58.58_PM.png" />
 
 **Switching Projects**
 
@@ -68,7 +68,7 @@ Once you have filled in the required fields, click "Create Project". The new pro
 
 <br />
 
-<Image align="center" width="60% " src="https://files.readme.io/62d09199f31e84c987741e8ef47c29e05374d40cce19efa5700f0eabc916f0cf-Screenshot_2025-09-15_at_6.44.50_PM.png" />
+<Image align="center" width="100% " src="https://files.readme.io/ac1d8cedc819bee287cceddec2c356b0a8c14da9451de4642c0df004e7af8933-Screenshot_2025-09-15_at_6.59.29_PM.png" />
 
 **Transaction History**
 
