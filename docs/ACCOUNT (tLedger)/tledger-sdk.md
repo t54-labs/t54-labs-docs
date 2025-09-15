@@ -5,10 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
-# tLedger SDK Developer Integration Guide
-
 [View source code](https://github.com/t54-labs/tpay-sdk-python/)
 
 ## Overview
