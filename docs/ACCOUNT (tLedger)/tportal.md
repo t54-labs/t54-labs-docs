@@ -42,7 +42,7 @@ Once you have successfully created your account, a verification link will be sen
 
 ## Core Capabilities
 
-### Project and Account Management###
+### Project and Account Management
 
 **Managing Projects**
 
@@ -70,13 +70,13 @@ Once you have filled in the required fields, click "Create Project". The new pro
 
 <Image align="center" width="100% " src="https://files.readme.io/ac1d8cedc819bee287cceddec2c356b0a8c14da9451de4642c0df004e7af8933-Screenshot_2025-09-15_at_6.59.29_PM.png" />
 
-## Transaction History##
+## Transaction History
 
-## Risk Profile Monitoring##
+## Risk Profile Monitoring
 
-## Security Configuration##
+## Security Configuration
 
-## Treasury Management##
+## Treasury Management
 
 The Balances page provides a comprehensive view of all financial assets held within the treasury and by individual agents. It's designed to give users a clear, real-time snapshot of their cryptocurrency holdings and transaction history.
 
