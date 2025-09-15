@@ -14,8 +14,8 @@ tRadar is t54's comprehensive trust and risk management framework designed to br
 
 tRadar provides end-to-end trust management for the agent economy through three integrated layers:
 **Agent Trust Establishment**  Know Your Agent (KYA) processes that verify agent identity, validate project credentials, and establish initial risk profiles before any financial activity begins.
-**Code Integrity Validation ** Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
-**Transaction-Time Risk Assessment ** Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
+**Code Integrity Validation** Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
+**Transaction-Time Risk Assessment** Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
 
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
 
