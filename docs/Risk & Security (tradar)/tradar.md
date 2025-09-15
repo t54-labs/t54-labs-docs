@@ -13,9 +13,9 @@ tRadar is t54's comprehensive trust and risk management framework designed to br
 ## What is tRadar?
 
 tRadar provides end-to-end trust management for the agent economy through three integrated layers:
-**Agent Trust Establishment** - Know Your Agent (KYA) processes that verify agent identity, validate project credentials, and establish initial risk profiles before any financial activity begins.
-**Code Integrity Validation **- Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
-**Transaction-Time Risk Assessment **- Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
+**Agent Trust Establishment**  Know Your Agent (KYA) processes that verify agent identity, validate project credentials, and establish initial risk profiles before any financial activity begins.
+**Code Integrity Validation ** Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
+**Transaction-Time Risk Assessment ** Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
 
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
 
@@ -30,7 +30,7 @@ Vote Dynamically: Reach consensus through weighted voting based on validator per
 Coordinate in Real-Time: Collaborate and challenge each other's assessments for robust decision-making
 Adapt Continuously: Learn from transaction patterns and outcomes to improve future assessments
 
-You can observe this network in action through tRadar Terminal, where validator agents appear as coordinated nodes analyzing transactions with visible reasoning processes displayed in real-time floating text boxes.
+You can observe this network in action through [tRadar Terminal](https://terminal.t54.ai/), where validator agents appear as coordinated nodes analyzing transactions with visible reasoning processes displayed in real-time floating text boxes.
 
 ## Key Features
 
