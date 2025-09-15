@@ -8,7 +8,7 @@ metadata:
 ---
 tRadar is t54's comprehensive trust and risk management framework designed to bring institutional-grade security to agent-initiated financial activity. Operating as a network of AI validator agents combined with code integrity validation, tRadar ensures every transaction is secure, auditable, and contextually verifiable from agent onboarding through payment execution.
 
-View Live Demo - Watch tRadar in action with real-time transaction validation
+[View Live Demo](https://docs.t54.ai/update/docs/visualizer#/) - Watch tRadar in action with real-time transaction validation
 
 ## What is tRadar?
 
