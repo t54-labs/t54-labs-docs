@@ -22,21 +22,15 @@ tRadar provides end-to-end trust management for the agent economy through three 
 
 ## Live Validator Agent Network (VAN)
 
-At the core of tRadar is the Validator Agent Network (VAN)—a diverse ecosystem of independent AI validators that collaborate to assess transaction risk. Unlike traditional systems that rely on static rules, VAN validators:
+At the core of tRadar is the Validator Agent Network (VAN)—a diverse ecosystem of independent AI validators that collaborate to assess transaction risk. Unlike traditional systems that rely on static rules, VAN validators analyze complete context by accessing full agent reasoning trails, function call lineage, and environmental data to make sophisticated risk determinations.
 
-**Analyze Complete Context:** Access full agent reasoning trails, function call lineage, and environmental data
-
-**Vote Dynamically:** Reach consensus through weighted voting based on validator performance history and stake
-
-**Coordinate in Real-Time:** Collaborate and challenge each other's assessments for robust decision-making
-
-**Adapt Continuously:** Learn from transaction patterns and outcomes to improve future assessments
+VAN validators reach consensus through weighted voting based on validator performance history and stake in the network. They coordinate in real-time, collaborating and challenging each other's assessments to ensure robust decision-making. The network continuously adapts by learning from transaction patterns and outcomes to improve future assessments, creating an evolving intelligence system that becomes more accurate over time.
 
 You can observe this network in action through [tRadar Terminal](https://terminal.t54.ai/), where validator agents appear as coordinated nodes analyzing transactions with visible reasoning processes displayed in real-time floating text boxes.
 
 ## Key Features
 
-tRadar operates through four integrated security layers that work together to validate every agent transaction. 
+tRadar operates through four integrated security layers that work together to validate every agent transaction.
 
 **Pre-Transaction Code Auditing (tAudit)** automatically extracts and normalizes payment functions during SDK initialization, creating cryptographic hashes that must match vetted implementations in our audit registry. This ensures tamper-proof audit trails linking every transaction back to approved code paths.
 
