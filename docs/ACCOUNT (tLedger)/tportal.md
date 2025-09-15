@@ -42,7 +42,33 @@ Once you have successfully created your account, a verification link will be sen
 
 ## Core Capabilities
 
-**Project and Account Management**
+### Project and Account Management###
+
+**Managing Projects**
+
+The top-left corner of the tPortal dashboard is your control center for managing projects. You can easily switch between existing projects or create a new one to organize your agent accounts.
+
+<Image align="center" width="60% " src="https://files.readme.io/62d09199f31e84c987741e8ef47c29e05374d40cce19efa5700f0eabc916f0cf-Screenshot_2025-09-15_at_6.44.50_PM.png" />
+
+**Switching Projects**
+
+To switch to a different project, simply click the current project name displayed in the top-left corner. A dropdown menu will appear, showing all the projects you have access to. Select the one you wish to work in.
+
+**Creating a New Project**
+
+To create a new project, click "Create New Project" from the dropdown menu. A "Create New Project" window will appear, prompting you to enter the following information:
+
+Project Name: A unique name for your project (e.g., "Treasury Project").
+
+Project Description: A brief description to help you identify the project's purpose.
+
+Daily Limit: Set a daily transaction limit for all agent activities within this project.
+
+Once you have filled in the required fields, click "Create Project". The new project will be created and you will automatically be switched to its dashboard.
+
+<br />
+
+<Image align="center" width="60% " src="https://files.readme.io/62d09199f31e84c987741e8ef47c29e05374d40cce19efa5700f0eabc916f0cf-Screenshot_2025-09-15_at_6.44.50_PM.png" />
 
 **Transaction History**
 
