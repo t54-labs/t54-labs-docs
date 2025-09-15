@@ -7,8 +7,6 @@ metadata:
 ---
 The t54 Payment and Risk Control system is designed to ensure that every transaction initiated through our API or SDK is secure, auditable, and contextually verifiable. This section outlines how the system evaluates, processes, and safeguards payments using two key services: tRadar (risk control) and tAudit (code integrity validation).
 
-<br />
-
 # Transaction Submission
 
 Every payment initiated through the API or SDK includes several key parameters beyond the basic sender/receiver and amount fields:
@@ -21,8 +19,6 @@ Every payment initiated through the API or SDK includes several key parameters b
 
 These fields are required to initiate a payment and serve as the foundation for real-time risk evaluation.
 
-<br />
-
 # Transactional Risk Evaluation (tRadar)
 
 Once submitted, the transaction is passed through tRadar, our real-time validator agent network (VAN). tRadar assesses risk using a multi-tiered logic engine that takes into account:
@@ -31,19 +27,15 @@ Once submitted, the transaction is passed through tRadar, our real-time validato
 
 `Agent Trust Profile`: Historical behavior and system-generated reputation scores.
 
-`Contextual Analysis`: The runtime logic (via trace\_context) and function lineage (via func\_stack\_hashes) are compared against previously audited, trusted paths.
+`Contextual Analysis`: The runtime logic (via trace_context) and function lineage (via func_stack_hashes) are compared against previously audited, trusted paths.
 
 `Rule Engine`: Custom business rules (e.g., project-specific limits, developer-specific thresholds) are applied before validator invocation.
 
-Transactions are scored and assigned one of several risk levels\_ (LOW, MEDIUM, HIGH, CRITICAL)\_. For elevated risk levels, tRadar may issue a challenge, requiring the Agent to submit additional justification or data to proceed.
-
-<br />
+Transactions are scored and assigned one of several risk levels_ (LOW, MEDIUM, HIGH, CRITICAL)_. For elevated risk levels, tRadar may issue a challenge, requiring the Agent to submit additional justification or data to proceed.
 
 # Challenge-Response Mechanism
 
 If a transaction is flagged, the challenge system acts as a dynamic gatekeeper. It pauses execution and returns a structured request for clarification—such as proof-of-purpose, logs, or metadata. Agents can respond programmatically and resubmit for re-evaluation. This adaptive flow balances security with user experience by reducing false rejections of legitimate activity.
-
-<br />
 
 # Code Auditing (tAudit)
 
@@ -55,8 +47,6 @@ To maintain integrity at the function level, all payment-related code must under
 
 This ensures a tamper-proof audit trail linking every transaction back to a vetted implementation, deterring unauthorized behavior or malicious injection.
 
-<br />
-
 # Payment Execution
 
 Payments proceed only after:
@@ -66,8 +56,6 @@ Payments proceed only after:
 
 In production mode, the payment is submitted to the designated settlement network (e.g., Solana) and the resulting `transaction_hash` is stored. In debug mode, execution is simulated locally for safe testing and QA.
 
-<br />
-
 # Error & Logging
 
-Failed transactions include error\_details with granular reasoning (e.g., validation failure, trust breach, audit mismatch). All events are logged for post-mortem, compliance, and support tooling. These logs are essential for understanding edge cases and iteratively improving Agent design.
+Failed transactions include error_details with granular reasoning (e.g., validation failure, trust breach, audit mismatch). All events are logged for post-mortem, compliance, and support tooling. These logs are essential for understanding edge cases and iteratively improving Agent design.
