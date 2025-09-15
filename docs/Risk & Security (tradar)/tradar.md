@@ -14,6 +14,8 @@ tRadar is a real-time risk engine that marshals a committee of AI validator agen
 
 The system provides validators with complete reasoning context—including the agent's decision process, function calls, and environmental data—enabling sophisticated risk assessment that goes far beyond traditional rule-based systems.
 
+![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
+
 ## Key Features
 
 tRadar delivers comprehensive risk management through four core security layers:
