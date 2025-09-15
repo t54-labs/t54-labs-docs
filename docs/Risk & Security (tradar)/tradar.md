@@ -19,16 +19,14 @@ tRadar provides end-to-end trust management for the agent economy through three 
 
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
 
-<br />
-
 ## Live Validator Agent Network (VAN)
 
 At the core of tRadar is the Validator Agent Network (VAN)—a diverse ecosystem of independent AI validators that collaborate to assess transaction risk. Unlike traditional systems that rely on static rules, VAN validators:
 
-Analyze Complete Context: Access full agent reasoning trails, function call lineage, and environmental data
-Vote Dynamically: Reach consensus through weighted voting based on validator performance history and stake
-Coordinate in Real-Time: Collaborate and challenge each other's assessments for robust decision-making
-Adapt Continuously: Learn from transaction patterns and outcomes to improve future assessments
+**Analyze Complete Context:** Access full agent reasoning trails, function call lineage, and environmental data
+**Vote Dynamically:** Reach consensus through weighted voting based on validator performance history and stake
+**Coordinate in Real-Time:** Collaborate and challenge each other's assessments for robust decision-making
+**Adapt Continuously:** Learn from transaction patterns and outcomes to improve future assessments
 
 You can observe this network in action through [tRadar Terminal](https://terminal.t54.ai/), where validator agents appear as coordinated nodes analyzing transactions with visible reasoning processes displayed in real-time floating text boxes.
 
