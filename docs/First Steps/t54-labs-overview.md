@@ -20,6 +20,35 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
 |      Claire      |     Claire Agent (WIP)    |                                                                         The financial gateway agent                                                                         |       Coming soon       |
 |                  |   Claire Card (Planned)   |                                            Physical payment device enabling real-world transactions paired with financial agents                                            |                         |
 
+<br />
+
+## Explore the products
+
+<Cards columns={3}>
+  <Card title="tLedger" icon="fa-database" href="/docs/tledger">
+    **AI-native account management platform**
+
+    • **tLedger API**: Blockchain-agnostic agent account management
+    • **tLedger SDK**: Seamless integration development kit\
+    • **tPortal**: Web-based management interface
+    • **t54 MCP**: Claude agent compatibility layer
+  </Card>
+
+  <Card title="tRadar" icon="fa-shield-alt" href="/docs/tradar">
+    **Intelligent risk management system**
+
+    • **tRadar API**: Standalone risk assessment service *(Work in Progress)*
+    • **Embedded functionality**: Powers risk assessment in Claire and tLedger
+  </Card>
+
+  <Card title="Claire" icon="fa-robot">
+    **Financial gateway agent**
+
+    • **Claire Agent**: AI financial assistant *(Work in Progress)*
+    • **Claire Card**: Physical payment device *(Planned)*
+  </Card>
+</Cards>
+
 ![](https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png)
 
 ## What you can do with t54
