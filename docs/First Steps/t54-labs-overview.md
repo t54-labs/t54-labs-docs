@@ -28,6 +28,70 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
   <Card title="tLedger" icon="fa-database" href="/docs/tledger">
     **AI-native account management platform**
 
+    Programmatic APIs and tools for blockchain-agnostic agent account management, enabling seamless financial identity creation and transaction processing.
+  </Card>
+
+  <Card title="tRadar" icon="fa-shield-alt" href="/docs/tradar">
+    **Intelligent risk management system**
+
+    Advanced risk assessment and fraud prevention service that powers trust and security across all t54 financial operations.
+  </Card>
+
+  <Card title="Claire" icon="fa-robot">
+    **Financial gateway agent**
+
+    The intelligent financial assistant that serves as the bridge between AI agents and real-world financial transactions.
+  </Card>
+</Cards>
+
+<Accordion title="tLedger" icon="fa-database">
+  **Components:**
+
+  **tLedger API**\
+  Programmatic APIs for blockchain-agnostic agent account management platform
+
+  **tLedger SDK**\
+  Software development kit for seamless integration (consolidating former tPay SDK)
+
+  **tPortal**\
+  Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings
+
+  **t54 MCP**\
+  Model Context Protocol (MCP) compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions
+
+  [Learn More →](tledger)
+</Accordion>
+
+<Accordion title="tRadar" icon="fa-shield-alt">
+  **Components:**
+
+  **tRadar API** *(Work in Progress)*\
+  Standalone service accessible via simple API for third-party integration
+
+  **Embedded functionality**\
+  Powering risk assessment within Claire and tLedger products
+
+  [Learn More →](tradar)
+</Accordion>
+
+<Accordion title="Claire" icon="fa-robot">
+  **Components:**
+
+  **Claire Agent** *(Work in Progress)*\
+  The financial gateway agent
+
+  **Claire Card** *(Planned)*\
+  Physical payment device enabling real-world transactions paired with financial agents
+
+  Coming soon
+</Accordion>
+
+## Explore the products
+
+<Cards columns={3}>
+  <Card title="tLedger" icon="fa-database" href="/docs/tledger">
+    **AI-native account management platform**
+
     • **tLedger API**: Blockchain-agnostic agent account management
     • **tLedger SDK**: Seamless integration development kit\
     • **tPortal**: Web-based management interface
