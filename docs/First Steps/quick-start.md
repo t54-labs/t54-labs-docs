@@ -53,19 +53,6 @@ Before diving into the technical architecture and implementation details like SD
 
 _We're also continuously working with our developer community and partners to expand this library of use cases and explore new frontiers together. And we welcome you onboard!_
 
-* [Autonomous Shopping Assistant](/docs/shopping-assistant)
-* [Agentic Monopoly Game](/docs/monopoly-game)
-
-<br />
-
-<br />
-
-## Start with some use cases!
-
-Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases. They illustrate how agent products intersect deeply with finance, and offer concrete scenarios to help you understand how agentic payments function in practice. Grasping these patterns is essential before entering a live development environment.
-
-_We're also continuously working with our developer community and partners to expand this library of use cases and explore new frontiers together. And we welcome you onboard!_
-
 <Cards columns={3}>
   <Card title="Autonomous Shopping Assistant" icon="fa-shopping-cart" href="/docs/shopping-assistant">
     AI agents that can browse, compare prices, and make purchases autonomously while managing budgets and payment approvals.
@@ -78,9 +65,9 @@ _We're also continuously working with our developer community and partners to ex
   <Card title="Global Payroll" icon="fa-globe" href="https://docs.t54.ai/v1.3/update/docs/global-payroll#/">
     **Leverage Claire and tLedger capabilities:**
 
-    • Receive payroll from 60+ countries
-    • Personal financial asset management\
-    • Financial risk assessment
+    Receive payroll from 60+ countries
+    Personal financial asset management\
+    Financial risk assessment
   </Card>
 </Cards>
 
