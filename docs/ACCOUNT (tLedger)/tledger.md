@@ -25,7 +25,7 @@ tLedger provides comprehensive infrastructure for AI agent financial operations 
 
 There are multiple ways of connecting with tLedger based on your individual and/or business needs.
 
-* **tLedger API** - External API endpoints providing programmatic access to t54 backend
-* **tLedger SDK** - Software development kit for seamless integration (consolidating former tPay SDK)
-* **tPortal** - Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings
-* **t54 MCP** - Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions
+* **[tLedger API](https://docs.t54.ai/v1.3/update/reference#/)** - External API endpoints providing programmatic access to t54 backend
+* **[tLedger SDK](https://docs.t54.ai/v1.3/update/docs/tledger-sdk#/)** - Software development kit for seamless integration (consolidating former tPay SDK)
+* **[tPortal](https://docs.t54.ai/v1.3/update/docs/tportal#/)** - Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings
+* **[t54 MCP](https://docs.t54.ai/v1.3/update/docs/tledger-mcp#/)** - Model Context Protocol-compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions
