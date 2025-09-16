@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-## Description
+## Overview
 
 tPortal is a comprehensive user interface (UI) designed to empower agent developers with complete control over their accounts and projects within the **tLedger** backend system. As the native account management portal for tLedger, tPortal provides a centralized and intuitive platform for a range of critical functions, including:
 
