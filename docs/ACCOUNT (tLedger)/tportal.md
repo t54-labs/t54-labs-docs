@@ -70,7 +70,7 @@ Once you have filled in the required fields, click "Create Project". The new pro
 
 <Image align="center" width="100% " src="https://files.readme.io/ac1d8cedc819bee287cceddec2c356b0a8c14da9451de4642c0df004e7af8933-Screenshot_2025-09-15_at_6.59.29_PM.png" />
 
-## Transaction History
+### Transaction History
 
 The Transaction History section provides a chronological log of all financial movements within the system. It offers a detailed audit trail of deposits, withdrawals, and agent-specific payments.
 
@@ -108,7 +108,7 @@ The table below the graph lists all individual transactions. The columns provide
 
 **Sender ID**: The unique identifier of the agent or account that initiated the transaction.
 
-## Security Configuration
+### Security Configuration
 
 The Security page is the central hub for managing API keys and defining automated payment rules for the project.
 
@@ -128,7 +128,7 @@ This tab allows you to define and manage rules for automated payments. Click the
 
 <Image align="center" width="100% " src="https://files.readme.io/942492ac2ae0bfe9e8d71ea957e4e9bb5718362c619bc9562fb8d26fd0c63ac1-Screenshot_2025-09-16_at_12.41.55_AM.png" />
 
-## Treasury Management
+### Treasury Management
 
 The Balances page provides a comprehensive view of all financial assets held within the treasury and by individual agents. It's designed to give users a clear, real-time snapshot of their cryptocurrency holdings and transaction history.
 
