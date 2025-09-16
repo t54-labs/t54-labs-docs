@@ -22,6 +22,8 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
 
 <br />
 
+<br />
+
 ## Explore the products
 
 <Cards columns={3}>
@@ -37,12 +39,16 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
     Advanced risk assessment and fraud prevention service that powers trust and security across all t54 financial operations.
   </Card>
 
-  <Card title="Claire" icon="fa-robot">
+  <Card title="Claire" icon="fa-robot" href="https://docs.t54.ai/v1.3/docs/claire#/">
     **Financial gateway agent**
 
     The intelligent financial assistant that serves as the bridge between AI agents and real-world financial transactions.
   </Card>
 </Cards>
+
+### Product Components
+
+We offer various ways to connect to our products, including agent-native approaches like our MCP integration for Claude, programmatic APIs for developers, and no-code solutions through our web portal. Whether you're building sophisticated AI agents or need simple point-and-click interfaces, t54 provides flexible integration options to match your technical requirements and use cases.
 
 <Accordion title="tLedger" icon="fa-database">
   **Components:**
@@ -83,35 +89,8 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
   **Claire Card** *(Planned)*\
   Physical payment device enabling real-world transactions paired with financial agents
 
-  Coming soon
+  [Learn More →](https://docs.t54.ai/v1.3/docs/claire#/)
 </Accordion>
-
-## Explore the products
-
-<Cards columns={3}>
-  <Card title="tLedger" icon="fa-database" href="/docs/tledger">
-    **AI-native account management platform**
-
-    • **tLedger API**: Blockchain-agnostic agent account management
-    • **tLedger SDK**: Seamless integration development kit\
-    • **tPortal**: Web-based management interface
-    • **t54 MCP**: Claude agent compatibility layer
-  </Card>
-
-  <Card title="tRadar" icon="fa-shield-alt" href="/docs/tradar">
-    **Intelligent risk management system**
-
-    • **tRadar API**: Standalone risk assessment service *(Work in Progress)*
-    • **Embedded functionality**: Powers risk assessment in Claire and tLedger
-  </Card>
-
-  <Card title="Claire" icon="fa-robot">
-    **Financial gateway agent**
-
-    • **Claire Agent**: AI financial assistant *(Work in Progress)*
-    • **Claire Card**: Physical payment device *(Planned)*
-  </Card>
-</Cards>
 
 ![](https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png)
 
