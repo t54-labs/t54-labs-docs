@@ -120,7 +120,7 @@ The Balances page provides a comprehensive view of all financial assets held wit
 
 <Image align="center" width="100% " src="https://files.readme.io/3a5725daa8c07228558a3731b253bbce59663401f781b1ce9f9325d184337715-Screenshot_2025-09-15_at_7.10.59_PM.png" />
 
-#### Treasury Balance
+**Treasury Balance**
 
 This section displays the total value of all assets in the main project wallet.
 
@@ -140,6 +140,8 @@ This section provides an overview of the total value of assets held by all agent
 
 **Toggle**: A toggle switch allows you to display a detailed list of all agent accounts and their individual balances.
 
+<br />
+
 **Overview**
 
 The detailed table provides a granular look at each agent's holdings and the specific asset accounts they manage.
@@ -153,3 +155,21 @@ The detailed table provides a granular look at each agent's holdings and the spe
 **Balance (USD)**: The total U.S. Dollar value of assets currently held by the agent.
 
 **Last Edit**: The date of the most recent activity on the account.
+
+<Cards columns={4}>
+  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
+    Neque porro quisquam est qui dolorem ipsum quia
+  </Card>
+
+  <Card title="Second Card" icon="fa-user">
+    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+  </Card>
+
+  <Card title="Third Card" icon="fa-star">
+    > Ut enim ad minim veniam, quis nostrud ullamco
+  </Card>
+
+  <Card title="Fourth Card" icon="fa-question">
+    **Excepteur sint occaecat cupidatat non proident**
+  </Card>
+</Cards>
