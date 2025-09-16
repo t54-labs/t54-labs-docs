@@ -173,3 +173,34 @@ The detailed table provides a granular look at each agent's holdings and the spe
     **Excepteur sint occaecat cupidatat non proident**
   </Card>
 </Cards>
+
+<br />
+
+<Cards columns={4}>
+  <Card title="Treasury Balance" icon="fa-wallet">
+    **Total USD Value**: Current aggregated value of all treasury assets in U.S. Dollars ($).
+
+    **Asset Breakdown**: Detailed breakdown of each cryptocurrency asset including coin (e.g., SOL, XRP), current balance, and USD value.
+  </Card>
+
+  <Card title="Treasury Actions" icon="fa-exchange-alt">
+    **Deposit/Withdraw**: Add or remove assets from the treasury.
+
+    **Toggle Accounts**: Switch to show underlying wallet addresses and account IDs that make up the total treasury balance.
+  </Card>
+
+  <Card title="Agents Total Balance" icon="fa-users">
+    **Total USD Value**: Aggregated value of all assets held by all agents, displayed in U.S. Dollars ($).
+
+    **Toggle View**: Switch to display detailed list of all agent accounts and their individual balances.
+  </Card>
+
+  <Card title="Agent Details Overview" icon="fa-table">
+    **Agent Management**: Granular view of each agent's holdings and asset accounts including:
+
+    * Agent Name & ID
+    * Daily Limit (USD)
+    * Balance (USD)
+    * Last Edit date
+  </Card>
+</Cards>
