@@ -58,6 +58,8 @@ _We're also continuously working with our developer community and partners to ex
 
 <br />
 
+<br />
+
 ## Start with some use cases!
 
 Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases. They illustrate how agent products intersect deeply with finance, and offer concrete scenarios to help you understand how agentic payments function in practice. Grasping these patterns is essential before entering a live development environment.
@@ -73,7 +75,7 @@ _We're also continuously working with our developer community and partners to ex
     Interactive game demonstrating agent-to-agent transactions, property management, and automated financial decision-making.
   </Card>
 
-  <Card title="Global Payroll" icon="fa-globe">
+  <Card title="Global Payroll" icon="fa-globe" href="https://docs.t54.ai/v1.3/update/docs/global-payroll#/">
     **Leverage Claire and tLedger capabilities:**
 
     • Receive payroll from 60+ countries
@@ -81,3 +83,5 @@ _We're also continuously working with our developer community and partners to ex
     • Financial risk assessment
   </Card>
 </Cards>
+
+<br />
