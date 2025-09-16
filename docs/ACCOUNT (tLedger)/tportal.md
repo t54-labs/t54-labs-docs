@@ -120,7 +120,7 @@ The Balances page provides a comprehensive view of all financial assets held wit
 
 <Image align="center" width="100% " src="https://files.readme.io/3a5725daa8c07228558a3731b253bbce59663401f781b1ce9f9325d184337715-Screenshot_2025-09-15_at_7.10.59_PM.png" />
 
-**Treasury Balance**
+#### Treasury Balance
 
 This section displays the total value of all assets in the main project wallet.
 
@@ -129,6 +129,8 @@ This section displays the total value of all assets in the main project wallet.
 **Asset Breakdown**: A detailed breakdown of each cryptocurrency asset is provided, including the coin (e.g., SOL, XRP), its current balance, and its corresponding USD value.
 
 **Actions**: You can deposit or withdraw assets from the treasury. A toggle switch allows you to show underlying accounts to reveal the specific wallet addresses and account IDs that make up the total treasury balance
+
+<br />
 
 **Agents Total Balance**
 
