@@ -72,9 +72,61 @@ Once you have filled in the required fields, click "Create Project". The new pro
 
 ## Transaction History
 
-## Risk Profile Monitoring
+The Transaction History section provides a chronological log of all financial movements within the system. It offers a detailed audit trail of deposits, withdrawals, and agent-specific payments.
+
+<br />
+
+<Image align="center" width="100% " src="https://files.readme.io/02682ae25071b91ad7565a4e48ad54638c980ddaee43783c7317d50d75e60323-Screenshot_2025-09-16_at_12.37.40_AM.png" />
+
+**Transaction Graph**
+
+The graph provides a visual representation of transaction volume over time.
+
+**Currency Filter**: You can filter the graph to display data for specific cryptocurrencies (e.g., RLUSD, XRP, USDC, USDT).
+
+**Time Axis**: The horizontal axis displays a timeline, showing transaction activity over a selected period (e.g., from mid-August to mid-September).
+
+**Value Axis**: The vertical axis represents the monetary value of transactions in U.S. Dollars ($).
+
+**Transaction Log**
+
+The table below the graph lists all individual transactions. The columns provide key details for each entry.
+
+**Timestamp**: The date and time the transaction was initiated.
+
+**Payment ID**: A unique identifier for the transaction. This is a crucial element for tracking and referencing specific payments.
+
+**Currency**: The specific cryptocurrency involved in the transaction (e.g., XRP).
+
+**Network**: The blockchain network on which the transaction occurred (e.g., XRPL).
+
+**Amount**: The quantity of the cryptocurrency transferred.
+
+**Amount (USD)**: The U.S. Dollar value of the transaction at the time it occurred.
+
+**Status**: The final state of the transaction.
+
+**Sender ID**: The unique identifier of the agent or account that initiated the transaction.
 
 ## Security Configuration
+
+The Security page is the central hub for managing API keys and defining automated payment rules for the project.
+
+**API Key Management**
+
+This tab allows you to create and manage API keys, which are essential for programmatic access to the system.
+
+<Image align="center" width="100% " src="https://files.readme.io/783feb3983862ea12cba9d0ea3827a7d6849b096d16e3d08081df51acb6e2494-Screenshot_2025-09-16_at_12.41.40_AM.png" />
+
+<br />
+
+**Payment Rules**
+
+This tab allows you to define and manage rules for automated payments. Click the "Create Payment Rule" button to define a new automated payment schedule.
+
+<br />
+
+<Image align="center" width="100% " src="https://files.readme.io/942492ac2ae0bfe9e8d71ea957e4e9bb5718362c619bc9562fb8d26fd0c63ac1-Screenshot_2025-09-16_at_12.41.55_AM.png" />
 
 ## Treasury Management
 
