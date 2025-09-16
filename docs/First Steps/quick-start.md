@@ -65,9 +65,7 @@ _We're also continuously working with our developer community and partners to ex
   <Card title="Global Payroll" icon="fa-globe" href="https://docs.t54.ai/v1.3/update/docs/global-payroll#/">
     **Leverage Claire and tLedger capabilities:**
 
-    Receive payroll from 60+ countries
-    Personal financial asset management\
-    Financial risk assessment
+    Receive payroll from 60+ countries, while making personal financial asset management and risk assessment
   </Card>
 </Cards>
 
