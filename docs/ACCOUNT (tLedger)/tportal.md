@@ -8,11 +8,7 @@ metadata:
 ---
 ## Description
 
-<br />
-
-tPortal is a comprehensive user interface (UI) designed to empower agent developers with complete control over their accounts and projects within the **tLedger** backend system.
-
-As the native account management portal for tLedger, tPortal provides a centralized and intuitive platform for a range of critical functions, including:
+tPortal is a comprehensive user interface (UI) designed to empower agent developers with complete control over their accounts and projects within the **tLedger** backend system. As the native account management portal for tLedger, tPortal provides a centralized and intuitive platform for a range of critical functions, including:
 
 **Project and Account Management**: Easily create, manage, and organize multiple projects and their associated agent accounts.
 
@@ -26,11 +22,7 @@ As the native account management portal for tLedger, tPortal provides a centrali
 
 tPortal streamlines the administration process, offering a powerful, efficient, and secure solution for managing agent operations on the tLedger platform.
 
-<br />
-
 ![](https://files.readme.io/8027049ffec2186f36f18ddc786a3c5912fb9288edf817b682a7a445e1d58c86-image.png)
-
-<br />
 
 ## Account Creation and Verification
 
@@ -66,15 +58,11 @@ Daily Limit: Set a daily transaction limit for all agent activities within this 
 
 Once you have filled in the required fields, click "Create Project". The new project will be created and you will automatically be switched to its dashboard.
 
-<br />
-
 <Image align="center" width="100% " src="https://files.readme.io/ac1d8cedc819bee287cceddec2c356b0a8c14da9451de4642c0df004e7af8933-Screenshot_2025-09-15_at_6.59.29_PM.png" />
 
 ### Transaction History
 
 The Transaction History section provides a chronological log of all financial movements within the system. It offers a detailed audit trail of deposits, withdrawals, and agent-specific payments.
-
-<br />
 
 <Image align="center" width="100% " src="https://files.readme.io/02682ae25071b91ad7565a4e48ad54638c980ddaee43783c7317d50d75e60323-Screenshot_2025-09-16_at_12.37.40_AM.png" />
 
@@ -118,8 +106,6 @@ This tab allows you to create and manage API keys, which are essential for progr
 
 <Image align="center" width="100% " src="https://files.readme.io/783feb3983862ea12cba9d0ea3827a7d6849b096d16e3d08081df51acb6e2494-Screenshot_2025-09-16_at_12.41.40_AM.png" />
 
-<br />
-
 **Payment Rules**
 
 This tab allows you to define and manage rules for automated payments. Click the "Create Payment Rule" button to define a new automated payment schedule.
@@ -132,8 +118,6 @@ This tab allows you to define and manage rules for automated payments. Click the
 
 The Balances page provides a comprehensive view of all financial assets held within the treasury and by individual agents. It's designed to give users a clear, real-time snapshot of their cryptocurrency holdings and transaction history.
 
-<br />
-
 <Image align="center" width="100% " src="https://files.readme.io/3a5725daa8c07228558a3731b253bbce59663401f781b1ce9f9325d184337715-Screenshot_2025-09-15_at_7.10.59_PM.png" />
 
 **Treasury Balance**
@@ -145,8 +129,6 @@ This section displays the total value of all assets in the main project wallet.
 **Asset Breakdown**: A detailed breakdown of each cryptocurrency asset is provided, including the coin (e.g., SOL, XRP), its current balance, and its corresponding USD value.
 
 **Actions**: You can deposit or withdraw assets from the treasury. A toggle switch allows you to show underlying accounts to reveal the specific wallet addresses and account IDs that make up the total treasury balance
-
-<br />
 
 **Agents Total Balance**
 
