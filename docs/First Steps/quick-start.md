@@ -23,7 +23,7 @@ Open t54's **[sandbox console](https://portal-sandbox.t54.ai/)** and create an a
 
 Learn more about our [Sandbox vs Production environments](https://docs.t54.ai/v1.2/update/docs/production-vs-sandbox#/).
 
-**Ready for launch?** When it's time to go live, simply create an account in the **production console** and replicate the resources you need.
+**Ready for launch?** When it's time to go live, simply create an account in the **[production console](https://portal.t54.ai/)** and replicate the resources you need.
 
 ## 2. Create your first project
 
@@ -66,5 +66,3 @@ _We're also continuously working with our developer community and partners to ex
     Leverage Claire and tLedger capabilities: Receive payroll from 60+ countries, while making personal financial asset management and risk assessment
   </Card>
 </Cards>
-
-<br />
