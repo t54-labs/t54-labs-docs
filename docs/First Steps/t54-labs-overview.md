@@ -66,7 +66,7 @@ We offer various ways to connect to our products, including agent-native approac
 <Accordion title="Claire" icon="fa-robot">
   **Components:**
 
-  **Claire Agent** *(Work in Progress)*\
+  **Claire Agent**\
   The financial gateway agent
 
   **Claire Card** *(Planned)*\
