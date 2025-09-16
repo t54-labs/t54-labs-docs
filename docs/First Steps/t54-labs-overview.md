@@ -9,23 +9,6 @@ t54 labs builds an **AI native financial infrastructure for the Agent Economy**.
 
 ## Explore the products
 
-| **Product Name** | **Sub Product Component** |                                                                               **Description**                                                                               |        Learn More       |
-| :--------------: | :-----------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------: |
-|      tLedger     |        tLedger API        |                                                 Programmatic APIs for Blockchain-agnostic agent account management platform                                                 | [Learn More →](tledger) |
-|                  |        tLedger SDK        |                                              Software development kit for seamless integration (consolidating former tPay SDK)                                              |                         |
-|                  |          tPortal          |                  Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings                  |                         |
-|                  |          t54 MCP          | Model Context Protocol (MCP) compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions |                         |
-|      tRadar      |      tRadar API (WIP)     |                                                   Standalone service accessible via simple API for third-party integration                                                  |  [Learn More →](tradar) |
-|                  |   Embedded functionality  |                                                         Powering risk assessment within Claire and tLedger products                                                         |                         |
-|      Claire      |     Claire Agent (WIP)    |                                                                         The financial gateway agent                                                                         |       Coming soon       |
-|                  |   Claire Card (Planned)   |                                            Physical payment device enabling real-world transactions paired with financial agents                                            |                         |
-
-<br />
-
-<br />
-
-## Explore the products
-
 <Cards columns={3}>
   <Card title="tLedger" icon="fa-database" href="/docs/tledger">
     **AI-native account management platform**
@@ -109,63 +92,5 @@ t54 enables agent developers to equip AI agents with core financial primitives�
 | Unlock agent monetization                  | Set up fee-sharing structures and reward tokens so agents can earn for completed tasks—similar to SaaS-style commissions or usage-based incentives.                                                                                     |
 | Integrate seamlessly with agent frameworks | Connect directly with agent orchestration tools like [Virtual Protocol's GAME](https://github.com/game-by-virtuals/game-python/tree/main/plugins/tLedger), [MCP](https://www.anthropic.com/news/model-context-protocol), and REST APIs. |
 | Audit and analyze                          | Track balances, review transaction history, and export logs for compliance or analytics—accessible via API or the t54 Portal.                                                                                                           |
-
-<Accordion title="My Accordion Title" icon="fa-info-circle">
-  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
-  occaecat cupidatat non proident!
-</Accordion>
-
-<Cards columns={4}>
-  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
-    Neque porro quisquam est qui dolorem ipsum quia
-  </Card>
-
-  <Card title="Second Card" icon="fa-user">
-    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
-  </Card>
-
-  <Card title="Third Card" icon="fa-star">
-    > Ut enim ad minim veniam, quis nostrud ullamco
-  </Card>
-
-  <Card title="Fourth Card" icon="fa-question">
-    **Excepteur sint occaecat cupidatat non proident**
-  </Card>
-</Cards>
-
-<Columns layout="auto">
-  <Column>
-    Neque porro quisquam est qui dolorem ipsum quia
-  </Column>
-
-  <Column>
-    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
-  </Column>
-
-  <Column>
-    > Ut enim ad minim veniam, quis nostrud ullamco
-  </Column>
-</Columns>
-
-<Tabs>
-  <Tab title="First Tab">
-    Welcome to the content that you can only see inside the first Tab.
-  </Tab>
-
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
-  </Tab>
-
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
-  </Tab>
-</Tabs>
-
-<Callout icon="📘" theme="info">
-
-</Callout>
-
-> <br />
 
 <br />
