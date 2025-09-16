@@ -36,16 +36,16 @@ We offer various ways to connect to our products, including agent-native approac
 <Accordion title="tLedger" icon="fa-database">
   **Components:**
 
-  **tLedger API**\
+  **[tLedger API](https://docs.t54.ai/v1.3/update/reference#/)**\
   Programmatic APIs for blockchain-agnostic agent account management platform
 
-  **tLedger SDK**\
+  **[tLedger SDK](https://docs.t54.ai/v1.3/update/docs/tledger-sdk#/)**\
   Software development kit for seamless integration (consolidating former tPay SDK)
 
-  **tPortal**\
+  **[tPortal](https://docs.t54.ai/v1.3/update/docs/tportal#/)**\
   Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings
 
-  **t54 MCP**\
+  **[t54 MCP](https://docs.t54.ai/v1.3/update/docs/tledger-mcp#/)**\
   Model Context Protocol (MCP) compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions
 
   [Learn More →](tledger)
@@ -57,7 +57,7 @@ We offer various ways to connect to our products, including agent-native approac
   **tRadar API** *(Work in Progress)*\
   Standalone service accessible via simple API for third-party integration
 
-  **Embedded functionality**\
+  **[Embedded functionality](https://docs.t54.ai/v1.3/update/docs/%EF%B8%8Fpayments-risk-control#/)**\
   Powering risk assessment within Claire and tLedger products
 
   [Learn More →](tradar)
