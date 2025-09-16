@@ -39,7 +39,7 @@ In the **security tab of your project** you will find the client and server API 
 
 <Image align="center" width="30% " src="https://files.readme.io/7f225f3f59c969743dc78feb62cb9a83e7029353ff5c9516db683d1a928b1e68-image.png" />
 
-## 4. Explore our products and use cases
+## 4. Explore our products
 
 Now you're ready to explore what t54 can do! You can dive into our three core products:
 
@@ -47,11 +47,9 @@ Now you're ready to explore what t54 can do! You can dive into our three core pr
 * **[tRadar](/docs/tradar)** - AI-native compliance and risk management framework
 * **[Claire](/docs/claire)** - The financial gateway agent
 
-## Start with some use cases!
+## 5. Start with some use cases!
 
-Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases. They illustrate how agent products intersect deeply with finance, and offer concrete scenarios to help you understand how agentic payments function in practice. Grasping these patterns is essential before entering a live development environment.
-
-_We're also continuously working with our developer community and partners to expand this library of use cases and explore new frontiers together. And we welcome you onboard!_
+Before diving into the technical architecture and implementation details like SDK and APIs, we encourage you—especially if you're a developer, whether or not you've already built your own agent—to begin by exploring these use cases...
 
 <Cards columns={3}>
   <Card title="Autonomous Shopping Assistant" icon="fa-shopping-cart" href="/docs/shopping-assistant">
