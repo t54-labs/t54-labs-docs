@@ -18,6 +18,27 @@ tRadar provides end-to-end trust management for the agent economy through three 
 * **Code Integrity Validation** Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
 * **Transaction-Time Risk Assessment** Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
 
+<br />
+
+## What is tRadar?
+
+tRadar provides end-to-end trust management for the agent economy through five areas:
+
+* **Agent Trust Establishment**
+  Know Your Agent (KYA) processes that verify agent identity, validate project credentials, and establish initial risk profiles before any financial activity begins.
+
+* **Code Integrity Validation**
+  Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
+
+* **Transaction-Time Risk Assessment**
+  Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
+
+* **Agent Compliance Management**
+  Dynamic compliance engine that applies different regulatory frameworks based on transaction context—whether on-chain, fiat, or cross-border—ensuring all money movement fulfills jurisdictional requirements. Automatically determines when agentic payments require human approval or consent based on transaction type, amount thresholds, and regulatory mandates.
+
+* **Chargeback and Failure Recovery**
+  Comprehensive loss protection system that activates when payments fail or disputes arise. Multiple recovery mechanisms include direct coverage by t54, automated collateral liquidation from customer/merchant deposits, and full chargeback support for failed transactions, ensuring financial protection for all parties in the agent economy.
+
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
 
 ## Live Validator Agent Network (VAN)
