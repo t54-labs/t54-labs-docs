@@ -72,7 +72,11 @@ The complete tRadar architecture includes detailed flow diagrams showing:
 2. **Flow Diagram** - Request routing and validation process flow
 3. **Detailed Flow Diagram** - Granular step-by-step validation workflow
 
-_[Include your three diagrams here]_
+![](https://files.readme.io/0fd31e600b98de9470af10b3a4553f428128360de40238bc3a9cdb4bc2aa2475-image.png)
+
+![](https://files.readme.io/51351f7e9a8ad5adfc48446972bc481e55171963995ce69ffe601cb727f5ab7b-image.png)
+
+![](https://files.readme.io/a92c71904cb721caa01faa32f1fda7ae69c97e2ec15d7afdd44777d86ccb3af1-image.png)
 
 ### Technical Implementation
 
