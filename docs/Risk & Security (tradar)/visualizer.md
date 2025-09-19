@@ -1,5 +1,5 @@
 ---
-title: Real-time tRadar Visualization Platform
+title: Real-time tRadar Visualization
 deprecated: false
 hidden: false
 metadata:
