@@ -7,8 +7,6 @@ metadata:
 ---
 The t54 Payment and Risk Control system is designed to ensure that every transaction initiated through our API or SDK is secure, auditable, and contextually verifiable. This section outlines how the system evaluates, processes, and safeguards payments using two key services: tRadar (risk control) and tAudit (code integrity validation).
 
-<Image align="center" width="-10px" src="https://files.readme.io/447aa7e7c55bdf2ddd31978f8d9d782577610b01b0521035f650e5a2839f154d-tRadar_pentagon_security_diagram.png" />
-
 # Transaction Submission
 
 Every payment initiated through the API or SDK includes several key parameters beyond the basic sender/receiver and amount fields:
