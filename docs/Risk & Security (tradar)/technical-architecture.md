@@ -7,7 +7,7 @@ metadata:
 ---
 tRadar 1.0 implements a sophisticated multi-tier validation architecture designed to handle risk assessment requests with varying complexity levels. The system is built around two core components: the Sequencer service and the enhanced RadarService validator network.
 
-### System Overview
+## System Overview
 
 tRadar follows a distributed architecture that enables scalable, intelligent risk assessment for agent transactions. The system intelligently routes requests based on complexity and maintains high availability through redundant validator instances.
 
@@ -18,7 +18,7 @@ tRadar follows a distributed architecture that enables scalable, intelligent ris
 * **RadarService** - Modular LLM-powered validation component
 * **Consensus Engine** - Weighted decision-making across validator committees
 
-### Sequencer Service
+## Sequencer Service
 
 The Sequencer acts as the intelligent routing layer that dispatches risk assessment requests across different tiers of validators based on transaction complexity and risk factors.
 
@@ -29,7 +29,7 @@ The Sequencer acts as the intelligent routing layer that dispatches risk assessm
 * **Tier Management** - Routes requests to appropriate validation tiers (easy, medium, hard)
 * **Response Coordination** - Aggregates validator responses and manages consensus
 
-### Multi-Tier Validation System
+## Multi-Tier Validation System
 
 tRadar operates three specialized validator instances, each optimized for specific complexity levels:
 
@@ -53,7 +53,7 @@ tRadar operates three specialized validator instances, each optimized for specif
   </Card>
 </Cards>
 
-### RadarService Architecture
+## RadarService Architecture
 
 The RadarService component has been significantly enhanced with modular LLM integration, providing plug-and-play flexibility for different AI models and validation strategies.
 
@@ -64,7 +64,7 @@ The RadarService component has been significantly enhanced with modular LLM inte
 * **Enhanced Flexibility** - Dynamic model selection based on transaction characteristics
 * **Scalable Processing** - Horizontal scaling across multiple validator instances
 
-### System Flow Diagrams
+## System Flow Diagrams
 
 The complete tRadar architecture includes detailed flow diagrams showing:
 
@@ -78,7 +78,7 @@ The complete tRadar architecture includes detailed flow diagrams showing:
 
 ![](https://files.readme.io/a92c71904cb721caa01faa32f1fda7ae69c97e2ec15d7afdd44777d86ccb3af1-image.png)
 
-### Technical Implementation
+## Technical Implementation
 
 <Accordion title="Architecture Details" icon="fa-cogs">
   **Complete System Architecture**
@@ -101,7 +101,7 @@ The complete tRadar architecture includes detailed flow diagrams showing:
   `app/prompt/README.md`
 </Accordion>
 
-### Performance & Scalability
+## Performance & Scalability
 
 The multi-tier architecture enables tRadar to:
 
