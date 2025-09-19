@@ -18,8 +18,6 @@ tRadar provides end-to-end trust management for the agent economy through three 
 * **Code Integrity Validation** Continuous auditing system (tAudit) that ensures all payment-related functions are vetted, hashed, and matched against approved implementations, creating tamper-proof audit trails.
 * **Transaction-Time Risk Assessment** Real-time Validator Agent Network (VAN) that marshals committees of independent AI validators to scrutinize each payment transaction using contextual analysis, behavioral patterns, and dynamic consensus mechanisms.
 
-<br />
-
 ![](https://files.readme.io/298cfc27e635ee491a0a861937fc71e5b50f2b595968af2e0b70ac5459420bfa-image.png)
 
 ## Live Validator Agent Network (VAN)
