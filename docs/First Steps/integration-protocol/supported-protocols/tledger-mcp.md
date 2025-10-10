@@ -1,5 +1,5 @@
 ---
-title: Model Context Protocol
+title: Model Context Protocol (MCP)
 excerpt: >-
   A Model Context Protocol (MCP) server that provides tools for interacting with
   the t54 Payment Gateway API
