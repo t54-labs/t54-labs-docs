@@ -13,6 +13,32 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
+tRadar Service API
+
+tLedger Onboarding
+
+Base App
+
+Claire Agents
+
+based on use case:
+
+I am individual, creating my own financial gateway agents
+
+I am base app users, I want to protect my fund
+
+I am agent developers, secure my agentic payment with t54 labs e2e solutions
+
+I am x402, AP2, A2A protocol developers, I want to protect my agents payments
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
 Welcome to t54, the AI-native financial infrastructure platform. Follow these steps to start building autonomous financial capabilities for your AI agents.
 
 ## 1. Create an account in sandbox
@@ -29,7 +55,7 @@ Learn more about our [Sandbox vs Production environments](https://docs.t54.ai/v1
 
 If you've just created an account for the first time, you'll be taken directly to the project creation process. Add the name to your project and continue.
 
-![](https://files.readme.io/3a3975574eba50dd96f7fe06fe3f4208af5736688820268dcceca76940c2fce0-image.png)
+<Image border={false} src="https://files.readme.io/3a3975574eba50dd96f7fe06fe3f4208af5736688820268dcceca76940c2fce0-image.png" />
 
 <br />
 
@@ -37,7 +63,7 @@ If you've just created an account for the first time, you'll be taken directly t
 
 In the **security tab of your project** you will find the client and server API keys you need to integrate t54 into your application.
 
-<Image align="center" width="30% " src="https://files.readme.io/7f225f3f59c969743dc78feb62cb9a83e7029353ff5c9516db683d1a928b1e68-image.png" />
+<Image align="center" border={false} width="30% " src="https://files.readme.io/7f225f3f59c969743dc78feb62cb9a83e7029353ff5c9516db683d1a928b1e68-image.png" />
 
 ## 4. Explore our products
 
