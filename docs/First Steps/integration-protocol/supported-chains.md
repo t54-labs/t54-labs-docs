@@ -1,5 +1,5 @@
 ---
-title: Supported Chains
+title: Supported Rails
 excerpt: Tap into multiple blockchains in one integration
 deprecated: false
 hidden: false
