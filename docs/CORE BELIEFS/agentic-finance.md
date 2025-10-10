@@ -1,6 +1,6 @@
 ---
 title: What is Agentic Finance?
-excerpt: Emancipating Human from Financial Anxiety
+excerpt: Empowering Trusted Agentic Finance
 deprecated: false
 hidden: false
 metadata:
