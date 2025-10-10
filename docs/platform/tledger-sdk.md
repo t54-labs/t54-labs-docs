@@ -1,5 +1,5 @@
 ---
-title: tLedger SDK
+title: SDK
 deprecated: false
 hidden: false
 metadata:
