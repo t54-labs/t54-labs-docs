@@ -1,5 +1,5 @@
 ---
-title: Supported Protocols
+title: Agentic Protocols
 deprecated: false
 hidden: false
 metadata:
