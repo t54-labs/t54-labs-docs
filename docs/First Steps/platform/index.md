@@ -1,5 +1,5 @@
 ---
-title: Platform
+title: Essentials
 deprecated: false
 hidden: true
 metadata:
