@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+MCP
+
 x402
 
 AP2
