@@ -13,7 +13,8 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-<br />
+Choose your path to get started with the **t54 Trust Stack**.
+Whether you’re integrating agentic finance into an organization or building your own autonomous financial agent, start with the flow that matches your use case.
 
 <br />
 
@@ -49,6 +50,15 @@ next:
        Future flows will include personal Trustline integration, peer-to-peer agent verification, and self-hosted compliance dashboards.
   </Tab>
 </Tabs>
+---
+
+### Next Steps
+
+Once your setup is complete, explore the following:
+- [**Integrate with KYA →**](https://docs.t54.ai/v1.4/docs/kya#/) — bind your agents to human identities and verify authorization.  
+- [**Review agent risk flows →**](https://docs.t54.ai/v1.4/docs/trustline#/) — understand how Trustline protects transactions in real time.  
+- [**Explore examples →**](https://docs.t54.ai/v1.4/docs/claire#/) — see how agentic finance operates in practice.
+
 
 <br />
 
