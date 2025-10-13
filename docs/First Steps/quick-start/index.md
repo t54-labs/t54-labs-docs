@@ -23,7 +23,7 @@ Whether you’re integrating agentic finance into an organization or building yo
     The **Business** path is designed for institutions, platforms, and developers integrating t54 into existing payment or compliance workflows.
 
     <Cards columns={3}>
-      <Card href="https://docs.t54.ai/v1.4/docs/tledger#/">
+      <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
           Create a tLedger Account
         </div>
