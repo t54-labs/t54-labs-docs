@@ -35,6 +35,8 @@ Photographs of officials destroying worn and damaged notes show the **less visib
 institutions actively policing the quality of money in circulation.
 By removing imperfect bills, governments maintained the collective belief that every note in your hand was clean, authentic, and redeemable—trust, upheld by vigilance.
 
+<Image align="center" border={false} width="50% " src="https://files.readme.io/44ce80d7326da8bb51ceebe041bffa68a272afc5c174c4523d1954b5cecfda8b-service-pnp-cph-3c00000-3c06000-3c06900-3c06975v.jpg" />
+
 [Library of Congress →](https://www.loc.gov/pictures/item/93502600/?utm_source=chatgpt.com)
 
 ***
