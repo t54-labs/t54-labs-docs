@@ -58,7 +58,7 @@ The identity undergoing KYC, the subject of compliance and risk evaluation, **re
 **Level 4 Agentic Finance marks a structural break.**
 It shifts control, responsibility, and execution from humans to agents.
 AI agents hold financial assets, initiate and approve payments, enter contracts, and participate in economic systems as autonomous entities.
-They are not merely tools—they are **trusted participants** in the financial ecosystem, governed by agent-native verification ([KYA](https://docs.t54.ai/v1.4/update/docs/know-your-agent#/)), continuous risk assessment ([Trustline](https://docs.t54.ai/v1.4/update/docs/trustline#/)), and compliant settlement infrastructure (tLedger).
+They are not merely tools—they are **trusted participants** in the financial ecosystem, governed by agent-native verification ([KYA](https://docs.t54.ai/v1.4/update/docs/know-your-agent#/)), continuous risk assessment ([Trustline](https://docs.t54.ai/v1.4/update/docs/trustline#/)), and compliant settlement infrastructure ([tLedger](https://docs.t54.ai/v1.4/update/docs/tledger#/)).
 
 This evolution doesn’t replace human judgment—it protects it.
 Because in L4 finance, **trust is programmable, accountability is verifiable, and peace of mind is no longer a luxury—it’s a protocol.**
