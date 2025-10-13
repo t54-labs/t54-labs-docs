@@ -117,7 +117,27 @@ Choose your path to get started with the **t54 Trust Stack**.
 
 <br />
 
+<div align="center" style={{ fontSize: "1.1em", fontWeight: 700, color: "#FF624A" }}>
+  Trustline x402 Facilitator
+</div>
+
+<hr style={{ width: "36%", border: "1px solid #FF624A", margin: "6px auto" }} />
+
 <br />
+
+<br />
+
+<Card href="https://docs.t54.ai/v1.4/docs/trustline#/">
+  <div style={{ border: "1px solid #FF624A", borderRadius: "12px", padding: "12px" }}>
+    <div align="center" style={{ fontSize: "1.1em", fontWeight: 700 }}>
+      Trustline x402 Facilitator
+    </div>
+
+    <div align="center">
+      Enable secure agent-to-agent payments using the x402 interoperability standard.
+    </div>
+  </div>
+</Card>
 
 <br />
 
