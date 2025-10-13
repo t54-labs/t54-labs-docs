@@ -21,8 +21,7 @@ Choose your path to get started with the **t54 Trust Stack**.
 
     <Cards columns={3}>
       {/* 1) Trustline x402 Facilitator */}
-
-      <Card href="https://docs.t54.ai/v1.4/docs/trustline#/">
+      <Card href="https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
           Connect via Trustline x402 Facilitator
         </div>
@@ -33,8 +32,7 @@ Choose your path to get started with the **t54 Trust Stack**.
       </Card>
 
       {/* 2) tLedger Account */}
-
-      <Card href="https://docs.t54.ai/v1.4/docs/tledger#/">
+      <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
           Create a tLedger Account
         </div>
@@ -45,8 +43,7 @@ Choose your path to get started with the **t54 Trust Stack**.
       </Card>
 
       {/* 3) tLedger SDK */}
-
-      <Card href="https://docs.t54.ai/v1.4/docs/tledger-sdk#/">
+      <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
           Integrate with tLedger SDK
         </div>
@@ -59,11 +56,10 @@ Choose your path to get started with the **t54 Trust Stack**.
   </Tab>
 
   <Tab title="Individual">
-    ### Getting Started for Individuals
+    ### Getting Started as Individuals
 
-    <Cards columns={3}>
+    <Cards columns={2}>
       {/* 1) Claire Agent */}
-
       <Card href="https://docs.t54.ai/v1.4/docs/claire#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
           Create Your Agent — Claire
@@ -74,20 +70,7 @@ Choose your path to get started with the **t54 Trust Stack**.
         </div>
       </Card>
 
-      {/* 2) Trustline Coming Soon */}
-
-      <Card>
-        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
-          Connect to Trustline (Coming Soon)
-        </div>
-
-        <div align="center">
-          Connect Claire to Trustline for real-time protection and transparency.
-        </div>
-      </Card>
-
-      {/* 3) Future Features */}
-
+      {/* 2) Future Features */}
       <Card>
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
           More to Come
@@ -100,6 +83,7 @@ Choose your path to get started with the **t54 Trust Stack**.
     </Cards>
   </Tab>
 </Tabs>
+
 
 ***
 
