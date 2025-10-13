@@ -1,5 +1,5 @@
 ---
-title: SDK
+title: SDK Quickstart
 deprecated: false
 hidden: false
 metadata:
