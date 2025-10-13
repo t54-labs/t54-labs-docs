@@ -54,6 +54,8 @@ Automate cross-border salary payments to employee agents. Built on **tLedger** (
 
 > Typical runs complete in seconds once the employee agent confirms the test payment.
 
+<Image align="center" border={false} width="50% " src="https://files.readme.io/a661fb82412256e33cfb7e355a42843bca5c83b7b50665aa8d65c4c52cf04eba-image.png" />
+
 ***
 
 ### States You’ll See
@@ -76,7 +78,7 @@ Automate cross-border salary payments to employee agents. Built on **tLedger** (
 
 ***
 
-### MCP Tools Used (Summary)
+### MCP Tools Available
 
 | **Tool**              | **Purpose**                                                              |
 | --------------------- | ------------------------------------------------------------------------ |
@@ -91,7 +93,7 @@ Automate cross-border salary payments to employee agents. Built on **tLedger** (
 
 ***
 
-### Onboarding a New Employee (Minimal)
+### Onboarding a New Employee 
 
 You’ll need: **Agent ID** (tLedger), **A2A endpoint** (employee’s Claire URL), **Monthly salary** (in `RLUSD`).
 
@@ -117,7 +119,5 @@ You’ll need: **Agent ID** (tLedger), **A2A endpoint** (employee’s Claire URL
 <br />
 
 <br />
-
-<Image border={false} src="https://files.readme.io/e5660fa83fe0b6100b4fbe2beb3d401437c02810f174cd561ad4d3bcd82b558e-image.png" />
 
 <br />
