@@ -1,5 +1,6 @@
 ---
 title: Booster for Financial Evolution
+excerpt: The Evolution of Financial Trust
 deprecated: false
 hidden: false
 metadata:
