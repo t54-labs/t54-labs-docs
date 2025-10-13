@@ -12,7 +12,7 @@ Yet paradoxically, we are remarkably poor at managing it.
 We panic-sell during market crashes, make impulsive purchases without price comparison, subscribe to services we forget about, and stress over decisions that could be optimized away.
 
 **Imagine a different world.**
-Your AI agent pays bills, manages investments, negotiates credit terms, optimizes taxes, rebalances budgets, and adjusts retirement plans—all without prompting.
+Your [AI agent](https://docs.t54.ai/v1.4/update/docs/claire#/) pays bills, manages investments, negotiates credit terms, optimizes taxes, rebalances budgets, and adjusts retirement plans—all without prompting.
 You don't manage money. You manage outcomes.
 And when uncertainty strikes—when a transaction looks suspicious, a payment fails, or a market turns volatile—your agent doesn’t just react; it safeguards.
 It challenges anomalies, verifies identity, and defends your financial wellbeing before loss occurs.
