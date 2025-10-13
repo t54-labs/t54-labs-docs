@@ -21,9 +21,9 @@ Together, these components form a complete trust layer across any blockchain, ag
 ## Product Overview
 
 <Cards columns={3}>
-
-  <Card title="KYA: Know Your Agent" href="https://docs.t54.ai/v1.4/docs/kya#/">
+  <Card href="https://docs.t54.ai/v1.4/docs/kya#/">
     <div align="center">
+      <strong>KYA: Know Your Agent</strong><br />
       **Agent-native identity verification**
     </div>
 
@@ -32,8 +32,9 @@ Together, these components form a complete trust layer across any blockchain, ag
     </div>
   </Card>
 
-  <Card title="Trustline" href="/docs/trustline">
+  <Card href="/docs/trustline">
     <div align="center">
+      <strong>Trustline</strong><br />
       **Real-time risk and fraud intelligence**
     </div>
 
@@ -42,8 +43,9 @@ Together, these components form a complete trust layer across any blockchain, ag
     </div>
   </Card>
 
-  <Card title="tLedger" href="/docs/tledger">
+  <Card href="/docs/tledger">
     <div align="center">
+      <strong>tLedger</strong><br />
       **Unified trust and settlement platform**
     </div>
 
@@ -51,7 +53,6 @@ Together, these components form a complete trust layer across any blockchain, ag
       Brings verified identity, risk, and compliance together for secure multi-chain financial operations.
     </div>
   </Card>
-
 </Cards>
 
 ***
