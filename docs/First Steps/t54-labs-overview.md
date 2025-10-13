@@ -21,14 +21,14 @@ Together, these components form a complete trust layer across any blockchain, ag
 ## Product Overview
 
 <Cards columns={3}>
-  <Card title="KYA: Know Your Agent" href="/docs/kya">
+  <Card title="KYA: Know Your Agent" href="/docs/know your agent">
     **Agent-native identity verification**
 
     Beyond KYC/KYB — cryptographically verifies *who the agent is, who it represents, and why it acts.*\
     Combines code audits, device posture, and intent proofs tied to merchant, asset, and time.
   </Card>
 
-  <Card title="tRadar" href="/docs/tradar">
+  <Card title="Trustline" href="/docs/trustline">
     **Real-time risk and fraud intelligence**
 
     A continuous trust monitor evaluating agent behavior and transaction context.\
