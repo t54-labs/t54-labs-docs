@@ -13,6 +13,45 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
+<br />
+
+<br />
+
+<Tabs>
+  <Tab title="Business (Default)">
+    ### Getting Started for Businesses
+
+    The **Business** path is designed for institutions, platforms, and developers integrating t54 into existing payment or compliance workflows.
+
+    **You can start in three ways:**
+
+    1. **[Create a tLedger Account](https://docs.t54.ai/v1.4/docs/tledger#/)**\
+       Set up a programmable account with integrated compliance, custody, and settlement logic.
+
+    2. **[Connect to Trustline API](https://docs.t54.ai/v1.4/docs/trustline#/)**\
+       Access real-time agent risk assessment, anomaly detection, and fraud prevention APIs.
+
+    3. **[Connect via Trustline x402 Facilitator](https://docs.t54.ai/v1.4/docs/trustline#/)**\
+       Enable agent-to-agent payment flows across networks through the x402 standard for secure delegated transactions.
+  </Tab>
+
+  <Tab title="Individual">
+    ### Getting Started for Individuals
+
+    The **Individual** path is for users and creators who want to experience personal agentic finance.
+
+    **You can start with:**
+
+    1. **[Create your own financial gateway agent — Claire](https://docs.t54.ai/v1.4/docs/claire#/)**\
+       Build your personal AI agent capable of managing bills, payroll, and cross-border transactions autonomously.
+
+    2. **More to come...**\
+       Future flows will include personal Trustline integration, peer-to-peer agent verification, and self-hosted compliance dashboards.
+  </Tab>
+</Tabs>
+
+<br />
+
 tRadar Service API
 
 tLedger Onboarding
