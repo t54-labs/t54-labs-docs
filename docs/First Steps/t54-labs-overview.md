@@ -21,39 +21,51 @@ Together, these components form a complete trust layer across any blockchain, ag
 ## Product Overview
 
 <Cards columns={3}>
+
   <Card href="https://docs.t54.ai/v1.4/docs/kya#/">
+    <div align="center" style={{ fontSize: "1.25em", fontWeight: 600 }}>
+      KYA: Know Your Agent
+    </div>
+    <hr style={{ width: "40%", border: "1px solid #ddd", margin: "6px auto" }} />
     <div align="center">
-      <strong>KYA: Know Your Agent</strong><br />
       **Agent-native identity verification**
     </div>
-
     <div align="center">
       Extends KYC/KYB to verify *who acts and why* — ensuring trusted agent identity and intent.
     </div>
   </Card>
 
   <Card href="/docs/trustline">
+    <div align="center" style={{ fontSize: "1.25em", fontWeight: 600 }}>
+      Trustline
+    </div>
+    <hr style={{ width: "40%", border: "1px solid #ddd", margin: "6px auto" }} />
     <div align="center">
-      <strong>Trustline</strong><br />
       **Real-time risk and fraud intelligence**
     </div>
-
     <div align="center">
       Continuously monitors agent behavior and transaction context to detect anomalies and prevent abuse.
     </div>
   </Card>
 
   <Card href="/docs/tledger">
+    <div align="center" style={{ fontSize: "1.25em", fontWeight: 600 }}>
+      tLedger
+    </div>
+    <hr style={{ width: "40%", border: "1px solid #ddd", margin: "6px auto" }} />
     <div align="center">
-      <strong>tLedger</strong><br />
       **Unified trust and settlement platform**
     </div>
-
     <div align="center">
       Brings verified identity, risk, and compliance together for secure multi-chain financial operations.
     </div>
   </Card>
+
 </Cards>
+
+
+
+
 
 ***
 
