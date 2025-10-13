@@ -70,8 +70,6 @@ Together, these components form a complete trust layer across any blockchain, ag
   </Card>
 </Cards>
 
-***
-
 ### Use Cases
 
 Explore how the **t54 Trust Stack** powers real-world agentic finance applications:
