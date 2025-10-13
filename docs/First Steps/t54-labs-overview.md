@@ -1,7 +1,9 @@
 ---
-title: t54 Labs Overview
+title: Products Overview
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
@@ -75,7 +77,7 @@ We offer various ways to connect to our products, including agent-native approac
   [Learn More →](https://docs.t54.ai/v1.3/docs/claire#/)
 </Accordion>
 
-![](https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png)
+<Image border={false} src="https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png" />
 
 ## What you can do with t54
 
