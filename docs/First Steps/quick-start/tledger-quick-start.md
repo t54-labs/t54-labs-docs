@@ -1,5 +1,5 @@
 ---
-title: tLedger Quick Start
+title: tLedger Quickstart
 deprecated: false
 hidden: false
 metadata:
