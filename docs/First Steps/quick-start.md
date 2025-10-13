@@ -13,15 +13,11 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-<br />
-
-# Quick Start
-
 Choose your path to get started with the **t54 Trust Stack**.
 Whether you’re integrating agentic finance into an organization or building your own autonomous financial agent, start with the flow that matches your use case.
 
 <Tabs>
-  <Tab title="Business (Default)">
+  <Tab title="Business">
     ### Getting Started for Businesses
 
     The **Business** path is designed for institutions, platforms, and developers integrating t54 into existing payment or compliance workflows.
