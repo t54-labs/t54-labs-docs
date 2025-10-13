@@ -1,96 +1,129 @@
 ---
-title: t54 Labs Overview
+title: Products Overview
+excerpt: The Trust Layer for the Agent Economy
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-t54 labs builds an **AI native financial infrastructure for the Agent Economy**. t54 labs offers the most trustworthy and scalable solutions that enable enterprise customers to equip their agents with financial identities, accounts, and payment capabilities—backed by an agent-native risk management and compliance framework. Whether you're building an agent that shops, hires, invests, or pays, **t54 provides the infrastructure to do it safely and confidently**.
+t54 labs builds an **AI-native trust layer for the agent economy.**  
+Our mission is to **re-engineer financial trust** for a world where AI agents act, transact, and make financial decisions on behalf of humans.
 
-## Explore the products
+The **t54 Trust Stack** delivers three core layers:
+
+1. **Identity & Verification** – verifying *who acts and why*  
+2. **Risk & Fraud** – detecting anomalies, abuse, and model-drift in real time  
+3. **Platform** – unifying identity, risk, and settlement into programmable infrastructure  
+
+Together, these components form a complete trust layer across any blockchain, agent framework, or payment rail.
+
+---
+
+## Product Overview
 
 <Cards columns={3}>
-  <Card title="tLedger" icon="fa-database" href="/docs/tledger">
-    **AI-native account management platform**
 
-    Programmatic APIs and tools for blockchain-agnostic agent account management, enabling seamless financial identity creation and transaction processing.
-  </Card>
+<Card title="KYA: Know Your Agent" href="/docs/kya">
+**Agent-native identity verification**
 
-  <Card title="tRadar" icon="fa-shield-alt" href="/docs/tradar">
-    **Intelligent risk management system**
+Beyond KYC/KYB — cryptographically verifies *who the agent is, who it represents, and why it acts.*  
+Combines code audits, device posture, and intent proofs tied to merchant, asset, and time.
+</Card>
 
-    Advanced risk assessment and fraud prevention service that powers trust and security across all t54 financial operations.
-  </Card>
+<Card title="tRadar" href="/docs/tradar">
+**Real-time risk and fraud intelligence**
 
-  <Card title="Claire" icon="fa-robot" href="https://docs.t54.ai/v1.3/docs/claire#/">
-    **Financial gateway agent**
+A continuous trust monitor evaluating agent behavior and transaction context.  
+Detects anomalies, fraud, and manipulation using agent-behavioral and financial signals.
+</Card>
 
-    The intelligent financial assistant that serves as the bridge between AI agents and real-world financial transactions.
-  </Card>
+<Card title="tLedger" href="/docs/tledger">
+**Unified trust and settlement platform**
+
+Blockchain-agnostic account, risk, and compliance engine that brings verified identity and trusted decisions directly into settlement.
+</Card>
+
 </Cards>
 
-### Product Components
+---
 
-We offer various ways to connect to our products, including agent-native approaches like our MCP integration for Claude, programmatic APIs for developers, and no-code solutions through our web portal. Whether you're building sophisticated AI agents or need simple point-and-click interfaces, t54 provides flexible integration options to match your technical requirements and use cases.
+## Product Components
 
-<Accordion title="tLedger" icon="fa-database">
-  **Components:**
+### Identity & Verification — Know Your Agent (KYA)
 
-  **[tLedger API](https://docs.t54.ai/v1.3/update/reference#/)**\
-  Programmatic APIs for blockchain-agnostic agent account management platform
+KYA defines *who acts and why.* It extends traditional compliance frameworks to cover agents as autonomous actors.
 
-  **[tLedger SDK](https://docs.t54.ai/v1.3/update/docs/tledger-sdk#/)**\
-  Software development kit for seamless integration (consolidating former tPay SDK)
+**Core Features**
+- Agent code audit and signature validation  
+- Human–agent identity binding via ASID biometric trust  
+- Cryptographic intent proofs (merchant, asset, time)  
+- Delegated authorization and validator agent checks  
 
-  **[tPortal](https://docs.t54.ai/v1.3/update/docs/tportal#/)**\
-  Web-based UI portal for managing agent accounts, viewing transaction history, monitoring risk profiles, and configuring security settings
+**Integrations**
+- **ASID hardware proof layer** (fingerprint/palm ZKP hardware from Claire Card — *coming soon*)  
+- **API:** `/api/v1/agent_profiles` (create, verify, limit, delete)  
 
-  **[t54 MCP](https://docs.t54.ai/v1.3/update/docs/tledger-mcp#/)**\
-  Model Context Protocol (MCP) compatible connections enabling Claude agents to directly utilize tLedger services, create agent accounts, and initiate financial transactions
+[Learn more →](kya)
 
-  [Learn More →](tledger)
-</Accordion>
+---
 
-<Accordion title="tRadar" icon="fa-shield-alt">
-  **Components:**
+### Risk & Fraud — tRadar
 
-  **tRadar API** *(Work in Progress)*\
-  Standalone service accessible via simple API for third-party integration
+tRadar is the agent-native risk engine that underpins every t54 product. It applies multi-layer scoring across behavioral, transactional, and model signals to defend against fraud, abuse, and model-drift.
 
-  **[Embedded functionality](https://docs.t54.ai/v1.3/update/docs/%EF%B8%8Fpayments-risk-control#/)**\
-  Powering risk assessment within Claire and tLedger products
+**Components**
+- **tRadar API (Beta):** External interface for agent risk scoring  
+- **Embedded Risk:** integrated directly into tLedger payment and account flows  
+- **Validator Network:** distributed agents validating risk decisions across ecosystems  
 
-  [Learn More →](tradar)
-</Accordion>
+**Example Use Cases**
+- Detecting hallucinated or replayed payments  
+- Real-time anomaly scoring for autonomous spending  
+- Risk-adjusted approvals and transaction challenges  
+- Credit caps, daily limit enforcement, and model drift detection  
+- Guardrailed AI delegation with programmable recourse  
 
-<Accordion title="Claire" icon="fa-robot">
-  **Components:**
+[Learn more →](tradar)
 
-  **Claire Agent**\
-  The financial gateway agent
+---
 
-  **Claire Card** *(Planned)*\
-  Physical payment device enabling real-world transactions paired with financial agents
+### Platform — tLedger
 
-  [Learn More →](https://docs.t54.ai/v1.3/docs/claire#/)
-</Accordion>
+tLedger powers verified, auditable, and programmable agent accounts.  
+It integrates blockchain rails (Solana, Base, XRPL) and fiat channels under one schema.
 
-![](https://files.readme.io/05068be2ce2cc890a154559ac85f8b0e19681057ac8777e562490c88ef74ed46-image.png)
+**Core APIs**
+- `POST /api/v1/projects` → create AI project & treasury  
+- `POST /api/v1/agent_profiles` → onboard agent identity  
+- `POST /api/v1/payment` → execute agent-to-agent payment  
+- `GET /api/v1/payments` → query transactions  
 
-## What you can do with t54
+**Key Features**
+- Virtual account management and treasury limits  
+- Multi-asset support (SOL, USDT, RLUSD, etc.)  
+- Risk-aware settlement using tRadar signals  
+- Integrated compliance via KYA validation  
 
-Start from a [Quick Start](/docs/getting-started)!
+**SDKs & Interfaces**
+- **tLedger SDKs:** Python + TypeScript for GAME/Eliza agents  
+- **tPortal:** Web UI for account, key, and risk management  
+- **MCP Integration:** Claude agents can call tLedger natively  
 
-t54 enables agent developers to equip AI agents with core financial primitives—without the need to rebuild financial infrastructure from scratch. More importantly, when failure, fraud, or loss occurs, t54 provides peace of mind to human users by enforcing trust and guardrails—maximizing the overall customer experience.
+[Learn more →](tledger)
 
-| **Capability**                             | **Enables you to…**                                                                                                                                                                                                                     |
-| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Create agent financial profiles            | Assign each AI agent a virtual financial account, configure daily spend limits, and manage the agent's financial assets.                                                                                                                |
-| Trigger agent-to-agent payments            | Enable your agents to send payments to other agents or third-party t54 agents using secure, programmable infrastructure.                                                                                                                |
-| Delegate payments securely                 | Leverage t54's KYA (Know Your Agent) and validator agents to verify behavior, enforce credit caps, and prevent fraud or hallucinated transactions.                                                                                      |
-| Build merchant payout rails                | Integrate compliant payout flows to human merchants—allowing agents to pay for services, subscriptions, or contractual work.                                                                                                            |
-| Unlock agent monetization                  | Set up fee-sharing structures and reward tokens so agents can earn for completed tasks—similar to SaaS-style commissions or usage-based incentives.                                                                                     |
-| Integrate seamlessly with agent frameworks | Connect directly with agent orchestration tools like [Virtual Protocol's GAME](https://github.com/game-by-virtuals/game-python/tree/main/plugins/tLedger), [MCP](https://www.anthropic.com/news/model-context-protocol), and REST APIs. |
-| Audit and analyze                          | Track balances, review transaction history, and export logs for compliance or analytics—accessible via API or the t54 Portal.                                                                                                           |
+---
 
-<br />
+## What You Can Build with t54
+
+| **Capability** | **Enables you to…** |
+|-----------------|--------------------|
+| **Create agent financial profiles** | Assign each AI agent a verified financial identity with compliance and credit controls. |
+| **Delegate and verify agent actions** | Bind each action to a verified identity and intent proof using KYA. |
+| **Monitor financial transaction risk in real time** | Detect anomalies via tRadar; pause, challenge, or block agent-initiated transactions. |
+| **Prevent fraud and model abuse** | Use continuous behavioral scoring to identify hallucinated payments or manipulation attempts. |
+| **Execute compliant payments** | Transfer funds securely through verified agents using tLedger APIs. |
+| **Analyze and audit activity** | Access risk logs, balances, and transaction history via API or Portal for compliance. |
+
+---
+
+[Quick Start →](/docs/getting-started)
