@@ -14,7 +14,7 @@ t54 supports **MCP** and **x402** out of the box — choose a protocol to get st
 
   <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-mcp#/">
     <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
-      Model Context Protocol (MCP)
+      Platform MCP
     </div>
 
     <div align="center">
@@ -26,7 +26,7 @@ t54 supports **MCP** and **x402** out of the box — choose a protocol to get st
 
   <Card href="https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/">
     <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
-      x402 / AP2 Settlement Protocol
+      x402-Secure Facilitator
     </div>
 
     <div align="center">
@@ -54,11 +54,11 @@ Explore the official documentation for each open protocol that powers agentic in
     </div>
   </Card>
 
-  {/* AP2 / x402 Official Docs */}
+  {/* x402 Official Docs */}
 
-  <Card href="https://ap2-protocol.org/">
+  <Card href="https://www.x402.org/">
     <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
-      AP2 / x402 Protocol
+      x402 Protocol
     </div>
 
     <div align="center">
