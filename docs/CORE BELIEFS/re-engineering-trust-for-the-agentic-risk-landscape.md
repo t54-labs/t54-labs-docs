@@ -1,5 +1,5 @@
 ---
-title: Re-engineering Trust for the Agentic Risk Landscape
+title: Re-engineering Trust Stack for the Agentic Finance
 deprecated: false
 hidden: false
 metadata:
@@ -27,6 +27,8 @@ Delegated, asynchronous, and context-aware transactions break every assumption e
 * **Agent identity:** A new layer of authentication emerges—one that verifies not the human, but the model, its version, and its runtime integrity.
 
 To bridge it, the **trust stack itself must evolve.**
+
+<Image border={false} src="https://files.readme.io/487c583441cce7ca1eeec66f21f182367fd3f98f18d931c13f3837a2091c319e-image.png" />
 
 ***
 
