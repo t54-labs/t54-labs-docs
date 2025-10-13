@@ -5,25 +5,16 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
-Here’s your draft converted into clean, GitHub-ready **Markdown** format—maintaining all hierarchy, code blocks, and inline formatting.
-
-***
-
-````markdown
-## 3. 🚀 Quick Start
-
 For a detailed step-by-step guide, see [docs/QUICKSTART.md](docs/QUICKSTART.md).
 
-### 3.1 Install Dependencies
+### Install Dependencies
 
 ```bash
 # Install all dependencies including local packages
 uv lock && uv sync
 ````
 
-### 3.2 Start the Proxy
+### Start the Proxy
 
 The proxy can run in two modes:
 
@@ -46,11 +37,11 @@ PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle \
 uv run python run_facilitator_proxy.py
 ```
 
-### 3.3 Run Examples
+### Run Examples
 
 After starting the proxy, you can run the example demos to see the complete payment flow.
 
-#### 3.3.1 Pre-requisites
+#### Prerequisites
 
 1. **Install Dependencies**
 
@@ -83,7 +74,7 @@ Upstream facilitator (optional, e.g., x402.org on Base Sepolia):
 * `PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify`
 * `PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle`
 
-#### 3.3.2 Run the Demo
+#### Run the Demo
 
 Open three terminals and run in sequence:
 
@@ -123,7 +114,7 @@ The buyer demo demonstrates the SDK's capabilities (using OpenAI as the current 
 **Note:** `PROXY_LOCAL_RISK=1` enables local in-memory risk handling (development).
 For production, set `PROXY_LOCAL_RISK=0` and `RISK_ENGINE_URL=https://trustline-api.t54.ai`.
 
-### 3.4 Observability
+### Observability
 
 * Buyer demo initializes OpenTelemetry tracing; spans print to console by default.
 * To view spans in a local OTEL Collector, follow [docs/observability/otel-collector-minimal.md](docs/observability/otel-collector-minimal.md).
@@ -131,16 +122,16 @@ For production, set `PROXY_LOCAL_RISK=0` and `RISK_ENGINE_URL=https://trustline-
   * Set `OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318/v1/traces`.
   * Optionally set `OTEL_SERVICE_NAME` (default: `buyer-demo`).
 
-### 3.5 Buyer Risk Session
+### Buyer Risk Session
 
 * Buyer agent creates risk session via `POST /risk/session` at `AGENT_GATEWAY_URL`.
 * **Local Mode** (`PROXY_LOCAL_RISK=1`): proxy handles risk in-memory.
 * **Production Mode** (`PROXY_LOCAL_RISK=0`): proxy forwards to Trustline (`RISK_ENGINE_URL=https://trustline-api.t54.ai`).
 * Payments include `X-RISK-SESSION` + `X-PAYMENT-SECURE` per [docs/specs/payment-trace-and-evidence-spec.md](docs/specs/payment-trace-and-evidence-spec.md).
 
-### 3.6 Base Sepolia Demo (Local Seller → x402.org Upstream)
+### Base Sepolia Demo (Local Seller → x402.org Upstream)
 
-Use localhost for Seller URL. Proxy forwards to x402.org facilitator on Base Sepolia.
+Use localhost for the Seller URL. The proxy forwards to x402.org’s upstream facilitator on Base Sepolia.
 
 **Network:** `base-sepolia`
 **Endpoints:** `https://x402.org/facilitator/verify` and `/settle`
@@ -169,23 +160,23 @@ uv run python packages/x402-secure/examples/buyer_agent_openai.py
 Notes:
 
 * `PUBLIC_URL` builds `paymentRequirements.resource`.
-* Proxy forwards `/x402/{verify,settle}` upstream.
-* Buyer uses local `AGENT_GATEWAY_URL` for Risk APIs.
+* The proxy forwards `/x402/{verify,settle}` upstream via `PROXY_UPSTREAM_*`.
+* The buyer uses `AGENT_GATEWAY_URL` (default `http://localhost:8000`) for Risk APIs.
 
-### 3.7 Signed X-PAYMENT (Default)
+### Signed X-PAYMENT (Default)
 
-Buyer demo uses x402 SDK to create and sign **EIP-3009 TransferWithAuthorization** payloads.
+The buyer demo uses the official x402 SDK to create and sign **EIP-3009 TransferWithAuthorization** payloads.
 
-**Env vars:**
+**Environment variables:**
 
-* `BUYER_PRIVATE_KEY=0x...`
+* `BUYER_PRIVATE_KEY=0x...` (Base Sepolia test key with funds)
 * `NETWORK=base-sepolia`
 * `AGENT_GATEWAY_URL=http://localhost:8000`
 * `PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify`
 * `PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle`
-* `MERCHANT_PAYTO=0x...`
+* `MERCHANT_PAYTO=0x...` (your merchant account on Base Sepolia)
 
-Run sequence:
+**Run sequence:**
 
 1. Start proxy
 2. Start seller at port 8010
@@ -193,10 +184,10 @@ Run sequence:
 
 Notes:
 
-* Proxy adds no upstream auth headers by default.
-* Ensure asset type and merchant address match network.
+* The proxy does not add upstream auth headers by default. If your target facilitator needs auth, add it at the upstream or contact us to wire optional headers.
+* The `PaymentRequirements.asset` must match the network’s USDC and `payTo` must be your merchant address; the seller demo sets both.
 
-### 3.8 Using the Client SDK
+### Using the Client SDK
 
 **Installation**
 
@@ -206,12 +197,12 @@ uv lock && uv sync
 
 Installs:
 
-* `x402-secure` SDK
-* `x402_proxy` module
+* `x402-secure` (client SDK)
+* `x402_proxy` (proxy server module)
 
 **SDK Components**
 
-1. **AI Agent Trace Collection**
+**AI Agent Trace Collection**
 
 ```python
 from x402_client import OpenAITraceCollector, store_agent_trace
@@ -221,21 +212,21 @@ tracer = OpenAITraceCollector()
 tid = await store_agent_trace(risk_client, sid, tracer.events)
 ```
 
-2. **Risk Session Management**
+**Risk Session Management**
 
 ```python
 from x402_client import RiskClient
 
 risk_client = RiskClient("http://localhost:8000")
 session = await risk_client.create_session(
-    agent_did=buyer_address,
+    agent_did=buyer_address,  # Future: EIP-8004 DID
     app_id="my-app",
     device={"ua": "x402-agent/1.0"}
 )
 sid = session["sid"]
 ```
 
-3. **Secure Payment Headers**
+**Secure Payment Headers**
 
 ```python
 from x402_client import build_payment_secure_header, start_client_span
@@ -244,7 +235,7 @@ with start_client_span("buyer.payment"):
     headers = build_payment_secure_header(agent_trace_context={"tid": tid})
 ```
 
-4. **Complete Payment Flow**
+**Complete Payment Flow**
 
 ```python
 from x402_client import BuyerClient, BuyerConfig
@@ -281,11 +272,5 @@ async def protected_resource(request: Request):
     pass
 ```
 
-See `run_facilitator_proxy.py` for full standalone example.
+See `run_facilitator_proxy.py` for a complete standalone proxy server example.
 
-```
-
----
-
-✅ This version is 100% Markdown-valid, properly indented, and ready for publishing to your documentation site or GitHub repo.
-```
