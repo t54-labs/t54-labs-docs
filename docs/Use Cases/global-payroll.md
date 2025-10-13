@@ -5,110 +5,119 @@ hidden: false
 metadata:
   robots: index
 ---
-automate cross-border salary payments to employee agents. built on **tledger** (settlement) and **trustline** (risk), the payroll mcp agent coordinates with each employee’s **claire** agent through secure a2a messaging.
+Automate cross-border salary payments to employee agents. Built on **tLedger** (settlement) and **Trustline** (risk), the Payroll MCP agent coordinates with each employee’s **Claire** agent through secure A2A messaging.
 
 ***
 
-### overview
+### Overview
 
-<Cards columns={2}>
-  <Card>
-    <div align="center" style={{ fontWeight: 700 }}>employer side — payroll mcp agent</div>
-    <div align="center">creates batches, authenticates, calculates totals, triggers payments, monitors status.</div>
-  </Card>
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <Cards columns={2} style={{ gap: 24 }}>
+    <Card style={{ width: 420, minHeight: 160, margin: "0 auto" }}>
+      <div align="center" style={{ fontWeight: 700 }}>Employer Side — Payroll MCP Agent</div>
 
-  <Card>
-    <div align="center" style={{ fontWeight: 700 }}>employee side — claire agent</div>
-    <div align="center">receives a2a notifications, confirms test payment, accepts full payroll, updates balances.</div>
-  </Card>
-</Cards>
+      <div align="center" style={{ marginTop: 8 }}>
+        Creates batches, authenticates, calculates totals, triggers payments, monitors status.
+      </div>
+    </Card>
 
-***
+    <Card style={{ width: 420, minHeight: 160, margin: "0 auto" }}>
+      <div align="center" style={{ fontWeight: 700 }}>Employee Side — Claire Agent</div>
 
-### high-level flow
-
-1. **authenticate**
-   payroll mcp authenticates with t54 (api key/secret).
-2. **prepare run**
-   list employees → compute monthly total → (optional) check balance.
-3. **trigger payroll (per employee)**
-   * **test payment**: send a small amount (e.g., `0.01 RLUSD`) to the employee’s claire a2a endpoint.
-   * **confirm**: wait for claire to acknowledge receipt.
-   * **full payment**: send the net salary (e.g., `3,000 RLUSD`) for the month.
-4. **monitor & settle**
-   use history endpoints to track `PENDING` → `CONFIRMED` (or `FAILED/CANCELLED`).
-5. **employee actions (claire)**
-   employee views balance, history, and can **withdraw** to a wallet when desired.
-
-> normal runs complete in ~seconds once the employee agent confirms the test payment.
+      <div align="center" style={{ marginTop: 8 }}>
+        Receives A2A notifications, confirms test payment, accepts full payroll, updates balances.
+      </div>
+    </Card>
+  </Cards>
+</div>
 
 ***
 
-### states you’ll see
+### High-Level Flow
 
-| state       | meaning                                                                 |
-| ----------- | ----------------------------------------------------------------------- |
-| `PENDING`   | awaiting agent confirmation or network finality                         |
-| `CONFIRMED` | completed and recorded                                                  |
-| `FAILED`    | attempt failed (e.g., endpoint down)                                    |
-| `CANCELLED` | aborted by system or insufficient funds at time of execution            |
-| de-dupe     | system prevents duplicate payroll attempts while one is still `PENDING` |
+1. **Authenticate**
+   Payroll MCP authenticates with t54 (API key/secret).
 
-***
+2. **Prepare Run**
+   List employees → compute monthly total → (optional) check balance.
 
-### retries & common issues
+3. **Trigger Payroll (Per Employee)**
+   * **Test payment**: send a small amount (e.g., `0.01 RLUSD`) to the employee’s Claire A2A endpoint.
+   * **Confirm**: wait for Claire to acknowledge receipt.
+   * **Full payment**: send the net salary (e.g., `3,000 RLUSD`) for the month.
 
-* **agent not responding**: test payment stays `PENDING`. fix the employee’s **a2a endpoint** (ensure service is online) or wait for timeout; then re-trigger.
-* **insufficient funds**: full payment may be `CANCELLED`. top up RLUSD, then retrigger the same month’s payroll.
-* **network hiccups**: history checks can error while payments continue in the background; re-query later.
+4. **Monitor & Settle**
+   Use history endpoints to track `PENDING` → `CONFIRMED` (or `FAILED` / `CANCELLED`).
 
-***
+5. **Employee Actions (Claire)**
+   Employee views balance, history, and can **withdraw** to a wallet when desired.
 
-### mcp tools used (summary)
-
-| tool                  | what it does (no pii)                                            |
-| --------------------- | ---------------------------------------------------------------- |
-| `authenticate`        | start a session with t54 payroll apis (api key/secret required). |
-| `list_employees`      | fetch active employees with salary configs.                      |
-| `check_balance`       | confirm available RLUSD.                                         |
-| `trigger_payroll`     | run test → confirm → full payment per employee.                  |
-| `get_payment_history` | poll status, detect `pending/confirmed/failed/cancelled`.        |
-| `add_employee`        | onboard a new employee (agent id, a2a endpoint, monthly salary). |
-
-> **security**: never paste api keys into chat or ui fields that are logged. store credentials in env/secrets (vault/ci). redact in screenshots/logs.
+> Typical runs complete in seconds once the employee agent confirms the test payment.
 
 ***
 
-### onboarding a new employee (minimal)
+### States You’ll See
 
-you’ll need:
-
-* **agent id** (from tledger)
-* **a2a endpoint** (employee’s claire http endpoint)
-* **monthly salary** (in `RLUSD`)
-
-steps:
-
-1. call `add_employee` with the three fields.
-2. verify the new entry appears in `list_employees`.
-3. run `trigger_payroll` for the current month when ready.
+| **State**   | **Meaning**                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| `PENDING`   | Awaiting agent confirmation or network finality                              |
+| `CONFIRMED` | Completed and recorded                                                       |
+| `FAILED`    | Attempt failed (e.g., endpoint down)                                         |
+| `CANCELLED` | Aborted by system or insufficient funds at execution time                    |
+| `DE-DUPE`   | Duplicate attempt blocked while an existing payment for the period is active |
 
 ***
 
-### example run (anonymized)
+### Retries & Common Issues
 
-* employer authenticates → lists **5** employees → total **~18k RLUSD**
-* triggers payroll: 4 employees **confirmed** end-to-end within ~1 minute
-* 1 employee stuck at **test `PENDING`** (endpoint issue) → later **confirmed**, then **full payment** processed
-* new employee added (agent id + a2a + salary). first attempts **failed** (endpoint OK, but balance low), then **top-up** → full payment **initiated** and **confirmed**
+* **Agent not responding** → test payment stays `PENDING`. Fix the employee’s **A2A endpoint** (ensure service online) or wait for timeout; then re-trigger.
+* **Insufficient funds** → full payment may be `CANCELLED`. Top up RLUSD, then re-trigger the period’s payroll.
+* **Network hiccups** → history checks can error while payments continue in the background; re-query later.
 
 ***
 
-### links
+### MCP Tools Used (Summary)
 
-* use **claire** to view balances, history, and withdraw:
-  [claire agent page →](/v1.4/docs/claire)
-* set up org-side flows or connect via mcp:
-  [tledger mcp quickstart →](https://docs.t54.ai/v1.4/update/docs/tledger-mcp#/)
-* run x402 facilitator with trustline headers (for a2a commerce):
-  [x402-secure quickstart →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)
+| **Tool**              | **Purpose**                                                              |
+| --------------------- | ------------------------------------------------------------------------ |
+| `authenticate`        | Start a session with t54 payroll APIs (API key/secret required)          |
+| `list_employees`      | Fetch active employees with salary configs                               |
+| `check_balance`       | Confirm available RLUSD                                                  |
+| `trigger_payroll`     | Run test → confirm → full payment per employee                           |
+| `get_payment_history` | Poll status, detect `PENDING / CONFIRMED / FAILED / CANCELLED / DE-DUPE` |
+| `add_employee`        | Onboard a new employee (Agent ID, A2A endpoint, monthly salary)          |
+
+> **Security**: never paste API keys into chat UIs or logs. Store credentials in env/secrets. Redact in screenshots.
+
+***
+
+### Onboarding a New Employee (Minimal)
+
+You’ll need: **Agent ID** (tLedger), **A2A endpoint** (employee’s Claire URL), **Monthly salary** (in `RLUSD`).
+
+1. Call `add_employee` with those fields.
+2. Verify the entry via `list_employees`.
+3. Run `trigger_payroll` for the month when ready.
+
+***
+
+### Links
+
+* Use **Claire** to view balances, history, and withdraw:
+  [Claire Agent →](/v1.4/docs/claire)
+
+* Connect org-side flows via MCP:
+  [tLedger MCP Quickstart →](https://docs.t54.ai/v1.4/update/docs/tledger-mcp#/)
+
+* Run x402 facilitator with Trustline headers (for A2A commerce):
+  [x402-Secure Quickstart →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)
+
+<br />
+
+<br />
+
+<br />
+
+<Image border={false} src="https://files.readme.io/e5660fa83fe0b6100b4fbe2beb3d401437c02810f174cd561ad4d3bcd82b558e-image.png" />
+
+<br />
