@@ -13,10 +13,12 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
+<br />
+
+# Quick Start
+
 Choose your path to get started with the **t54 Trust Stack**.
 Whether you’re integrating agentic finance into an organization or building your own autonomous financial agent, start with the flow that matches your use case.
-
-<br />
 
 <Tabs>
   <Tab title="Business (Default)">
@@ -24,16 +26,37 @@ Whether you’re integrating agentic finance into an organization or building yo
 
     The **Business** path is designed for institutions, platforms, and developers integrating t54 into existing payment or compliance workflows.
 
-    **You can start in three ways:**
+    <Cards columns={3}>
+      <Card href="https://docs.t54.ai/v1.4/docs/tledger#/">
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          Create a tLedger Account
+        </div>
 
-    1. **[Create a tLedger Account](https://docs.t54.ai/v1.4/docs/tledger#/)**\
-       Set up a programmable account with integrated compliance, custody, and settlement logic.
+        <div align="center">
+          Set up a programmable financial account with built-in compliance, custody, and settlement logic.
+        </div>
+      </Card>
 
-    2. **[Connect to Trustline API](https://docs.t54.ai/v1.4/docs/trustline#/)**\
-       Access real-time agent risk assessment, anomaly detection, and fraud prevention APIs.
+      <Card href="https://docs.t54.ai/v1.4/docs/trustline#/">
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          Connect to Trustline API
+        </div>
 
-    3. **[Connect via Trustline x402 Facilitator](https://docs.t54.ai/v1.4/docs/trustline#/)**\
-       Enable agent-to-agent payment flows across networks through the x402 standard for secure delegated transactions.
+        <div align="center">
+          Access real-time agent risk scoring, anomaly detection, and fraud prevention services.
+        </div>
+      </Card>
+
+      <Card href="https://docs.t54.ai/v1.4/docs/trustline#/">
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          Connect via Trustline x402 Facilitator
+        </div>
+
+        <div align="center">
+          Enable secure agent-to-agent payments using the x402 interoperability standard.
+        </div>
+      </Card>
+    </Cards>
   </Tab>
 
   <Tab title="Individual">
@@ -41,24 +64,59 @@ Whether you’re integrating agentic finance into an organization or building yo
 
     The **Individual** path is for users and creators who want to experience personal agentic finance.
 
-    **You can start with:**
+    <Cards columns={3}>
+      <Card href="https://docs.t54.ai/v1.4/docs/claire#/">
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          Create Your Agent — Claire
+        </div>
 
-    1. **[Create your own financial gateway agent — Claire](https://docs.t54.ai/v1.4/docs/claire#/)**\
-       Build your personal AI agent capable of managing bills, payroll, and cross-border transactions autonomously.
+        <div align="center">
+          Build your personal AI financial gateway to automate payments, savings, and budgeting.
+        </div>
+      </Card>
 
-    2. **More to come...**\
-       Future flows will include personal Trustline integration, peer-to-peer agent verification, and self-hosted compliance dashboards.
+      <Card>
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          Connect to Trustline (Coming Soon)
+        </div>
+
+        <div align="center">
+          Soon you’ll be able to connect Claire directly to Trustline for real-time protection and transparency.
+        </div>
+      </Card>
+
+      <Card>
+        <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
+          More to Come
+        </div>
+
+        <div align="center">
+          Stay tuned for personal agent verification, P2P agent payments, and self-hosted dashboards.
+        </div>
+      </Card>
+    </Cards>
   </Tab>
 </Tabs>
----
+
+***
 
 ### Next Steps
 
-Once your setup is complete, explore the following:
-- [**Integrate with KYA →**](https://docs.t54.ai/v1.4/docs/kya#/) — bind your agents to human identities and verify authorization.  
-- [**Review agent risk flows →**](https://docs.t54.ai/v1.4/docs/trustline#/) — understand how Trustline protects transactions in real time.  
-- [**Explore examples →**](https://docs.t54.ai/v1.4/docs/claire#/) — see how agentic finance operates in practice.
+Once your setup is complete, explore:
 
+* [**Integrate with KYA →**](https://docs.t54.ai/v1.4/docs/kya#/) — bind your agents to human identities and verify authorization.
+* [**Review agent risk flows →**](https://docs.t54.ai/v1.4/docs/trustline#/) — understand how Trustline protects transactions in real time.
+* [**Explore examples →**](https://docs.t54.ai/v1.4/docs/claire#/) — see how agentic finance operates in practice.
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
 
 <br />
 
