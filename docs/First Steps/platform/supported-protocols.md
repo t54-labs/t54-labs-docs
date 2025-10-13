@@ -5,10 +5,12 @@ hidden: false
 metadata:
   robots: index
 ---
+### Agentic Protocols
+
 t54 supports **MCP** and **x402** out of the box — choose a protocol to get started.
 
 <Cards columns={2}>
-  {/* MCP */}
+  {/* MCP Integration */}
 
   <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-mcp#/">
     <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
@@ -18,15 +20,9 @@ t54 supports **MCP** and **x402** out of the box — choose a protocol to get st
     <div align="center">
       Connect Claude and other MCP-compatible clients to t54’s payment gateway for agent onboarding, balances, and payments.
     </div>
-
-    <div align="center" style={{ marginTop: 8 }}>
-      <a href="https://modelcontextprotocol.io/docs/getting-started/intro" target="_blank" rel="noreferrer">
-        Official MCP docs →
-      </a>
-    </div>
   </Card>
 
-  {/* x402 / AP2 */}
+  {/* x402 / AP2 Integration */}
 
   <Card href="https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/">
     <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
@@ -36,13 +32,37 @@ t54 supports **MCP** and **x402** out of the box — choose a protocol to get st
     <div align="center">
       Route agent-to-agent payments via the x402 facilitator using Trustline risk headers and verifiable payment context.
     </div>
-
-    <div align="center" style={{ marginTop: 8 }}>
-      <a href="https://ap2-protocol.org/" target="_blank" rel="noreferrer">
-        Learn more about AP2 →
-      </a>
-    </div>
   </Card>
 </Cards>
 
-<br />
+***
+
+### Learn More
+
+Explore the official documentation for each open protocol that powers agentic interoperability.
+
+<Cards columns={2}>
+  {/* MCP Official Docs */}
+
+  <Card href="https://modelcontextprotocol.io/docs/getting-started/intro">
+    <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
+      Model Context Protocol (MCP)
+    </div>
+
+    <div align="center">
+      Official documentation for the open protocol enabling AI agents and tools to share context securely across environments.
+    </div>
+  </Card>
+
+  {/* AP2 / x402 Official Docs */}
+
+  <Card href="https://ap2-protocol.org/">
+    <div align="center" style={{ fontSize: "1.1em", fontWeight: 600, color: "#FF624A" }}>
+      AP2 / x402 Protocol
+    </div>
+
+    <div align="center">
+      Learn more about the emerging standard for agent-to-payment interoperability and verifiable intent exchange.
+    </div>
+  </Card>
+</Cards>
