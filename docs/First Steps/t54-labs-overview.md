@@ -21,25 +21,37 @@ Together, these components form a complete trust layer across any blockchain, ag
 ## Product Overview
 
 <Cards columns={3}>
-  <Card title="KYA: Know Your Agent" href="https://docs.t54.ai/v1.4/docs/kya#/">
-    **Agent-native identity verification**
 
-    Beyond KYC/KYB — cryptographically verifies *who the agent is, who it represents, and why it acts.*\
-    Combines code audits, device posture, and intent proofs tied to merchant, asset, and time.
+  <Card title="KYA: Know Your Agent" href="https://docs.t54.ai/v1.4/docs/kya#/">
+    <div align="center">
+      **Agent-native identity verification**
+    </div>
+
+    <div align="center">
+      Extends KYC/KYB to verify *who acts and why* — ensuring trusted agent identity and intent.
+    </div>
   </Card>
 
   <Card title="Trustline" href="/docs/trustline">
-    **Real-time risk and fraud intelligence**
+    <div align="center">
+      **Real-time risk and fraud intelligence**
+    </div>
 
-    A continuous trust monitor evaluating agent behavior and transaction context.\
-    Detects anomalies, fraud, and manipulation using agent-behavioral and financial signals.
+    <div align="center">
+      Continuously monitors agent behavior and transaction context to detect anomalies and prevent abuse.
+    </div>
   </Card>
 
   <Card title="tLedger" href="/docs/tledger">
-    **Unified trust and settlement platform**
+    <div align="center">
+      **Unified trust and settlement platform**
+    </div>
 
-    Blockchain-agnostic account, risk, and compliance engine that brings verified identity and trusted decisions directly into settlement.
+    <div align="center">
+      Brings verified identity, risk, and compliance together for secure multi-chain financial operations.
+    </div>
   </Card>
+
 </Cards>
 
 ***
