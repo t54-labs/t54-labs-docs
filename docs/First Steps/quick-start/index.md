@@ -13,17 +13,21 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
+<br />
+
+# Quick Start
+
 Choose your path to get started with the **t54 Trust Stack**.
 Whether you’re integrating agentic finance into an organization or building your own autonomous financial agent, start with the flow that matches your use case.
 
 <Tabs>
-  <Tab title="Business">
+  <Tab title="Business (Default)">
     ### Getting Started for Businesses
 
     The **Business** path is designed for institutions, platforms, and developers integrating t54 into existing payment or compliance workflows.
 
     <Cards columns={3}>
-      <Card href="https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/">
+      <Card href="https://docs.t54.ai/v1.4/docs/tledger#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
           Create a tLedger Account
         </div>
@@ -33,13 +37,13 @@ Whether you’re integrating agentic finance into an organization or building yo
         </div>
       </Card>
 
-      <Card href="https://docs.t54.ai/v1.4/docs/trustline#/">
+      <Card href="https://docs.t54.ai/v1.4/docs/tledger-sdk#/">
         <div align="center" style={{ fontSize: "1.1em", fontWeight: 600 }}>
-          Connect to Trustline API
+          Integrate with tLedger SDK
         </div>
 
         <div align="center">
-          Access real-time agent risk scoring, anomaly detection, and fraud prevention services.
+          Use the SDK to embed account creation, payments, and compliance flows directly into your product.
         </div>
       </Card>
 
@@ -100,9 +104,7 @@ Whether you’re integrating agentic finance into an organization or building yo
 
 Once your setup is complete, explore:
 
-* [**Integrate with KYA →**](https://docs.t54.ai/v1.4/docs/kya#/) — bind your agents to human identities and verify authorization.
-* [**Review agent risk flows →**](https://docs.t54.ai/v1.4/docs/trustline#/) — understand how Trustline protects transactions in real time.
-* [**Explore examples →**](https://docs.t54.ai/v1.4/docs/claire#/) — see how agentic finance operates in practice.
+* [**Integrate with KYA →**](https:)
 
 <br />
 
