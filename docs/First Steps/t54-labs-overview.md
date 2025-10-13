@@ -21,7 +21,7 @@ Together, these components form a complete trust layer across any blockchain, ag
 ## Product Overview
 
 <Cards columns={3}>
-  <Card title="KYA: Know Your Agent" href="/docs/knowyouragent">
+  <Card title="KYA: Know Your Agent" href="/docs/kya">
     **Agent-native identity verification**
 
     Beyond KYC/KYB — cryptographically verifies *who the agent is, who it represents, and why it acts.*\
