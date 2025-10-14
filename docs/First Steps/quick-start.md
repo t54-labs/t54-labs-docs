@@ -214,203 +214,172 @@ Choose your path to get started with the **t54 Trust Stack**
 
 <br />
 
-{/* Spotlight: two large stacked boxes */}
-
-<div
-  style={{
-    maxWidth: "980px",
-    margin: "0 auto",
-    display: "grid",
-    gap: "16px"
-  }}
->
-  <div
-    style={{
-      border: "1px solid #FF624A",
-      borderRadius: "12px",
-      padding: "20px",
-      background: "#FFF7F5"
-    }}
-  >
-    <div
-      style={{
-        fontSize: "1.4em",
-        fontWeight: 700,
-        color: "#FF624A",
-        textAlign: "center"
-      }}
-    >
-      For Businesses & Developers
-    </div>
-
-    <div
-      style={{
-        marginTop: "8px",
-        textAlign: "center"
-      }}
-    >
-      Bring financial profiles to your agents, screen risk before execution,
-      and connect via x402 with dispute protection.
-    </div>
-  </div>
-
-  <div
-    style={{
-      border: "1px solid #FF624A",
-      borderRadius: "12px",
-      padding: "20px",
-      background: "#FFF7F5"
-    }}
-  >
-    <div
-      style={{
-        fontSize: "1.4em",
-        fontWeight: 700,
-        color: "#FF624A",
-        textAlign: "center"
-      }}
-    >
-      For Individuals
-    </div>
-
-    <div
-      style={{
-        marginTop: "8px",
-        textAlign: "center"
-      }}
-    >
-      Spin up Claire as your personal financial gateway to automate payments,
-      hold guardrails, and assess risk across agents.
-    </div>
-  </div>
-</div>
-
-<br />
-
-<br />
-
 <br />
 
 <Cards columns={1}>
-<Card title="For Businesses & Developers" icon="fa-briefcase" color="#FF624A">
-  ### Getting Started for Businesses
+  <Card title="For Businesses & Developers" icon="fa-briefcase" color="#FF624A">
+    ### Getting Started for Businesses
 
-  Below are common business and developer needs — and how t54 can help you address them.
+    Below are common business and developer needs — and how t54 can help you address them.
 
-  ***
+    ***
 
-  #### 1. “My AI agents need to manage and handle money.”
+    #### 1. “My AI agents need to manage and handle money.”
 
-  You already have AI agents (buyer, seller, or task bots) and you want them to hold balances, receive payments, or make purchases safely.
+    You already have AI agents (buyer, seller, or task bots) and you want them to hold balances, receive payments, or make purchases safely.
 
-  **Solution**
+    **Solution**
 
-  * **[tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)**
-    * Onboard your agents to create programmable financial accounts with built-in compliance, custody, and settlement logic.
-  * **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
-    * Embed account creation, payments, and compliance directly into your existing agent or product stack.
-  * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
-    * Manage your agents’ financial operations via the Model Context Protocol (MCP).
+    * **[tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)**
+      * Onboard your agents to create programmable financial accounts with built-in compliance, custody, and settlement logic.
+    * **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
+      * Embed account creation, payments, and compliance directly into your existing agent or product stack.
+    * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
+      * Manage your agents’ financial operations via the Model Context Protocol (MCP).
 
-  ***
+    ***
 
-  #### 2. “I want to screen or verify my agents’ financial behavior before they execute.”
+    #### 2. “I want to screen or verify my agents’ financial behavior before they execute.”
 
-  You want to assess agent behavior and financial risk before they act — or add a trusted layer to detect anomalies and prevent losses.
+    You want to assess agent behavior and financial risk before they act — or add a trusted layer to detect anomalies and prevent losses.
 
-  **Solution**
+    **Solution**
 
-  * [Trustline Risk API →](https://docs.t54.ai/update/docs/trustline)
-    * Evaluate agent intent and transaction context in real time before execution.
-  * [Know Your Agent (KYA) →](https://docs.t54.ai/update/docs/kya)
-    * Verify agent identity, fetch credit scores, and validate human–agent bindings.
+    * [Trustline Risk API →](https://docs.t54.ai/update/docs/trustline)
+      * Evaluate agent intent and transaction context in real time before execution.
+    * [Know Your Agent (KYA) →](https://docs.t54.ai/update/docs/kya)
+      * Verify agent identity, fetch credit scores, and validate human–agent bindings.
 
-  ***
+    ***
 
-  #### 3. “I’m a merchant agent that needs to receive money safely.”
+    #### 3. “I’m a merchant agent that needs to receive money safely.”
 
-  Your merchant-facing agent provides goods or services and needs to accept payments without directly holding funds.
+    Your merchant-facing agent provides goods or services and needs to accept payments without directly holding funds.
 
-  **Solution**
+    **Solution**
 
-  * [tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)
-    * Use tPortal for no-code onboarding or connect via tLedger SDK for programmatic settlement.
-  * [tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)
-    * Embed compliant payment and settlement logic into your merchant agent.
-  * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
-    * Manage fund movements or account state directly via MCP.
+    * [tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)
+      * Use tPortal for no-code onboarding or connect via tLedger SDK for programmatic settlement.
+    * [tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)
+      * Embed compliant payment and settlement logic into your merchant agent.
+    * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
+      * Manage fund movements or account state directly via MCP.
 
-  ***
+    ***
 
-  #### 4. “My agents transact via x402 — I want protection and dispute handling.”
+    #### 4. “My agents transact via x402 — I want protection and dispute handling.”
 
-  You operate buyer or merchant agents connected through x402 or similar agentic protocols and need assurance, dispute resolution, or loss coverage.
+    You operate buyer or merchant agents connected through x402 or similar agentic protocols and need assurance, dispute resolution, or loss coverage.
 
-  **Solution**
+    **Solution**
 
-  * [x402-Secure Facilitator →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)
-    * Integrate Trustline risk validation to secure your x402 flows and ensure transparent dispute resolution.
+    * [x402-Secure Facilitator →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)
+      * Integrate Trustline risk validation to secure your x402 flows and ensure transparent dispute resolution.
 
-  ***
+    ***
 
-  #### 5. “I operate a payment or agent network and want built-in trust infrastructure.”
+    #### 5. “I operate a payment or agent network and want built-in trust infrastructure.”
 
-  Your network needs native AI-risk capabilities and agentic compliance infrastructure.
+    Your network needs native AI-risk capabilities and agentic compliance infrastructure.
 
-  **Solution**
+    **Solution**
 
-  * Partner with t54 Labs — contact [https://t54.ai](https://t54.ai)
-    * Integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.
+    * Partner with t54 Labs — contact [https://t54.ai](https://t54.ai)
+      * Integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.
   </Card>
-  </Cards>
-
-
+</Cards>
 
 ***
 
 <Cards columns={1}>
-<Card title="For Individuals" icon="fa-user" color="#FF624A">
-  ### Getting Started for Individuals
+  <Card title="For Individuals" icon="fa-user" color="#FF624A">
+    ### Getting Started for Individuals
 
-  Below are common personal scenarios — and how you can use t54 agents to automate, protect, and manage your financial life.
+    Below are common personal scenarios — and how you can use t54 agents to automate, protect, and manage your financial life.
 
-  ***
+    ***
 
-  #### 1. “I want a personal financial agent to help me manage my money securely.”
+    #### 1. “I want a personal financial agent to help me manage my money securely.”
 
-  You need a personal AI financial gateway to receive payroll, automate payments, and handle savings or investments.
+    You need a personal AI financial gateway to receive payroll, automate payments, and handle savings or investments.
 
-  **Solution**
+    **Solution**
 
-  * [Claire Agent →](https://docs.t54.ai/v1.4/docs/claire#/)
-    * Create your trusted financial agent that connects to your accounts and acts safely on your behalf.
+    * [Claire Agent →](https://docs.t54.ai/v1.4/docs/claire#/)
+      * Create your trusted financial agent that connects to your accounts and acts safely on your behalf.
 
-  ***
+    ***
 
-  #### 2. “I already use multiple agents in Base or other apps — I need guardrails.”
+    #### 2. “I already use multiple agents in Base or other apps — I need guardrails.”
 
-  You use AI trading or investment agents but want control over how much they can spend or risk.
+    You use AI trading or investment agents but want control over how much they can spend or risk.
 
-  **Solution**
+    **Solution**
 
-  * Claire in Base Super App (Coming Soon)
-    * Add Claire to your existing agent group chat — she manages custody, applies guardrails, and monitors agent activity in real time.
+    * Claire in Base Super App (Coming Soon)
+      * Add Claire to your existing agent group chat — she manages custody, applies guardrails, and monitors agent activity in real time.
 
-  ***
+    ***
 
-  #### 3. “I want my OpenAI or Claude agents to understand financial risk.”
+    #### 3. “I want my OpenAI or Claude agents to understand financial risk.”
 
-  You’d like your conversational or reasoning agents to assess financial trust, risk exposure, or compliance before taking action.
+    You’d like your conversational or reasoning agents to assess financial trust, risk exposure, or compliance before taking action.
 
-  **Solution**
+    **Solution**
 
-  * Trustline via MCP (Coming Soon)
-    * Connect your AI agents directly to t54’s Trustline service through the Model Context Protocol (MCP), enabling risk-aware decision-making.
+    * Trustline via MCP (Coming Soon)
+      * Connect your AI agents directly to t54’s Trustline service through the Model Context Protocol (MCP), enabling risk-aware decision-making.
   </Card>
 </Cards>
 
+<br />
 
 <br />
+
+<br />
+
+<div style={{ width: "100%", maxWidth: "100vw", marginLeft: "calc(-50vw + 50%)" }}>
+  <Cards columns={1} style={{ width: "100%" }}>
+    <Card title="For Individuals" icon="fa-user" color="#FF624A">
+      ### Getting Started for Individuals
+
+      Below are common personal scenarios — and how you can use t54 agents to automate, protect, and manage your financial life.
+
+      ***
+
+      #### 1. “I want a personal financial agent to help me manage my money securely.”
+
+      You need a personal AI financial gateway to receive payroll, automate payments, and handle savings or investments.
+
+      **Solution**
+
+      * [Claire Agent →](https://docs.t54.ai/v1.4/docs/claire#/)
+        * Create your trusted financial agent that connects to your accounts and acts safely on your behalf.
+
+      ***
+
+      #### 2. “I already use multiple agents in Base or other apps — I need guardrails.”
+
+      You use AI trading or investment agents but want control over how much they can spend or risk.
+
+      **Solution**
+
+      * Claire in Base Super App (Coming Soon)
+        * Add Claire to your existing agent group chat — she manages custody, applies guardrails, and monitors agent activity in real time.
+
+      ***
+
+      #### 3. “I want my OpenAI or Claude agents to understand financial risk.”
+
+      You’d like your conversational or reasoning agents to assess financial trust, risk exposure, or compliance before taking action.
+
+      **Solution**
+
+      * Trustline via MCP (Coming Soon)
+        * Connect your AI agents directly to t54’s Trustline service through the Model Context Protocol (MCP), enabling risk-aware decision-making.
+    </Card>
+  </Cards>
+</div>
 
 ### Next Steps
 
