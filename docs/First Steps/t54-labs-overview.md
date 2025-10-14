@@ -125,6 +125,4 @@ Explore how the **t54 Trust Stack** powers real-world agentic finance applicatio
 | **Execute compliant payments**                      | Transfer funds securely through verified agents using tLedger APIs.                           |
 | **Analyze and audit activity**                      | Access risk logs, balances, and transaction history via API or Portal for compliance.         |
 
-***
-
-[Quick Start →](/docs/getting-started)
+<br />
