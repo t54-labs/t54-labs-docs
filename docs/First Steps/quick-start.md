@@ -291,7 +291,7 @@ Choose your path to get started with the **t54 Trust Stack**
 
 <br />
 
-<Cards columns={1}>
+
   <Card title="For Businesses & Developers" icon="fa-briefcase" color="#FF624A">
     ### Getting Started for Businesses
 
@@ -362,7 +362,8 @@ Choose your path to get started with the **t54 Trust Stack**
     * Partner with t54 Labs — contact [https://t54.ai](https://t54.ai)
       * Integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.
   </Card>
---- 
+
+  ***
 
   <Card title="For Individuals" icon="fa-user" color="#FF624A">
     ### Getting Started for Individuals
@@ -402,7 +403,7 @@ Choose your path to get started with the **t54 Trust Stack**
     * Trustline via MCP (Coming Soon)
       * Connect your AI agents directly to t54’s Trustline service through the Model Context Protocol (MCP), enabling risk-aware decision-making.
   </Card>
-</Cards>
+
 
 <br />
 
