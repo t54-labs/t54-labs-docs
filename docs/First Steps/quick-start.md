@@ -14,7 +14,7 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-Choose your path to get started with the **t54 Trust Stack**
+<br />
 
 <Tabs>
   <Tab title={<span style={{ color: "#FF624A", fontWeight: 600 }}>For Businesses & Developers</span>}>
@@ -169,7 +169,6 @@ Choose your path to get started with the **t54 Trust Stack**
     </Cards>
   </Tab>
 </Tabs>
-
 
 <br />
 
