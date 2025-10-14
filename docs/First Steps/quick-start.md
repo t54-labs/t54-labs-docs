@@ -18,7 +18,6 @@ Choose your path to get started with the **t54 Trust Stack**
 
 <Tabs>
   <Tab title={<span style={{ color: "#FF624A", fontWeight: 600 }}>For Businesses & Developers</span>}>
-    ### Getting Started for Businesses
 
     Below are common business and developer needs — and how t54 can help you address them.
 
@@ -112,7 +111,6 @@ Choose your path to get started with the **t54 Trust Stack**
   </Tab>
 
   <Tab title={<span style={{ color: "#FF624A", fontWeight: 600 }}>For Individuals</span>}>
-    ### Getting Started for Individuals
 
     Below are common personal scenarios — and how you can use t54 agents to automate, protect, and manage your financial life.
 
@@ -173,7 +171,6 @@ Choose your path to get started with the **t54 Trust Stack**
     </Cards>
   </Tab>
 </Tabs>
-
 
 <br />
 
