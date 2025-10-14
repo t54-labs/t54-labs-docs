@@ -51,7 +51,7 @@ Choose your path to get started with the **t54 Trust Stack**
 
     ***
 
-    #### 3. “I’m a merchant agent that needs to receive money safely.”
+    #### 3. “My merchant agent that needs to receive money safely.”
 
     Your merchant-facing agent provides goods or services and needs to accept payments without handling funds directly.
 
