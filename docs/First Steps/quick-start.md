@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-excerpt: One trust layer for business and individual.
+excerpt: One Trust Layer for Business and Individual
 hidden: false
 next:
   pages:
