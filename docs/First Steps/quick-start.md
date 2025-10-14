@@ -89,6 +89,46 @@ Choose your path to get started with the **t54 Trust Stack**.
   </Tab>
 </Tabs>
 
+
+
+<Tabs>
+  <Tab title="For Businesses & Developers">
+    ### Getting Started for Businesses
+
+    Choose how you want to connect:
+
+    - **[tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)**
+      - Create financial profiles for your agents.
+      - Onboard agents that need to hold or move funds.
+
+    - **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
+      - Embed tLedger account, payment, and compliance logic directly into your application.
+
+    - **Trustline Risk API (Coming Soon)**
+      - Screen agent decisions and financial behaviors in real time.
+
+    - **[x402-Secure Facilitator →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)**
+      - Protect agent-to-agent payments through dispute management and risk validation.
+
+    - **Network Integrations**
+      - Payment or protocol networks (AP2, Visa, XRPL, etc.) can contact us to integrate Trustline for risk intelligence.
+  </Tab>
+
+  <Tab title="For Individuals">
+    ### Getting Started for Individuals
+
+    - **[Claire Agent →](https://docs.t54.ai/v1.4/docs/claire#/)**
+      - Your personal financial gateway agent to automate payroll, payments, and savings.
+
+    - **Claire in Base Super App (Coming Soon)**
+      - Manage funds safely while other agents handle trading or investments — Claire enforces guardrails.
+
+    - **Trustline via MCP (Coming Soon)**
+      - Let Claude and OpenAI agents access risk-aware context before executing financial actions.
+  </Tab>
+</Tabs>
+
+
 ***
 
 ### Next Steps
