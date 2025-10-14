@@ -94,19 +94,19 @@ Choose your path to get started with the **t54 Trust Stack**
     Not sure where to start? Explore these **pre-built agentic finance use cases** to see t54 in action.
 
     <Cards columns={3}>
-      <Card href="https://docs.t54.ai/update/docs/global-payroll#/" >
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Global Payroll</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Autonomous payroll orchestration for distributed teams.</div>
+      <Card href="https://docs.t54.ai/update/docs/global-payroll#/">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Global Payroll</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Autonomous payroll orchestration for distributed teams.</div>
       </Card>
 
-      <Card href="https://docs.t54.ai/update/docs/shopping-assistant#/" >
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Shopping Assistant</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Verified merchants, delegated payments, fraud prevention.</div>
+      <Card href="https://docs.t54.ai/update/docs/shopping-assistant#/">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Shopping Assistant</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Verified merchants, delegated payments, fraud prevention.</div>
       </Card>
 
-      <Card>
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Autonomous Treasury Management</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Automated treasury allocation and settlement across networks.</div>
+      <Card href="https://docs.t54.ai/docs/autonomous-treasury-management#/">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Autonomous Treasury Management</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Automated treasury allocation and settlement across networks.</div>
       </Card>
     </Cards>
   </Tab>
@@ -156,19 +156,19 @@ Choose your path to get started with the **t54 Trust Stack**
     Not sure what to build first? Discover **ready-to-use agentic finance examples** to experience how Claire and other t54 agents work in practice.
 
     <Cards columns={3}>
-      <Card href="https://docs.t54.ai/update/docs/claire" >
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Claire Agent</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Personal financial gateway for everyday money tasks.</div>
+      <Card href="https://docs.t54.ai/update/docs/claire">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Claire Agent</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Personal financial gateway for everyday money tasks.</div>
       </Card>
 
-      <Card href="https://docs.t54.ai/update/docs/global-payroll#/" >
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Global Payroll</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Receive payroll programmatically with agent guardrails.</div>
+      <Card href="https://docs.t54.ai/update/docs/global-payroll#/">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Global Payroll</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Receive payroll programmatically with agent guardrails.</div>
       </Card>
 
-      <Card href="https://docs.t54.ai/update/docs/agentic-monoply" >
-        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "20px", paddingBottom: "10px" }}>Agentic Monopoly</div>
-        <div align="center" style={{ minHeight: "60px", paddingBottom: "10px" }}>Explore agent-to-agent coordination and trust dynamics.</div>
+      <Card href="https://docs.t54.ai/update/docs/agentic-monoply">
+        <div align="center" style={{ fontWeight: 700, color: "#FF624A", paddingTop: "24px", paddingBottom: "12px" }}>Agentic Monopoly</div>
+        <div align="center" style={{ minHeight: "70px", paddingBottom: "14px" }}>Explore agent-to-agent coordination and trust dynamics.</div>
       </Card>
     </Cards>
   </Tab>
