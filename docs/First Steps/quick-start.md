@@ -68,9 +68,7 @@ Choose your path to get started with the **t54 Trust Stack**
 
     #### 4. “My agents transact via agentic payment protocols like x402 — I want protection and dispute handling.”
 
-    You operate buyer or merchant agents connected through mainstream agentic protocols.\
-    (The list of supported protocols can be found [here](https://docs.t54.ai/docs/supported-protocols#/).)\
-    You need transaction assurance, dispute resolution, or loss coverage.
+    You operate buyer or merchant agents connected through mainstream agentic protocols.(The list of supported protocols can be found [here](https://docs.t54.ai/docs/supported-protocols#/).) You need transaction assurance, dispute resolution, or loss coverage.
 
     **Solution:**
 
