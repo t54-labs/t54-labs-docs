@@ -84,8 +84,7 @@ Choose your path to get started with the **t54 Trust Stack**
     **Solution:**
 
     * **Partner with t54 Labs →**\
-      Reach out to our team to integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.\
-      Contact us at [t54.ai](https://www.t54.ai/)
+      Reach out to our team to integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network. Contact us at [t54.ai](https://www.t54.ai/)
   </Tab>
 
   <Tab title="For Individuals">
