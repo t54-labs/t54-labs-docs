@@ -215,3 +215,11 @@ Choose your path to get started with the **t54 Trust Stack**
 <br />
 
 <br />
+
+<Accordion title="For Businesses & Developers" icon="fa-briefcase" color="#FF624A">
+  (keep all your business content here)
+</Accordion>
+
+<Accordion title="For Individuals" icon="fa-user" color="#FF624A">
+  (keep all your individual content here)
+</Accordion>
