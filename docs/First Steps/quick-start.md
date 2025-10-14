@@ -127,6 +127,81 @@ Choose your path to get started with the **t54 Trust Stack**
   </Tab>
 </Tabs>
 
+
+
+<Cards columns={2}>
+
+  <Card title="For Businesses & Developers" icon="fa-briefcase" color="#FF624A">
+    ### Getting Started for Businesses
+
+    Below are common business and developer needs — and how t54 can help you address them.
+
+    ***
+
+    #### 1. “My AI agents need to manage and handle money.”
+    You already have AI agents (buyer, seller, or task bots) that should hold balances, receive payments, or make purchases safely.
+
+    **Solution**
+    * **[tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)**
+    * **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
+    * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
+
+    ***
+
+    #### 2. “I want to screen or verify my agents’ financial behavior before they execute.”
+    **Solution**
+    * [Trustline Risk API →](https://docs.t54.ai/update/docs/trustline)
+    * [Know Your Agent (KYA) →](https://docs.t54.ai/update/docs/kya)
+
+    ***
+
+    #### 3. “I’m a merchant agent that needs to receive money safely.”
+    **Solution**
+    * [tLedger Quick Start →](https://docs.t54.ai/v1.4/update/docs/tledger-quick-start#/)
+    * [tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)
+    * [MCP Integration →](https://docs.t54.ai/update/docs/tledger-mcp)
+
+    ***
+
+    #### 4. “My agents transact via x402 — I want protection and dispute handling.”
+    **Solution**
+    * [x402-Secure Facilitator →](https://docs.t54.ai/v1.4/update/docs/x402-secure-quickstart#/)
+
+    ***
+
+    #### 5. “I operate a payment or agent network and want built-in trust infrastructure.”
+    **Solution**
+    * Partner with t54 Labs — contact [https://t54.ai](https://t54.ai)
+  </Card>
+
+  <Card title="For Individuals" icon="fa-user" color="#FF624A">
+    ### Getting Started for Individuals
+
+    Below are common personal scenarios — and how you can use t54 agents to automate, protect, and manage your financial life.
+
+    ***
+
+    #### 1. “I want a personal financial agent to help me manage my money securely.”
+    **Solution**
+    * [Claire Agent →](https://docs.t54.ai/v1.4/docs/claire#/)
+
+    ***
+
+    #### 2. “I already use multiple agents in Base or other apps — I need guardrails.”
+    **Solution**
+    * Claire in Base Super App (Coming Soon)
+
+    ***
+
+    #### 3. “I want my OpenAI or Claude agents to understand financial risk.”
+    **Solution**
+    * Trustline via MCP (Coming Soon)
+  </Card>
+
+</Cards>
+
+
+
 ***
 
 ### Next Steps
@@ -134,3 +209,27 @@ Choose your path to get started with the **t54 Trust Stack**
 * [**Integrate with KYA →**](https://docs.t54.ai/v1.4/docs/kya#/)
 * [**Review Trustline flows →**](https://docs.t54.ai/v1.4/docs/trustline#/)
 * [**Explore Claire examples →**](https://docs.t54.ai/v1.4/docs/claire#/)
+
+<Accordion title="My Accordion Title" icon="fa-info-circle">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
+
+<Cards columns={4}>
+  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
+    Neque porro quisquam est qui dolorem ipsum quia
+  </Card>
+
+  <Card title="Second Card" icon="fa-user">
+    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+  </Card>
+
+  <Card title="Third Card" icon="fa-star">
+    > Ut enim ad minim veniam, quis nostrud ullamco
+  </Card>
+
+  <Card title="Fourth Card" icon="fa-question">
+    **Excepteur sint occaecat cupidatat non proident**
+  </Card>
+</Cards>
