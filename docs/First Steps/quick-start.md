@@ -15,7 +15,6 @@ next:
 ---
 Choose your path to get started with the **t54 Trust Stack**
 
-
 <Tabs>
   <Tab title="For Businesses & Developers">
     ### Getting Started for Businesses
@@ -34,20 +33,20 @@ Choose your path to get started with the **t54 Trust Stack**
       * Onboard your agents to create programmable financial accounts with built-in compliance, custody, and settlement logic.
     * **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
       * For direct integration, embed account creation, payments, and compliance into your existing product or agent stack.
-    * We also offer **MCP capability**, allowing you and other agents to manage funds via MCP.  
+    * We also offer **MCP capability**, allowing you and other agents to manage funds via MCP.\
       [Learn more →](https://docs.t54.ai/update/docs/tledger-mcp)
 
     ***
 
     #### 2. “I want to screen or verify my agents’ financial behavior before they execute.”
 
-    Your agents are capable of processing transactions through mainstream agentic rails (x402, blockchains), and you want to assess financial risk before they act — or add a trusted layer to detect anomalies and prevent losses.
+    Your agents are capable of processing transactions through mainstream financial rails (blockchains), and you want to assess financial risk before they act — or add a trusted layer to detect anomalies and prevent losses.
 
     **Solution:**
 
-    * **Trustline Risk API (Coming Soon)**  
+    * **Trustline Risk API (Coming Soon)**\
       Connect your agent network to [Trustline](https://docs.t54.ai/update/docs/trustline), the risk and trust engine that evaluates behavior, intent, and context in real time before transactions execute.
-    * **Know Your Agent (Coming Soon)**  
+    * **Know Your Agent (Coming Soon)**\
       Connect to [KYA](https://docs.t54.ai/update/docs/kya) to verify agent identity, fetch agent credit scores, and validate human–agent identity binding.
 
     ***
@@ -62,15 +61,15 @@ Choose your path to get started with the **t54 Trust Stack**
       * Use tPortal for no-code onboarding, or integrate with tLedger SDK for code-based settlement and reconciliation.
     * **[tLedger SDK →](https://docs.t54.ai/v1.4/update/docs/tledger-sdk#/)**
       * For direct integration, embed account creation, payments, and compliance into your existing product or agent stack.
-    * We also offer **MCP capability**, allowing you and other agents to manage funds via MCP.  
+    * We also offer **MCP capability**, allowing you and other agents to manage funds via MCP.\
       [Learn more →](https://docs.t54.ai/update/docs/tledger-mcp)
 
     ***
 
     #### 4. “My agents transact via agentic payment protocols like x402 — I want protection and dispute handling.”
 
-    You operate buyer or merchant agents connected through mainstream agentic protocols.  
-    (The list of supported protocols can be found [here](https://docs.t54.ai/docs/supported-protocols#/).)  
+    You operate buyer or merchant agents connected through mainstream agentic protocols.\
+    (The list of supported protocols can be found [here](https://docs.t54.ai/docs/supported-protocols#/).)\
     You need transaction assurance, dispute resolution, or loss coverage.
 
     **Solution:**
@@ -86,8 +85,8 @@ Choose your path to get started with the **t54 Trust Stack**
 
     **Solution:**
 
-    * **Partner with t54 Labs →**  
-      Reach out to our team to integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.  
+    * **Partner with t54 Labs →**\
+      Reach out to our team to integrate Trustline risk scoring, validator consensus, and dispute recovery mechanisms directly into your network.\
       Contact us at [t54.ai](https://www.t54.ai/)
   </Tab>
 
@@ -115,7 +114,7 @@ Choose your path to get started with the **t54 Trust Stack**
 
     **Solution:**
 
-    * **Claire in Base Super App (Coming Soon)**  
+    * **Claire in Base Super App (Coming Soon)**\
       Add Claire to your existing agent group chat — she manages custody, applies guardrails, and monitors agent activity in real time.
 
     ***
@@ -126,11 +125,10 @@ Choose your path to get started with the **t54 Trust Stack**
 
     **Solution:**
 
-    * **Trustline via MCP (Coming Soon)**  
+    * **Trustline via MCP (Coming Soon)**\
       Connect your AI agents directly to t54’s Trustline service through the Model Context Protocol (MCP), enabling risk-aware decision-making.
   </Tab>
 </Tabs>
-
 
 ***
 
