@@ -14,8 +14,6 @@ next:
       title: API Schema & Endpoints
       type: basic
 ---
-<br />
-
 <Tabs>
   <Tab title={<span style={{ color: "#FF624A", fontWeight: 600 }}>For Businesses & Developers</span>}>
     Below are common business and developer needs — and how t54 can help you address them.
