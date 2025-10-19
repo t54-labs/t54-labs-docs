@@ -1,276 +1,230 @@
 ---
-title: x402-Secure Quickstart
+title: x402-Secure
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-For a detailed step-by-step guide, see [docs/QUICKSTART.md](docs/QUICKSTART.md).
+**Open-Source SDK & Proxy for Secure Agent Payments on x402 — powered by Trustline from [t54](https://t54.ai)**
 
-### Install Dependencies
+**Production Proxy:** [https://x402-proxy.t54.ai](https://x402-proxy.t54.ai)
+**Repository:** [github.com/t54-labs/x402-secure](https://github.com/t54-labs/x402-secure)
 
-```bash
-# Install all dependencies including local packages
-uv lock && uv sync
-````
+***
 
-### Start the Proxy
+## 1. Overview
 
-The proxy can run in two modes:
+**x402-secure** is the open-source gateway that connects AI agents to **Trustline**, t54’s agent-native risk engine.
+Together, they enable **safe, accountable, and compliant** agent-to-agent or agent-to-service payments.
 
-**Development Mode** (with local in-memory risk storage):
+### What Trustline Provides
 
-```bash
-PROXY_LOCAL_RISK=1 \
-PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify \
-PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle \
-uv run python run_facilitator_proxy.py
-```
+* Logic-level risk assessment on the agent’s reasoning chain
+* Real-time fraud and anomaly detection
+* Cryptographic evidence for dispute resolution
+* Agent-native compliance and audit trails
 
-**Production Mode** (with Trustline risk engine):
+### What x402-secure Adds
 
-```bash
-PROXY_LOCAL_RISK=0 \
-RISK_ENGINE_URL=https://trustline-api.t54.ai \
-PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify \
-PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle \
-uv run python run_facilitator_proxy.py
-```
+* Agent SDK for trace collection (OpenAI today; LangChain and AutoGPT next)
+* Facilitator proxy aligned with the x402 payment protocol
+* Liability protection for both agent developers and service providers
+* Production-grade proxy integrated with Trustline’s real-time risk layer
 
-### Run Examples
+For architecture details and test suite, see the [GitHub repository](https://github.com/t54-labs/x402-secure).
 
-After starting the proxy, you can run the example demos to see the complete payment flow.
+***
 
-#### Prerequisites
+## 2. Quick Start
 
-1. **Install Dependencies**
+This section helps you spin up the proxy locally for testing.
 
-```bash
-uv lock && uv sync
-```
+### Prerequisites
 
-This installs all dependencies including the local `x402-secure` and `x402_proxy` packages in editable mode.
+* Python 3.11 or 3.12
+* [uv](https://astral.sh/uv) package manager
 
-2. **Configure Environment**
+### Setup
 
 ```bash
+# 1. Clone repository
+git clone https://github.com/t54-labs/x402-secure
+cd x402-secure
+
+# 2. Create virtual environment & install dependencies
+uv venv
+uv sync
+
+# 3. Copy and configure environment
 cp env.example .env
-# Edit .env file with required settings:
-# - OPENAI_API_KEY: Required for buyer agent demo with AI responses
-# - AGENT_GATEWAY_URL: Unified gateway base for buyer Risk API (default http://localhost:8000)
-# - MERCHANT_PAYTO: Seller's receive address (default provided in env.example)
-# - NETWORK: default base-sepolia
 ```
 
-**For Buyer Agent Demo**, ensure these are set:
-
-* `OPENAI_API_KEY` - Your OpenAI API key for agent tracing
-* `BUYER_PRIVATE_KEY=0x...` - Required; signed X-PAYMENT is the default
-* `SELLER_BASE_URL` - Default: `http://localhost:8010`
-* `AGENT_GATEWAY_URL` - Default: `http://localhost:8000` (served by the proxy app)
-
-Upstream facilitator (optional, e.g., x402.org on Base Sepolia):
-
-* `PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify`
-* `PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle`
-
-#### Run the Demo
-
-Open three terminals and run in sequence:
-
-**Terminal 1: Start Proxy (port 8000)**
+Edit `.env` and update:
 
 ```bash
-PROXY_LOCAL_RISK=1 \
-PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify \
-PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle \
+PROXY_LOCAL_RISK=1
+PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify
+PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle
+```
+
+### Run the Proxy
+
+```bash
 uv run python run_facilitator_proxy.py
 ```
 
-**Terminal 2: Start Seller (port 8010)**
+Verify with:
 
 ```bash
-PROXY_BASE=http://localhost:8000/x402 \
-uv run uvicorn --app-dir packages/x402-secure/examples seller_integration:app --port 8010
+curl http://localhost:8000/health
 ```
 
-**Terminal 3: Run Buyer Agent Demo**
+**Common issues**
 
-```bash
-AGENT_GATEWAY_URL=http://localhost:8000 \
-SELLER_BASE_URL=http://localhost:8010 \
-uv run python packages/x402-secure/examples/buyer_agent_openai.py
-```
+* `500 risk endpoints`: ensure `PROXY_LOCAL_RISK=1` for local testing.
+* Port conflict: adjust `PROXY_PORT` in `.env` or free port 8000.
 
-The buyer demo demonstrates the SDK's capabilities (using OpenAI as the current agent framework):
+**Next steps**
 
-1. **RiskClient**: Creates a risk session with Trustline (works with any agent framework)
-2. **OpenAITraceCollector**: Captures AI reasoning traces during OpenAI streaming
-3. **store_agent_trace**: Submits collected traces to Trustline (framework-agnostic)
-4. **build_payment_secure_header**: Generates W3C traceparent headers with trace ID
-5. **BuyerClient**: Executes payment with all required risk headers
-6. **Optional**: Includes AP2 evidence (mandates/attestations) for enhanced risk assessment
+* See full developer guide at [docs/DEVELOPMENT.md](https://github.com/t54-labs/x402-secure/blob/main/docs/DEVELOPMENT.md)
+* Browse sample integrations under [examples/](https://github.com/t54-labs/x402-secure/tree/main/packages/x402-secure/examples)
 
-**Note:** `PROXY_LOCAL_RISK=1` enables local in-memory risk handling (development).
-For production, set `PROXY_LOCAL_RISK=0` and `RISK_ENGINE_URL=https://trustline-api.t54.ai`.
+***
 
-### Observability
+## 3. Why x402-secure
 
-* Buyer demo initializes OpenTelemetry tracing; spans print to console by default.
-* To view spans in a local OTEL Collector, follow [docs/observability/otel-collector-minimal.md](docs/observability/otel-collector-minimal.md).
+### The Challenge
 
-  * Set `OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318/v1/traces`.
-  * Optionally set `OTEL_SERVICE_NAME` (default: `buyer-demo`).
+If you build AI agents that transact:
 
-### Buyer Risk Session
+* How do you prevent unauthorized purchases?
+* Who bears liability when an agent errs?
+* How do you prove the agent’s reasoning was sound?
 
-* Buyer agent creates risk session via `POST /risk/session` at `AGENT_GATEWAY_URL`.
-* **Local Mode** (`PROXY_LOCAL_RISK=1`): proxy handles risk in-memory.
-* **Production Mode** (`PROXY_LOCAL_RISK=0`): proxy forwards to Trustline (`RISK_ENGINE_URL=https://trustline-api.t54.ai`).
-* Payments include `X-RISK-SESSION` + `X-PAYMENT-SECURE` per [docs/specs/payment-trace-and-evidence-spec.md](docs/specs/payment-trace-and-evidence-spec.md).
+If you run APIs or services accepting agent payments:
 
-### Base Sepolia Demo (Local Seller → x402.org Upstream)
+* How do you verify agent-initiated transactions?
+* How do you resolve disputes automatically?
 
-Use localhost for the Seller URL. The proxy forwards to x402.org’s upstream facilitator on Base Sepolia.
+### The Solution
 
-**Network:** `base-sepolia`
-**Endpoints:** `https://x402.org/facilitator/verify` and `/settle`
+x402-secure enforces clear, verifiable responsibility boundaries through:
 
-Run (three terminals):
+* Reasoning trace capture
+* Real-time risk evaluation via Trustline
+* Immutable evidence storage
+* Programmatic dispute protection
 
-```bash
-# Terminal 1
-PROXY_LOCAL_RISK=1 \
-PROXY_PORT=8000 \
-PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify \
-PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle \
-uv run python run_facilitator_proxy.py
+***
 
-# Terminal 2
-PROXY_BASE=http://localhost:8000/x402 \
-uv run uvicorn --app-dir packages/x402-secure/examples seller_integration:app --port 8010
+## 4. For AI Agent Developers
 
-# Terminal 3
-AGENT_GATEWAY_URL=http://localhost:8000 \
-SELLER_BASE_URL=http://localhost:8010 \
-BUYER_PRIVATE_KEY=0x6156dbafdf508898b11697a5a7af8dd7a5b7ca35841f598a6c68ac6dd3e50555 \
-uv run python packages/x402-secure/examples/buyer_agent_openai.py
-```
+**Use Case:** you’re building an agent that spends on behalf of users.
 
-Notes:
+### What You Get
 
-* `PUBLIC_URL` builds `paymentRequirements.resource`.
-* The proxy forwards `/x402/{verify,settle}` upstream via `PROXY_UPSTREAM_*`.
-* The buyer uses `AGENT_GATEWAY_URL` (default `http://localhost:8000`) for Risk APIs.
+* Automatic liability coverage for approved transactions
+* Evidence of reasoning for every payment
+* Risk checks before settlement
+* SDK with simple integration
 
-### Signed X-PAYMENT (Default)
-
-The buyer demo uses the official x402 SDK to create and sign **EIP-3009 TransferWithAuthorization** payloads.
-
-**Environment variables:**
-
-* `BUYER_PRIVATE_KEY=0x...` (Base Sepolia test key with funds)
-* `NETWORK=base-sepolia`
-* `AGENT_GATEWAY_URL=http://localhost:8000`
-* `PROXY_UPSTREAM_VERIFY_URL=https://x402.org/facilitator/verify`
-* `PROXY_UPSTREAM_SETTLE_URL=https://x402.org/facilitator/settle`
-* `MERCHANT_PAYTO=0x...` (your merchant account on Base Sepolia)
-
-**Run sequence:**
-
-1. Start proxy
-2. Start seller at port 8010
-3. Run buyer demo
-
-Notes:
-
-* The proxy does not add upstream auth headers by default. If your target facilitator needs auth, add it at the upstream or contact us to wire optional headers.
-* The `PaymentRequirements.asset` must match the network’s USDC and `payTo` must be your merchant address; the seller demo sets both.
-
-### Using the Client SDK
-
-**Installation**
-
-```bash
-uv lock && uv sync
-```
-
-Installs:
-
-* `x402-secure` (client SDK)
-* `x402_proxy` (proxy server module)
-
-**SDK Components**
-
-**AI Agent Trace Collection**
+### Integration (Python Example)
 
 ```python
-from x402_client import OpenAITraceCollector, store_agent_trace
+pip install x402-secure
 
-tracer = OpenAITraceCollector()
-# ... collect OpenAI traces
-tid = await store_agent_trace(risk_client, sid, tracer.events)
-```
-
-**Risk Session Management**
-
-```python
-from x402_client import RiskClient
-
-risk_client = RiskClient("http://localhost:8000")
-session = await risk_client.create_session(
-    agent_did=buyer_address,  # Future: EIP-8004 DID
-    app_id="my-app",
-    device={"ua": "x402-agent/1.0"}
-)
-sid = session["sid"]
-```
-
-**Secure Payment Headers**
-
-```python
-from x402_client import build_payment_secure_header, start_client_span
-
-with start_client_span("buyer.payment"):
-    headers = build_payment_secure_header(agent_trace_context={"tid": tid})
-```
-
-**Complete Payment Flow**
-
-```python
-from x402_client import BuyerClient, BuyerConfig
+from x402_secure_client import BuyerClient, BuyerConfig, RiskClient, OpenAITraceCollector
+from x402_secure_client import store_agent_trace, execute_payment_with_tid
 
 buyer = BuyerClient(BuyerConfig(
-    seller_base_url="http://localhost:8010",
-    agent_gateway_url="http://localhost:8000",
-    network="base-sepolia",
-    buyer_private_key=os.getenv("BUYER_PRIVATE_KEY")
+    seller_base_url="https://api.example.com",
+    agent_gateway_url="https://x402-proxy.t54.ai",
+    buyer_private_key=YOUR_PRIVATE_KEY
 ))
-result = await buyer.execute_paid_request(
-    endpoint="/api/market-data",
-    task="Buy BTC price data",
-    params={"symbol": "BTC/USD"},
-    risk_sid=sid,
-    extra_headers=headers
+
+risk = RiskClient("https://x402-proxy.t54.ai")
+session = await risk.create_session(agent_did=buyer.address, app_id="my-agent-v1")
+sid = session["sid"]
+
+tracer = OpenAITraceCollector()
+# ...collect reasoning stream...
+tid = await store_agent_trace(risk, sid, "purchase_item", {"item": "coffee maker"}, tracer.events)
+
+payment = await execute_payment_with_tid(
+    buyer, "/api/purchase", "purchase_item",
+    {"item": "coffee maker"}, sid, tid
 )
 ```
 
-**Proxy Server (FastAPI)**
+For full SDK reference, see [Buyer Integration Guide](https://github.com/t54-labs/x402-secure/blob/main/docs/BUYER_INTEGRATION.md).
+
+***
+
+## 5. For API / Service Providers
+
+**Use Case:** your API accepts agent payments.
+
+### What You Get
+
+* Risk score attached to each transaction
+* Proof-of-intent for disputes
+* Seamless integration via standard x402 headers
+
+### Example Integration (FastAPI)
 
 ```python
-from fastapi import FastAPI
-from x402_proxy import router, risk_router
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
+from x402_secure_client import SellerClient
 
 app = FastAPI()
-app.include_router(router)
-app.include_router(risk_router)
+seller = SellerClient("https://x402-proxy.t54.ai/x402")
 
-@app.get("/api/protected")
-async def protected_resource(request: Request):
-    # Verify X-PAYMENT, X-PAYMENT-SECURE, X-RISK-SESSION
-    # Call /x402/verify and /x402/settle
-    pass
+@app.get("/api/service")
+async def service(request: Request, param: str):
+    # define payment requirements
+    reqs = {"network": "base-sepolia", "maxAmountRequired": "100000", "asset": "0x...USDC"}
+    xpay = request.headers.get("X-PAYMENT")
+    secure = request.headers.get("X-PAYMENT-SECURE")
+    sid = request.headers.get("X-RISK-SESSION")
+    if not all([xpay, secure, sid]):
+        return JSONResponse({"accepts": [reqs]}, status_code=402)
+
+    result = await seller.verify_then_settle(json.loads(base64.b64decode(xpay)), reqs,
+                                             x_payment_b64=xpay, x_payment_secure=secure,
+                                             risk_sid=sid)
+    return JSONResponse({"status": "ok", "result": result})
 ```
 
-See `run_facilitator_proxy.py` for a complete standalone proxy server example.
+Detailed server integration guide: [Seller Integration Guide](https://github.com/t54-labs/x402-secure/blob/main/docs/SELLER_INTEGRATION.md)
 
+***
+
+## 6. How It Works
+
+**Flow summary**
+
+1. Agent creates a risk session via the proxy.
+2. Reasoning trace collected and stored by Trustline.
+3. Agent sends payment with risk headers through x402.
+4. Proxy validates payment, consults Trustline, and settles upstream.
+5. Result returned with signed evidence.
+
+<Image border={false} src="https://files.readme.io/435bf27086842fe6b56580dc0e6a8a251312edbbf5ccd9798d0f0e30d6dd288c-Untitled_diagram-2025-10-17-175900.png" />
+
+***
+
+## 7. Resources
+
+* [Developer Documentation](https://github.com/t54-labs/x402-secure/tree/main/docs)
+* [tLedger Quick Start](../tledger-toolkit)
+* [Trustline Risk Engine](../trustline-overview)
+* [Agentic Finance Overview](../agentic-finance)
+
+For questions or support: **[support@t54.ai](mailto:support@t54.ai)**
+Community: [discord.gg/t54labs](https://discord.gg/t54labs)
+
+***
+
+**Maintained by [t54 labs](https://t54.ai)**
+_For continuous updates and advanced use cases, visit the [x402-secure GitHub page](https://github.com/t54-labs/x402-secure)._
