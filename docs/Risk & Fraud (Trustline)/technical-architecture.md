@@ -5,109 +5,153 @@ hidden: false
 metadata:
   robots: index
 ---
-tRadar 1.0 implements a sophisticated multi-tier validation architecture designed to handle risk assessment requests with varying complexity levels. The system is built around two core components: the Sequencer service and the enhanced RadarService validator network.
+> t54’s agent-native risk engine for x402/AP2 and tLedger.
+> This page introduces the Trustline flow architecture and system components.
+> For implementation details and continuous updates, visit the relevant GitHub repositories.
 
-## System Overview
+* **Proxy Endpoint:** `/risk/*` served by the x402-secure gateway (local or production)
+* **Scope:** Runtime flow, validation sequence, and decision logic
+* **Upstream Rails:** x402 verify/settle, tLedger settlement
 
-tRadar follows a distributed architecture that enables scalable, intelligent risk assessment for agent transactions. The system intelligently routes requests based on complexity and maintains high availability through redundant validator instances.
+***
 
-**Key Architecture Components:**
+## 1. System Overview
 
-* **Sequencer Service** - Central dispatch system for risk assessment requests
-* **Multi-Tier Validator Network** - Specialized validator instances for different complexity levels
-* **RadarService** - Modular LLM-powered validation component
-* **Consensus Engine** - Weighted decision-making across validator committees
+Trustline implements a **multi-tier, committee-based validation architecture** designed to assess the trustworthiness of agent-initiated transactions.
 
-## Sequencer Service
+It combines **sequenced routing**, **specialized validators**, and **consensus-based adjudication** to provide real-time, explainable, and challengeable risk decisions.
 
-The Sequencer acts as the intelligent routing layer that dispatches risk assessment requests across different tiers of validators based on transaction complexity and risk factors.
+### Core Characteristics
 
-**Core Functions:**
+* Tiered validation loop (Easy → Medium → Hard)
+* Parallel specialization per tier for domain-specific risk analysis
+* Consensus-based final decision with confidence scoring
+* Optional human-in-loop challenge and re-evaluation flow
 
-* **Request Classification** - Analyzes incoming transactions to determine complexity level
-* **Load Balancing** - Distributes requests across available validator instances
-* **Tier Management** - Routes requests to appropriate validation tiers (easy, medium, hard)
-* **Response Coordination** - Aggregates validator responses and manages consensus
+***
 
-## Multi-Tier Validation System
+## 2. Core Components
 
-tRadar operates three specialized validator instances, each optimized for specific complexity levels:
+### 2.1 Sequencer
 
-<Cards columns={3}>
-  <Card title="Easy Tier" icon="fa-check-circle">
-    **Low-risk transactions**
+The Sequencer classifies incoming risk requests by **complexity** and **context**, dispatching them to the appropriate validation tier.
 
-    Simple rule-based validation for routine payments under standard thresholds
-  </Card>
+**Responsibilities**
 
-  <Card title="Medium Tier" icon="fa-shield-alt">
-    **Moderate complexity**
+* **Classification:** Determines initial difficulty tier
+* **Dispatching:** Routes request to validator committees
+* **Escalation:** Triggers higher-tier analysis when confidence is low
+* **Aggregation:** Collects validator outputs for consensus
 
-    Enhanced analysis requiring contextual evaluation and pattern matching
-  </Card>
+***
 
-  <Card title="Hard Tier" icon="fa-brain">
-    **High-risk/complex**
+### 2.2 Validator Network
 
-    Full AI committee analysis with deep contextual reasoning and multi-validator consensus
-  </Card>
-</Cards>
+Validators are grouped into parallel committees, each specialized in a unique risk dimension.
 
-## RadarService Architecture
+**Validator Specializations**
 
-The RadarService component has been significantly enhanced with modular LLM integration, providing plug-and-play flexibility for different AI models and validation strategies.
+1. Injection Detection
+2. Identity Verification (KYA, device posture, or attestation)
+3. Consent & Mandate Verification (AP2/x402 evidence)
+4. Code & Step Validation (tool calls, signature integrity)
+5. Anomaly Detection (behavioral or contextual deviations)
 
-**Key Improvements:**
+Each committee executes its validation logic independently, returning structured confidence outputs to the Consensus Coordinator.
 
-* **Modular LLM Integration** - Supports multiple AI models with standardized interfaces
-* **Plug-and-Play Design** - Easy swapping of validation models based on requirements
-* **Enhanced Flexibility** - Dynamic model selection based on transaction characteristics
-* **Scalable Processing** - Horizontal scaling across multiple validator instances
+***
 
-## System Flow Diagrams
+### 2.3 Consensus Coordinator
 
-The complete tRadar architecture includes detailed flow diagrams showing:
+The Coordinator acts as the **judge** of each tier. It merges validator outputs to form a unified decision.
 
-1. **Block Diagram** - High-level system components and their relationships
-2. **Flow Diagram** - Request routing and validation process flow
-3. **Detailed Flow Diagram** - Granular step-by-step validation workflow
+**Functions**
 
-![](https://files.readme.io/0fd31e600b98de9470af10b3a4553f428128360de40238bc3a9cdb4bc2aa2475-image.png)
+* Aggregates risk scores from multiple validators
+* Computes overall confidence and risk level
+* Determines whether to approve, decline, or escalate
+* Produces the **Final Decision Artifact**, including optional future liability mapping
 
-![](https://files.readme.io/51351f7e9a8ad5adfc48446972bc481e55171963995ce69ffe601cb727f5ab7b-image.png)
+***
 
-![](https://files.readme.io/a92c71904cb721caa01faa32f1fda7ae69c97e2ec15d7afdd44777d86ccb3af1-image.png)
+### 2.4 Session & Trace Services
 
-## Technical Implementation
+Sessions and traces form the data backbone of Trustline.
 
-<Accordion title="Architecture Details" icon="fa-cogs">
-  **Complete System Architecture**
+* **Session Manager:**
+  Creates and manages risk sessions (default expiry 24h, adjustable).
+  Each session anchors the complete life cycle of a transaction evaluation.
 
-  For comprehensive architectural specifications, system interfaces, and implementation details, refer to:
-  [Architecture Documentation](https://docs.t54.ai/docs/architecture)
-</Accordion>
+* **Trace Manager:**
+  Stores reasoning traces, model context, and validation inputs.
+  Multiple traces can attach to one session—allowing challenge and re-evaluation.
 
-<Accordion title="Sequencer Implementation" icon="fa-route">
-  **Sequencer Service Details**
+***
 
-  Detailed implementation specifications, configuration options, and operational procedures:
-  `docs/Sequencer_Implementation.md`
-</Accordion>
+## 3. System Flow
 
-<Accordion title="Prompts Module" icon="fa-comments">
-  **Validation Prompts & AI Integration**
+> The following diagram represents the complete Trustline risk evaluation process, including session creation, trace submission, multi-tier consensus validation, and challenge handling.
 
-  LLM prompt engineering, model integration patterns, and validation logic:
-  `app/prompt/README.md`
-</Accordion>
+<Image border={false} src="https://files.readme.io/899b641d6d2c40929ad15e67b4661acb9575ca9890fe23d58de32eb3cb7e8fe3-Untitled_diagram-2025-10-17-175900.png" />
 
-## Performance & Scalability
+### High-Level Summary
 
-The multi-tier architecture enables tRadar to:
+1. **Session Creation:**
+   The system opens a new session with expiration metadata.
 
-* **Scale Horizontally** - Add validator instances based on demand
-* **Optimize Resources** - Route simple requests to lightweight validators
-* **Maintain Performance** - Prevent complex validations from blocking routine transactions
-* **Ensure Reliability** - Redundant validators provide fault tolerance
+2. **Trace Submission:**
+   Agent reasoning and task context are uploaded and verified.
 
-This architecture ensures that tRadar can handle high transaction volumes while maintaining the deep analysis required for complex risk assessments.
+3. **Tier Classification & Dispatch:**
+   Sequencer selects the starting tier based on request complexity.
+
+4. **Parallel Validation:**
+   Specialist validators analyze the trace simultaneously across five focus areas.
+
+5. **Consensus Aggregation:**
+   Coordinator computes risk level, confidence, and decision outcome.
+
+6. **Decision Output:**
+   The system issues either an approval or decline, with confidence and validity window.
+
+7. **Challenge Loop (If Applicable):**
+   When declined, a challenge path can be initiated using new evidence within the same session.
+   The new trace triggers re-evaluation until final decision is reached.
+
+***
+
+## 4. Decision Framework
+
+Every evaluation results in a standardized **Decision Object** containing:
+
+* **Decision:** Approve / Decline
+* **Risk Level:** Low / Medium / High
+* **Confidence:** Calculated probability score
+* **Time-To-Live (TTL):** Validity window for decision reuse
+* **Rationales:** Summary of validator reasoning
+* **Challenge Eligibility:** Optional field if further evidence is allowed
+* **Liability Map (Future Use):** Outlines role-based accountability (agent, operator, merchant, or network)
+
+***
+
+## 5. Integration Notes
+
+* **[x402 Integration](https://docs.t54.ai/update/docs/x402-secure-quickstart):**
+  Trustline runs in tandem with the x402 verify/settle process and contributes `X-RISK-SESSION` headers to the payment context.
+
+* **AP2 Alignment:**
+  Agent consent, mandate, and evidence fields conform to AP2’s evolving intent-verification standard.
+
+* **KYA / Identity Layer:**
+  Optional device-based identity (Claire, ASID) can supplement risk signals for challenge and liability reassignment.
+
+***
+
+## 6. Related References
+
+* [x402-secure Quick Start](../x402-secure-intro)
+* [Trustline Overview](../trustline-overview)
+* [tLedger Toolkit](../tledger-toolkit)
+* [Agentic Finance Primer](../agentic-finance)
+
+<br />
