@@ -4,6 +4,10 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  description: >-
+    _For continuous updates and advanced use cases, visit the [x402-secure
+    GitHub page](https://github.com/t54-labs/x402-secure)._
 ---
 **Open-Source SDK & Proxy for Secure Agent Payments on x402 — powered by Trustline from [t54](https://t54.ai)**
 
@@ -223,10 +227,3 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 
 For questions or support: **[support@t54.ai](mailto:support@t54.ai)**
 Community: [discord.gg/t54labs](https://discord.gg/t54labs)
-
-***
-
-**Maintained by [t54 labs](https://t54.ai)**
-_For continuous updates and advanced use cases, visit the [x402-secure GitHub page](https://github.com/t54-labs/x402-secure)._
-
-<br />
