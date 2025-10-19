@@ -210,7 +210,7 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 4. Proxy validates payment, consults Trustline, and settles upstream.
 5. Result returned with signed evidence.
 
-<Image border={false} src="https://files.readme.io/435bf27086842fe6b56580dc0e6a8a251312edbbf5ccd9798d0f0e30d6dd288c-Untitled_diagram-2025-10-17-175900.png" />
+<Image border={false} src="https://files.readme.io/b4142fcd8215266c24b7662f65b70706d2fd2c5dd0fe1b91e434c089aafb1afb-image_3.png" />
 
 ***
 
@@ -228,3 +228,5 @@ Community: [discord.gg/t54labs](https://discord.gg/t54labs)
 
 **Maintained by [t54 labs](https://t54.ai)**
 _For continuous updates and advanced use cases, visit the [x402-secure GitHub page](https://github.com/t54-labs/x402-secure)._
+
+<br />
