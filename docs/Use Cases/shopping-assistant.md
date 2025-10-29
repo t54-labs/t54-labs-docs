@@ -1,7 +1,7 @@
 ---
 title: Autonomous Shopping Assistant
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
