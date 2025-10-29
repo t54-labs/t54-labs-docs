@@ -1,7 +1,7 @@
 ---
 title: tLedger Quickstart
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
