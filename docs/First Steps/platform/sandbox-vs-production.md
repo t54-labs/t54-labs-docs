@@ -1,7 +1,7 @@
 ---
 title: Sandbox vs Production
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
