@@ -2,7 +2,7 @@
 title: Claire Agent
 excerpt: 'Your trusted financial gateway agent '
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
