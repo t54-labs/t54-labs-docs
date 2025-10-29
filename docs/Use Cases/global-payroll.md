@@ -1,7 +1,7 @@
 ---
 title: Global Payroll
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
