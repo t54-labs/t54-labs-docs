@@ -2,7 +2,7 @@
 title: Products Overview
 excerpt: The Trust Layer for the Agentic Finance
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
