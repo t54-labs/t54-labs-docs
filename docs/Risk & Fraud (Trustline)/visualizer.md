@@ -1,7 +1,7 @@
 ---
 title: Real-time tRadar Visualization
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
