@@ -1,7 +1,7 @@
 ---
 title: Know Your Agent
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
