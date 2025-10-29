@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 excerpt: One Trust Layer for Business and Individual
-hidden: false
+hidden: true
 next:
   pages:
     - slug: tledger-backend-sdk
