@@ -2,7 +2,7 @@
 title: tPortal
 excerpt: The user interface to interact with tLedger
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
