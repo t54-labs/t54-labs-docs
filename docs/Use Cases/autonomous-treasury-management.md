@@ -1,7 +1,7 @@
 ---
 title: Autonomous Treasury Management
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
