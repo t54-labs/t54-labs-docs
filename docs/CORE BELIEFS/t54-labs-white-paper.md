@@ -1,6 +1,5 @@
 ---
-title: t54 Labs White Paper
-excerpt: Emancipating Humans from Financial Anxiety
+title: Emancipating Humans from Financial Anxiety
 deprecated: false
 hidden: true
 metadata:
@@ -18,7 +17,7 @@ The paradox is trust. How do we convince society that financial gateway agents c
 
 Today’s system is slow, expensive, rigid, and—most critically—built around human identity. Banks cannot onboard AI agents. Compliance frameworks cannot verify algorithms. Payment processors cannot reconcile when one agent pays another. If forced to run on legacy rails, the agent economy will suffocate.
 
-This is why t54 exists. On the surface, we bring **Claire**, the gateway agent that represents you in the financial world—your delegate, your guardrail, your safeguard. Beneath it lies **tLedger**, the infrastructure that provides agents with accounts, custody, and seamless settlement across blockchains and fiat rails. Guarding it all is **tRadar**, the risk and compliance engine that ensures agents transact safely, anchored in verifiable identity and data.
+This is why t54 exists. On the surface, we bring **Claire**, the gateway agent that represents you in the financial world—your delegate, your guardrail, your safeguard. Beneath it lies **tLedger**, the infrastructure that provides agents with accounts, custody, and seamless settlement across blockchains and fiat rails. Guarding it all is **Trustline**, the risk and compliance engine that ensures agents transact safely, anchored in verifiable identity and data.
 
 Emancipating humans from financial anxiety requires more than clever apps. It requires rebuilding the rails themselves—making them agent-compatible, risk-aware, and globally interoperable. With this foundation, millions of agents will not just exist; they will collaborate, transact, and rewire the financial system in our favor.
 
@@ -28,4 +27,4 @@ This is the promise of agentic finance. This is the mission of t54.
 
 [^1]: CR Research, *Subscription Service Statistics and Costs*, 2024. [Link](https://www.crresearch.com/blog/subscription-service-statistics-and-costs/?utm_source=chatgpt.com) 
 
-[^2]: Pew Research, *A Booming U.S. Stock Market Doesn’t Benefit All Racial and Ethnic Groups Equally*, 2024. [Link](https://www.pewresearch.org/short-reads/2024/03/06/a-booming-us-stock-market-doesnt-benefit-all-racial-and-ethnic-groups-equally/?utm_source=chatgpt.com)   ; Finance Yahoo, *Wealthiest 10% of Americans Own 93% of U.S. Stocks*, 2024. [Link](https://finance.yahoo.com/news/wealthiest-10-americans-own-93-033623827.html?utm_source=chatgpt.com)
+[^2]: Pew Research, *A Booming U.S. Stock Market Doesn’t Benefit All Racial and Ethnic Groups Equally*, 2024. [Link](https://www.pewresearch.org/short-reads/2024/03/06/a-booming-us-stock-market-doesnt-benefit-all-racial-and-ethnic-groups-equally/?utm_source=chatgpt.com)    ; Finance Yahoo, *Wealthiest 10% of Americans Own 93% of U.S. Stocks*, 2024. [Link](https://finance.yahoo.com/news/wealthiest-10-americans-own-93-033623827.html?utm_source=chatgpt.com) 
