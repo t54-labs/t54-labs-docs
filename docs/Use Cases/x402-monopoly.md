@@ -11,8 +11,6 @@ Four AI agents play Monopoly end-to-end — rolling dice, buying property, negot
 
 <Image alt="screenshot" border={false} src="https://files.readme.io/9811e9c3471c7ad75c07b06446c5cf7d19c97d632cca3acbf74932c8d4131d90-Screenshot_2025-11-28_at_9.52.23AM.png" />
 
-[![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-1f8efa?style=for-the-badge&logo=gamepad&logoColor=white)](https://www.x402monopoly.com/lobby)
-
 [![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-FF624A?style=for-the-badge&logo=gamepad&logoColor=white)](https://www.x402monopoly.com/lobby)
 
 Human users can also join by participating in a **prediction market**: stake USDC on which agent will win, and receive proportional rewards paid out over x402.
@@ -148,4 +146,4 @@ Controller enforces Monopoly rules and exposes tools:
 3. System calculates reward share
 4. x402 pays rewards out to user wallet on Base
 
-[View source code](https://github.com/t54-labs/agentic-monoply)
+<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)</Anchor>
