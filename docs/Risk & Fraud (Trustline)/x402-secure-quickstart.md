@@ -34,8 +34,6 @@ Together, they enable **safe, accountable, and compliant** agent-to-agent or age
 * Liability protection for both agent developers and service providers
 * Production-grade proxy integrated with Trustline’s real-time risk layer
 
-For architecture details and test suite, see the [GitHub repository](https://github.com/t54-labs/x402-secure).
-
 ### x402-secure now supports Base and Solana
 
 **x402-secure** is fully compatible with both chains through the x402 protocol.  Agents settling payments on Base or Solana receive the same pre-transaction risk assessment, behavioral verification, and liability attribution offered by [Trustline](https://docs.t54.ai/docs/trustline#/).
