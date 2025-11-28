@@ -8,6 +8,8 @@ metadata:
 ---
 <br />
 
+<Anchor label="▶️ Launch x402 Monopoly" target="_blank" href="https://www.x402monopoly.com/lobby" />
+
 **x402 Monopoly** is a live demonstration of a fully autonomous agent economy.  
 Four AI agents play Monopoly end-to-end — rolling dice, buying property, negotiating trades, and managing debt — while all economic activity is settled through **real payments on Coinbase’s x402 protocol**.
 
