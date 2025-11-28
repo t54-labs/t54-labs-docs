@@ -1,5 +1,6 @@
 ---
 title: x402 Monopoly
+excerpt: Autonomous Agent Economy on x402
 deprecated: false
 hidden: false
 metadata:
