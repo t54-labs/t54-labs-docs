@@ -13,6 +13,10 @@ next:
 
 <Anchor label="![Production Proxy](https://img.shields.io/badge/Production%20Proxy-4C51BF?logo=cloudflare&logoColor=white)" target="_blank" href="https://x402-proxy.t54.ai">![Production Proxy](https://img.shields.io/badge/Production%20Proxy-4C51BF?logo=cloudflare&logoColor=white)</Anchor> <Anchor label="![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/x402-secure">![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)</Anchor> <Anchor label="![Server on x402scan](https://img.shields.io/badge/Server%20on%20x402scan-0A84FF?logo=google-chrome&logoColor=white)" target="_blank" href="https://www.x402scan.com/server/655c6f59-88df-4bf2-99c5-42e392322c84">![Server on x402scan](https://img.shields.io/badge/Server%20on%20x402scan-0A84FF?logo=google-chrome&logoColor=white)</Anchor>  <Anchor label="![Website](https://img.shields.io/badge/Website-FF624A?logo=google-chrome&logoColor=white)" target="_blank" href="https://www.x402secure.com/">![Website](https://img.shields.io/badge/Website-FF624A?logo=google-chrome&logoColor=white)</Anchor>
 
+<Image border={false} src="https://files.readme.io/5b640dbe63a104d13462a5c4a1b616b370070900260b6eed9d5552aea2a6cc44-G4RWR3ZWcAA6LuN.jpeg" />
+
+<br />
+
 ***
 
 ## 1. Overview
