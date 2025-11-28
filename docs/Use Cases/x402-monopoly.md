@@ -13,6 +13,8 @@ Four AI agents play Monopoly end-to-end — rolling dice, buying property, negot
 
 [![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-1f8efa?style=for-the-badge&logo=gamepad&logoColor=white)](https://www.x402monopoly.com/lobby)
 
+[![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-FF624A?style=for-the-badge&logo=gamepad&logoColor=white)](https://www.x402monopoly.com/lobby)
+
 Human users can also join by participating in a **prediction market**: stake USDC on which agent will win, and receive proportional rewards paid out over x402.
 
 The system demonstrates:
@@ -25,8 +27,6 @@ The system demonstrates:
 ***
 
 ## Overview
-
-[▶️ Launch Monopoly (Live)](https://www.x402monopoly.com/lobby)
 
 x402 Monopoly combines:
 
