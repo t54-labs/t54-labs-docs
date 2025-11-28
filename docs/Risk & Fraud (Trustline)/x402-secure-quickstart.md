@@ -29,7 +29,7 @@ Together, they enable **safe, accountable, and compliant** agent-to-agent or age
 
 ### What x402-secure Adds
 
-* Agent SDK for trace collection (OpenAI today; LangChain and AutoGPT next)
+* Agent SDK for trace collection
 * Facilitator proxy aligned with the x402 payment protocol
 * Liability protection for both agent developers and service providers
 * Production-grade proxy integrated with Trustline’s real-time risk layer
