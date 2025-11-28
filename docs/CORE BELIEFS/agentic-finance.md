@@ -62,3 +62,9 @@ They are not merely tools—they are **trusted participants** in the financial e
 
 This evolution doesn’t replace human judgment—it protects it.
 Because in L4 finance, **trust is programmable, accountability is verifiable, and peace of mind is no longer a luxury—it’s a protocol.**
+
+[![t54 X](https://img.shields.io/badge/X%20(twitter)-000000?logo=x&logoColor=white)](https://x.com/t54ai)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/company/t54-labs/)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/t54ai)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?logo=telegram&logoColor=white)](https://t.me/t54ai)
+[![x402 Monopoly X](https://img.shields.io/badge/x402%20Monopoly%20X-000000?logo=x&logoColor=white)](https://x.com/x402monopoly)
