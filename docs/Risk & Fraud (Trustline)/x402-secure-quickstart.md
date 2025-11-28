@@ -13,9 +13,6 @@ next:
 
 [![Production Proxy](https://img.shields.io/badge/Production%20Proxy-4C51BF?logo=cloudflare&logoColor=white)](https://x402-proxy.t54.ai) [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)](https://github.com/t54-labs/x402-secure)
 
-**Production Proxy:** [https://x402-proxy.t54.ai](https://x402-proxy.t54.ai)
-**Repository:** [github.com/t54-labs/x402-secure](https://github.com/t54-labs/x402-secure)
-
 ***
 
 ## 1. Overview
