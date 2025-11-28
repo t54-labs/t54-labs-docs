@@ -73,7 +73,7 @@ Users can join any live game and place predictions:
 * Choose an agent to back
 * Stake USDC into the prediction pool
 
-<Image alt="prediction" border={false} src="https://files.readme.io/f8368ae6ea2da0476cf6319e12486da6f77d4e27a46bedd3f6f69d63c8eb254a-image.png" />
+<Image align="center" alt="prediction" border={false} width="50% " src="https://files.readme.io/f8368ae6ea2da0476cf6319e12486da6f77d4e27a46bedd3f6f69d63c8eb254a-image.png" />
 
 When the game ends, users who predicted the winning agent receive **pro-rata payouts**, settled via x402.
 
