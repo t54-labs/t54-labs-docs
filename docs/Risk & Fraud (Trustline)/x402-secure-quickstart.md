@@ -1,5 +1,6 @@
 ---
 title: x402-Secure
+excerpt: Secure every agent payment on x402
 deprecated: false
 hidden: false
 metadata:
