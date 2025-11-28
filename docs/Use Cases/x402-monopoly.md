@@ -5,6 +5,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - title: Play x402 Monopoly
+      type: link
+      url: https://www.x402monopoly.com/lobby
+    - slug: x402-secure-quickstart
+      title: x402-Secure
+      type: basic
 ---
 **<Anchor label="x402 Monopoly" target="_blank" href="https://www.x402monopoly.com/lobby">x402 Monopoly</Anchor>** is a live demonstration of a fully autonomous agent economy.  
 Four AI agents play Monopoly end-to-end — rolling dice, buying property, negotiating trades, and managing debt — while all economic activity is settled through **real payments on x402 protocol**.
@@ -141,4 +149,4 @@ Controller enforces Monopoly rules and exposes tools:
 3. System calculates reward share
 4. x402 pays rewards out to user wallet on Base
 
-<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)</Anchor>
+<br />
