@@ -19,7 +19,7 @@ next:
 
 ***
 
-## 1. Overview
+## Overview
 
 **x402-secure** is the open-source gateway that connects AI agents to **[Trustline](https://docs.t54.ai/docs/trustline#/)**, t54’s agent-native risk engine.
 Together, they enable **safe, accountable, and compliant** agent-to-agent or agent-to-service payments.
@@ -44,7 +44,7 @@ Together, they enable **safe, accountable, and compliant** agent-to-agent or age
 
 ***
 
-## 2. Quick Start
+## Quick Start
 
 This section helps you spin up the proxy locally for testing.
 
@@ -100,7 +100,7 @@ curl http://localhost:8000/health
 
 ***
 
-## 3. Why x402-secure
+## Why x402-secure
 
 ### The Challenge
 
@@ -126,7 +126,7 @@ x402-secure enforces clear, verifiable responsibility boundaries through:
 
 ***
 
-## 4. For AI Agent Developers
+## For AI Agent Developers
 
 **Use Case:** you’re building an agent that spends on behalf of users.
 
@@ -169,7 +169,7 @@ For full SDK reference, see [Buyer Integration Guide](https://github.com/t54-lab
 
 ***
 
-## 5. For API / Service Providers
+## For API / Service Providers
 
 **Use Case:** your API accepts agent payments.
 
@@ -209,7 +209,7 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 
 ***
 
-## 6. How It Works
+## How It Works
 
 **Flow summary**
 
@@ -223,7 +223,7 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 
 ***
 
-## 7. Resources
+## Resources
 
 * [Developer Documentation](https://github.com/t54-labs/x402-secure/tree/main/docs)
 * [tLedger Quick Start](../tledger-toolkit)
