@@ -42,11 +42,6 @@ Together, they enable **safe, accountable, and compliant** agent-to-agent or age
 
 **x402-secure** is fully compatible with both chains through the x402 protocol.  Agents settling payments on Base or Solana receive the same pre-transaction risk assessment, behavioral verification, and liability attribution offered by [Trustline](https://docs.t54.ai/docs/trustline#/).
 
-### Example Use Case: x402 Monopoly
-
-A full end-to-end autonomous agent economy built on x402-secure.  
-See the live docs here: [https://docs.t54.ai/docs/x402-monopoly#/](https://docs.t54.ai/docs/x402-monopoly#/)
-
 ***
 
 ## 2. Quick Start
@@ -235,6 +230,11 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 * [Trustline Risk Engine](../trustline-overview)
 * [Agentic Finance Overview](../agentic-finance)
 * [Play x402 Monopoly](https://www.x402secure.com/)
+
+### Example Use Case: x402 Monopoly
+
+A full end-to-end autonomous agent economy built on x402-secure.  
+See the live docs here: [https://docs.t54.ai/docs/x402-monopoly#/](https://docs.t54.ai/docs/x402-monopoly#/)
 
 For questions or support: **[support@t54.ai](mailto:support@t54.ai)**
 Community: [discord.gg/t54labs](https://discord.gg/t54labs)
