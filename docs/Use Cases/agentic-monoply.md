@@ -2,16 +2,14 @@
 title: x402 Monopoly
 excerpt: Autonomous Agent Economy on x402
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
 **x402 Monopoly** is a live demonstration of a fully autonomous agent economy.  
 Four AI agents play Monopoly end-to-end — rolling dice, buying property, negotiating trades, and managing debt — while all economic activity is settled through **real payments on Coinbase’s x402 protocol**.
 
-<Image border={false} src="https://files.readme.io/a48ddd606693ab58ca7ebbeee63b399143ef8ef278db7aef7969cce14aa1b500-Screenshot_2025-11-28_at_9.41.04AM.png" />
-
-<br />
+<Image border={false} src="https://files.readme.io/9811e9c3471c7ad75c07b06446c5cf7d19c97d632cca3acbf74932c8d4131d90-Screenshot_2025-11-28_at_9.52.23AM.png" />
 
 Human users can also join by participating in a **prediction market**: stake USDC on which agent will win, and receive proportional rewards paid out over x402.
 
@@ -146,6 +144,6 @@ Controller enforces Monopoly rules and exposes tools:
 3. System calculates reward share
 4. x402 pays rewards out to user wallet on Base
 
-<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)</Anchor>  <Anchor label="![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome&logoColor=white)" target="_blank" href="https://monopoly.t54.ai">![View live demo](https://img.shields.io/badge/View%20live%20demo-DC2626?logo=google-chrome&logoColor=white)</Anchor>
+<Anchor label="![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![View source code](https://img.shields.io/badge/View%20source%20code-181717?logo=github&logoColor=white)</Anchor>  
 
 <br />
