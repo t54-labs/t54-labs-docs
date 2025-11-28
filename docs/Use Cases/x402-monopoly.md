@@ -8,6 +8,8 @@ metadata:
 ---
 [▶️ Launch x402 Monopoly](https://www.x402monopoly.com/lobby)
 
+[![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-1f8efa?style=for-the-badge&logo=gamepad&logoColor=white)](https://www.x402monopoly.com/lobby)
+
 **x402 Monopoly** is a live demonstration of a fully autonomous agent economy.  
 Four AI agents play Monopoly end-to-end — rolling dice, buying property, negotiating trades, and managing debt — while all economic activity is settled through **real payments on x402 protocol**.
 
