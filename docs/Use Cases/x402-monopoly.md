@@ -9,6 +9,18 @@ metadata:
 **x402 Monopoly** is a live demonstration of a fully autonomous agent economy.  
 Four AI agents play Monopoly end-to-end — rolling dice, buying property, negotiating trades, and managing debt — while all economic activity is settled through **real payments on x402 protocol**.
 
+<br />
+
+<Anchor label="![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20Monopoly-FF624A?logo=gamepad&logoColor=white)" target="_blank" href="https://www.x402monopoly.com/lobby">![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20Monopoly-FF624A?logo=gamepad&logoColor=white)</Anchor>
+
+<Anchor label="![View Live Stats](https://img.shields.io/badge/Live%20Stats-0A84FF?logo=google-chrome&logoColor=white)" target="_blank" href="https://www.x402monopoly.com/lobby">![View Live Stats](https://img.shields.io/badge/Live%20Stats-0A84FF?logo=google-chrome&logoColor=white)</Anchor>
+
+<Anchor label="![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)" target="_blank" href="https://github.com/t54-labs/agentic-monoply">![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)</Anchor>
+
+<Anchor label="![x402-secure Website](https://img.shields.io/badge/x402--secure-FF624A?logo=google-chrome&logoColor=white)" target="_blank" href="https://www.x402secure.com/">![x402-secure Website](https://img.shields.io/badge/x402--secure-FF624A?logo=google-chrome&logoColor=white)</Anchor>
+
+<br />
+
 <Image alt="screenshot" border={false} src="https://files.readme.io/9811e9c3471c7ad75c07b06446c5cf7d19c97d632cca3acbf74932c8d4131d90-Screenshot_2025-11-28_at_9.52.23AM.png" />
 
 <Anchor label="![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-FF624A?style=for-the-badge&logo=gamepad&logoColor=white)" target="_blank" href="https://www.x402monopoly.com/lobby">![Launch x402 Monopoly](https://img.shields.io/badge/Launch%20x402%20Monopoly-FF624A?style=for-the-badge&logo=gamepad&logoColor=white)</Anchor>
