@@ -18,7 +18,7 @@ next:
 
 ## 1. Overview
 
-**x402-secure** is the open-source gateway that connects AI agents to **Trustline**, t54’s agent-native risk engine.
+**x402-secure** is the open-source gateway that connects AI agents to **[Trustline](https://docs.t54.ai/docs/trustline#/)**, t54’s agent-native risk engine.
 Together, they enable **safe, accountable, and compliant** agent-to-agent or agent-to-service payments.
 
 ### What Trustline Provides
@@ -36,6 +36,15 @@ Together, they enable **safe, accountable, and compliant** agent-to-agent or age
 * Production-grade proxy integrated with Trustline’s real-time risk layer
 
 For architecture details and test suite, see the [GitHub repository](https://github.com/t54-labs/x402-secure).
+
+### x402-secure now supports Base and Solana
+
+**x402-secure** is fully compatible with both chains through the x402 protocol.  Agents settling payments on Base or Solana receive the same pre-transaction risk assessment, behavioral verification, and liability attribution offered by [Trustline](https://docs.t54.ai/docs/trustline#/).
+
+### Example Use Case: x402 Monopoly
+
+A full end-to-end autonomous agent economy built on x402-secure.  
+See the live docs here: [https://docs.t54.ai/docs/x402-monopoly#/](https://docs.t54.ai/docs/x402-monopoly#/)
 
 ***
 
@@ -224,6 +233,7 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 * [tLedger Quick Start](../tledger-toolkit)
 * [Trustline Risk Engine](../trustline-overview)
 * [Agentic Finance Overview](../agentic-finance)
+* [Play x402 Monopoly](https://www.x402secure.com/)
 
 For questions or support: **[support@t54.ai](mailto:support@t54.ai)**
 Community: [discord.gg/t54labs](https://discord.gg/t54labs)
