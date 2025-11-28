@@ -11,7 +11,7 @@ next:
 ---
 **Open-Source SDK & Proxy for Secure Agent Payments on x402 — powered by Trustline from [t54](https://t54.ai)**
 
-[![Production Proxy](https://img.shields.io/badge/Production%20Proxy-4C51BF?logo=cloudflare&logoColor=white)](https://x402-proxy.t54.ai) [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)](https://github.com/t54-labs/x402-secure)
+[![Production Proxy](https://img.shields.io/badge/Production%20Proxy-4C51BF?logo=cloudflare&logoColor=white)](https://x402-proxy.t54.ai) [![GitHub Repo](https://img.shields.io/badge/GitHub%20Repo-181717?logo=github&logoColor=white)](https://github.com/t54-labs/x402-secure) [![Server on x402scan](https://img.shields.io/badge/Server%20on%20x402scan-0A84FF?logo=google-chrome&logoColor=white)](https://www.x402scan.com/server/655c6f59-88df-4bf2-99c5-42e392322c84)
 
 ***
 
