@@ -231,10 +231,5 @@ Detailed server integration guide: [Seller Integration Guide](https://github.com
 * [Agentic Finance Overview](../agentic-finance)
 * [Play x402 Monopoly](https://www.x402secure.com/)
 
-### Example Use Case: x402 Monopoly
-
-A full end-to-end autonomous agent economy built on x402-secure.  
-See the live docs here: [https://docs.t54.ai/docs/x402-monopoly#/](https://docs.t54.ai/docs/x402-monopoly#/)
-
 For questions or support: **[support@t54.ai](mailto:support@t54.ai)**
 Community: [discord.gg/t54labs](https://discord.gg/t54labs)
