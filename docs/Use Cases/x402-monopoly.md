@@ -148,5 +148,3 @@ Controller enforces Monopoly rules and exposes tools:
 2. Grok wins the game
 3. System calculates reward share
 4. x402 pays rewards out to user wallet on Base
-
-<br />
